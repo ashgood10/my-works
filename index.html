@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app= "Me">
+	<head>
+		<link rel="stylesheet" href= "css/common.css">
+		<link rel="stylesheet" href= "css/profile.css">
+		<link rel="stylesheet" href= "css/works.css">
+	</head>
+	<body>
+		<div ng-include= "'my-home/navbar.html'"></div>
+		<div ng-view autoscroll="true"></div>
+		<script type="text/javascript" src= "scripts/angular.min.js"></script>
+		<script type="text/javascript" src= "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
+		<script type="text/javascript" src= "me.js"></script>
+		<script type="text/javascript" src= "my-works/my.works.module.js"></script>
+	</body>
+</html>
