@@ -1,15 +1,14 @@
 angular.module('Me', [
 	'ngRoute',
-	'My.Works',
-	'My.Profile'
+	'My.Home'
 	])
 	.config(['$routeProvider', function($routeProvider) {
-		$routeProvider.when('/', {
-			templateUrl: 'home/home.html',
-			controller: 'HomeController',
-			controllerAs: 'hvm'
-		})
-		.when('/profile', {
+		// $routeProvider.when('/', {
+		// 	templateUrl: 'home/home.html',
+		// 	controller: 'HomeController',
+		// 	controllerAs: 'hvm'
+		// })
+		$routeProvider.when('/profile', {
 			templateUrl: 'my-profile/my-profile.html',
 			controller: 'ProfileController',
 			controllerAs: 'pvm'
