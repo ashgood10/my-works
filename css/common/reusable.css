@@ -1,0 +1,23 @@
+.inline-block {
+	display: inline-block !important;
+}
+
+.display-block {
+	display: block !important;
+}
+
+.opaque {
+	opacity: 1 !important;
+}
+
+.transparent {
+	opacity: 0 !important;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}

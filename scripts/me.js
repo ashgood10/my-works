@@ -1,7 +1,4 @@
-angular.module('Me', [
-	'ngRoute',
-	'My.Home'
-	])
+angular.module('Me', ['ngRoute','My.Home'])
 	.config(['$routeProvider', function($routeProvider) {
 		// $routeProvider.when('/', {
 		// 	templateUrl: 'home/home.html',

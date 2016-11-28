@@ -1,11 +1,12 @@
 .home-menu {
-	min-height: 70px;
+	min-height: 40px;
+	background-color: #1E1E1E;
 }
 
-.home-menu span {
-	font-size: xx-large;
+ .home-label {
+	font-size: x-large;
 	font-weight: bolder;
-	height: 70px;
+	margin-top: 20px;
 }
 
 .home-menu-header {
@@ -14,19 +15,119 @@
 	border-radius: 0;
 	color: #fff;
 	cursor: pointer;
-	background-color: #5cb85c;
-	border-left: 3px solid #fff;
-	border-right: 3px solid #fff;
+	opacity: 0.8;
 }
 
-/*.home {
-	background-color: #d9534f;
-}*/
+.home-menu-header:hover {
+	opacity: 1;
+	transform: scale(1.01);
+} 
 
-/*.works {
-	background-color: #5cb85c;
+.name-header {
+	font-size: 12px;
+	text-align: center;
+	background-color: #1E1E1E;
+	color: #fff;
+	line-height: 50px;
 }
 
-.profile {
-	background-color: #428bca;
-}*/
+.name-header span {
+	font-size: xx-large;
+}
+
+.custom-dropdown {
+	position: absolute;
+	width: 100%;
+	left:0;
+	opacity: 0;
+	transform: translateY(-100%);
+	transition: all 0.3s ease-in;
+	visibility: hidden;
+}
+
+.home-menu-header:hover .custom-dropdown {
+	opacity: 1;
+	background-color: #1E1E1E;
+	visibility: visible;
+	transition: .5s cubic-bezier(0, 1, 0.5, 1);
+  	transform: translateY(0);
+}
+
+.dropdown-element {
+	display: block;
+	line-height: 35px;
+	max-height: 35px;
+}
+
+.vertical.home-menu {
+	height: 100vh;
+	background-color: transparent;
+}
+
+.vertical .home-menu-header {
+	position: relative;
+	margin-top: 110px;
+	background-color: #1e1e1e;
+	height: 70px;
+}
+
+.color-picker {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	display: block;
+	top: 50vh;
+	left: -5vw;
+	transition: all ease-in 0.3s;
+}
+
+@keyframes rotatecolor {
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(90deg);}
+    50%  {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.color-picker.active {
+	top: 50vh;
+	left: 50vw;
+	-webkit-animation-name: rotatecolor; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 0.3s; /* Safari 4.0 - 8.0 */
+	animation-name: rotatecolor;
+	animation-duration: 0.3s;
+}
+
+.color-tile {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	/*border-radius: 50%;*/
+}
+
+.color-picker-small {
+	height: 16px;
+	width: 12px;
+	display: inline-block;
+	position: absolute;
+	top: 45px;
+	right: 55px;
+	border: 0.5px solid #d2d2d2
+}
+
+.color-tile-small {
+	height: 5px;
+	width: 5px;
+	display: inline-block;
+	float: left;
+}
+
+.layout-picker {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.social-connect {
+	position: absolute;
+	margin-top: 17%;
+	margin-left: 50%;
+}

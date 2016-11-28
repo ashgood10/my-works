@@ -1,4 +1,6 @@
 @import url('home/home.css');
+@import url('common/icons.css');
+@import url('common/reusable.css');
 
 @font-face {
     font-family: 'adihaus_psreg';
@@ -7,15 +9,61 @@
     font-style: normal;
 }
 
-.icon {
-	background-image: url('../icons/icons.png');
-	display: inline-block;
-}
-
 body {
 	font-family: adihaus_psreg;
 	text-align: left;
 	overflow-x: hidden;
+	background-image: url('../images/back-img.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+/* Font Color Classes */
+.red {
+	color: #d9534f;
+}
+
+.white {
+	color: #f9f9f9;
+}
+
+.navy-blue {
+	color: #5bc0de;
+}
+
+.green {
+	color: #5cb85c;
+}
+
+.blue {
+	color: #428bca;
+}
+/* Font Color Classes End */
+
+/* Background Color Classes */
+.bg-red {
+	background-color: #d9534f;
+}
+
+.bg-white {
+	background-color: #f9f9f9;
+}
+
+.bg-navy-blue {
+	background-color: #5bc0de;
+}
+
+.bg-green {
+	background-color: #5cb85c;
+}
+
+.bg-blue {
+	background-color: #428bca;
+}
+
+.bg-black {
+	background-color: #1e1e1e;
 }
 
 .header {
@@ -23,3 +71,30 @@ body {
 	font-size: 22px;
 	margin: 0;
 }
+
+.custom-hr {
+	background-color: #5cb85c;
+	min-height: 5px;
+	opacity: 0;
+	margin: 0 !important;
+	border-top: 0px !important;
+}
+
+.tooltip {
+	text-transform: uppercase;
+	font-family: adihaus_psreg;
+	padding: 5px !important;
+	opacity: 1 !important;
+	color: #fff;
+	background-color:rgba(0, 0, 0, 1);
+	transition: all ease-in 0.3s;
+}
+
+/*.tooltip.right {
+	top: 10px;
+	right: 0;
+}
+
+.tooltip.top {
+	top: 20px;
+}*/
