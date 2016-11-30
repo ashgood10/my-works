@@ -5,7 +5,7 @@
 
 	<!-- Horizontal View -->
 	<div class= "row home-menu horizontal" ng-if= "hvm.layoutHorizontal">
-		<div class= "col-lg-2 col-md-2 col-sm-2 col-lg-offset-2 works home-menu-header" ng-mouseover= "hover.works = true" ng-mouseout= "hover.works = false">
+		<div class= "col-lg-4 col-md-4 col-sm-4 col-xs-4 works home-menu-header" ng-mouseover= "hover.works = true" ng-mouseout= "hover.works = false">
 			<span class= "home-label" ng-click= "hvm.goToHome()">
 				MY WORKS
 				<hr class= "custom-hr" ng-class= "{'opaque' : hover.works}">
@@ -16,7 +16,7 @@
 				<span class= "dropdown-element">OTHERS</span>
 			</div>
 		</div>
-		<div class= "col-lg-2 col-md-2 col-sm-2 col-lg-offset-1 profile home-menu-header" ng-mouseover= "hover.about = true" ng-mouseout= "hover.about = false">
+		<div class= "col-lg-4 col-md-4 col-sm-4 col-xs-4 profile home-menu-header" ng-mouseover= "hover.about = true" ng-mouseout= "hover.about = false">
 			<span class= "home-label" ng-click= "hvm.goToHome()">
 				ABOUT ME
 				<hr class= "custom-hr" ng-class= "{'opaque' : hover.about}">
@@ -27,14 +27,14 @@
 				<span class= "dropdown-element">3</span>
 			</div>
 		</div>
-		<div class= "col-lg-2 col-md-2 col-sm-2 col-lg-offset-1 customize home-menu-header" ng-mouseover= "hover.customize = true" ng-mouseout= "hover.customize = false">
+		<div class= "col-lg-4 col-md-4 col-sm-4 col-xs-4 customize home-menu-header" ng-mouseover= "hover.customize = true" ng-mouseout= "hover.customize = false">
 			<span class= "home-label" ng-click= "hvm.goToHome()">
 				CUSTOMIZE
 				<hr class= "custom-hr" ng-class= "{'opaque' : hover.customize}">
 			</span>
 			<div class= "custom-dropdown">
-				<div class= "dropdown-element" tooltip="Switch to vertical" tooltip-placement="right" ng-click= "hvm.switchLayout()">
-					<label class= "inline-block">LAYOUT</label>
+				<div class= "dropdown-element" ng-click= "hvm.switchLayout()">
+					<label tooltip="Switch to vertical" tooltip-placement="right" class= "inline-block">LAYOUT</label>
 					<div class= "layout-picker inline-block">
 						<span class= "icon" ng-class= "{'vertical-layout' : !hvm.layoutHorizontal, 'horizontal-layout' : hvm.layoutHorizontal}"></span>
 					</div>
@@ -55,7 +55,7 @@
 	</div>
 
 	<!-- Vertical Alignment -->
-	<div class= "row home-menu vertical" ng-if= "!hvm.layoutHorizontal">
+	<!-- <div class= "row home-menu vertical" ng-if= "!hvm.layoutHorizontal">
 		<div class= "row">
 			<div class= "col-lg-2 col-md-2 col-sm-2 works home-menu-header" ng-mouseover= "hover.works = true" ng-mouseout= "hover.works = false">
 				<span class= "home-label" ng-click= "hvm.goToHome()">
@@ -110,7 +110,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- Color Picker -->
 	<div class= "color-picker" ng-class= "{'active' : hvm.pickColor}">

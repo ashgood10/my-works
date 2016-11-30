@@ -89,8 +89,9 @@
 }
 
 .color-picker.active {
-	top: 50vh;
 	left: 50vw;
+	margin-top: -25px;
+	margin-left: -25px;
 	-webkit-animation-name: rotatecolor; /* Safari 4.0 - 8.0 */
 	-webkit-animation-duration: 0.3s; /* Safari 4.0 - 8.0 */
 	animation-name: rotatecolor;
@@ -109,8 +110,8 @@
 	width: 12px;
 	display: inline-block;
 	position: absolute;
-	top: 45px;
-	right: 55px;
+	margin-top: 10px;
+	margin-left: 5px;
 	border: 0.5px solid #d2d2d2
 }
 
@@ -128,6 +129,8 @@
 
 .social-connect {
 	position: absolute;
-	margin-top: 17%;
-	margin-left: 50%;
+	top: 50vh;
+	left: 50vw;
+	margin-top: -25px;
+	margin-left: -50px;
 }
