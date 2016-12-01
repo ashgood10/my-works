@@ -1,20 +1,26 @@
-angular.module('Me', ['ngRoute','My.Home'])
+angular.module('Me', ['ngRoute',
+					'My.Menu',
+					'My.Home', 
+					'My.Works',
+				])
 	.config(['$routeProvider', function($routeProvider) {
-		// $routeProvider.when('/', {
-		// 	templateUrl: 'home/home.html',
-		// 	controller: 'HomeController',
-		// 	controllerAs: 'hvm'
-		// })
+		$routeProvider.when('/', {
+			templateUrl: 'modules/home/home.html',
+			controller: 'HomeController',
+			controllerAs: 'hvm'
+		})
 		$routeProvider.when('/profile', {
-			templateUrl: 'my-profile/my-profile.html',
+			templateUrl: 'profile/profile.html',
 			controller: 'ProfileController',
 			controllerAs: 'pvm'
 		})
-		.when('/works', {
-			templateUrl: 'my-works/my-works.html',
-			controller: 'WorksController',
-			controllerAs: 'wvm'
-		})
 		.otherwise({redirectTo: '/'})
 		}
-	]);
+	])
+	.constant('myConfig' , {
+		bgThemes : [
+			'bg-black','bg-white','bg-blue',
+			'bg-teal','bg-mars','bg-lime',
+			'bg-green','bg-amber','bg-grey',
+			'bg-indigo','bg-orange','bg-red']
+	});
