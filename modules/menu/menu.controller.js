@@ -33,8 +33,9 @@ Author: Ashish Dwivedi
 			_this.layoutHorizontal = !_this.layoutHorizontal;
 			$timeout(function() {
 				var menuItemWidth = $('.vertical .home-menu-header').outerWidth();
-				$('.home.name-header').css({'width' : menuItemWidth});
+				$('.home.name-header').css({'width' : '18.5vw'});
 				$('.home-label').css({'font-size' : '18px'});
+				$('.name-header span').css({'font-size' : '18px'});
 			}, 350);
 			$('.home.name-header').css({'line-height' : '100px', 'transition' : 'all ease-in 0.3s'});
 		}
