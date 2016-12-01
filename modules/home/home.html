@@ -1,13 +1,13 @@
 <!-- Color Picker -->
 <div class= "color-picker" ng-class= "{'active' : hvm.$rootScope.pickColor}">
-	<span class= "color-tile" ng-repeat="theme in hvm.myConfig.bgThemes" ng-class= "theme" ng-click= "$root.theme = theme"></span>
+	<span class= "color-tile" ng-repeat="theme in hvm.myConfig.bgThemes" ng-class= "theme" ng-click= "($root.theme=theme);$root.switchColor()"></span>
 </div>
 
 <div class= "social-connect cursor-pointer">
-	<a tooltip="Visit LinkedIn Profile" tooltip-placement="top" href= "https://in.linkedin.com/in/ashish-dwivedi-760a3023" target="_blank">
+	<a tooltip="Visit LinkedIn Profile" href= "https://in.linkedin.com/in/ashish-dwivedi-760a3023" target="_blank">
 		<span class= "icon linked-in"></span>
 	</a>
-	<a tooltip="Write to me" tooltip-placement="top" href="mailto:ashishdwivedi1909@yahoo.in?Subject=Hello%20Ashish" target="_top">
+	<a tooltip="Write to me" href="mailto:ashishdwivedi1909@yahoo.in?Subject=Ashish,%20Let's%20have%20a%20word" target="_top">
 		<span class= "icon mail-me"></span>
 	</a>
 </div>

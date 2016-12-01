@@ -22,7 +22,6 @@ Author: Ashish Dwivedi
 		// Functions
 		_this.goToHome = goToHome;
 		_this.switchLayout = switchLayout;
-		_this.switchColor = switchColor;
 		_this.goToWorks = goToWorks;
 
 		function goToHome() {
@@ -30,17 +29,26 @@ Author: Ashish Dwivedi
 		}
 
 		function switchLayout() {
+			if(_this.layoutHorizontal) {
+				$timeout(function() {
+					var menuItemWidth = $('.vertical .home-menu-header').outerWidth();
+					$('.home.name-header').css({'width' : '18.5vw'});
+					$('.home-label').css({'font-size' : '18px'});
+					$('.name-header span').css({'font-size' : '18px'});
+				}, 100);
+				$('.home.name-header').css({'line-height' : '100px', 'transition' : 'all ease-in 0.3s'});
+				$('body').addClass('vertical-layout');
+			} else {
+				$('.home.name-header').removeAttr('style');
+				$('.home-label').removeAttr('style');
+				$('.name-header span').removeAttr('style');
+				$('.home.name-header').removeAttr('style');
+				$('body').removeClass('vertical-layout');
+			}
 			_this.layoutHorizontal = !_this.layoutHorizontal;
-			$timeout(function() {
-				var menuItemWidth = $('.vertical .home-menu-header').outerWidth();
-				$('.home.name-header').css({'width' : '18.5vw'});
-				$('.home-label').css({'font-size' : '18px'});
-				$('.name-header span').css({'font-size' : '18px'});
-			}, 350);
-			$('.home.name-header').css({'line-height' : '100px', 'transition' : 'all ease-in 0.3s'});
 		}
 
-		function switchColor() {
+		$rootScope.switchColor = function() {
 			$rootScope.pickColor = !$rootScope.pickColor;
 			if($(".social-connect").hasClass('animation')) {
 				$('.social-connect').css({'left' : '50vw', 'animation' : ''});
