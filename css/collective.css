@@ -20,7 +20,8 @@ body {
 }
 
 /* Font Color Classes */
-.red {
+.red,
+.error {
 	color: #d9534f;
 }
 

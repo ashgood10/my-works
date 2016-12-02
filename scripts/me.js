@@ -1,4 +1,5 @@
 angular.module('Me', ['ngRoute',
+					'My.Auth',
 					'My.Menu',
 					'My.Home', 
 					'My.Works',
@@ -23,4 +24,13 @@ angular.module('Me', ['ngRoute',
 			'bg-teal','bg-mars','bg-lime',
 			'bg-green','bg-amber','bg-grey',
 			'bg-indigo','bg-orange','bg-red']
-	});
+	}).run(appRun);
+
+	appRun.$inject = ['$location', '$rootScope'];
+	function appRun($location, $rootScope) {
+		$rootScope.$on('$routeChangeStart', function (event, current, next) {
+			if(!sessionStorage.getItem('username')) {
+				$location.path('/auth');
+			}
+		});
+	}
