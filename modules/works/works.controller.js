@@ -3,9 +3,9 @@
 	angular.module('My.Works')
 	.controller('WorksController', WorksController);
 
-	WorksController.$inject = ['$http'];
+	WorksController.$inject = ['$http', 'myConfig'];
 
-	function WorksController($http) {
+	function WorksController($http, myConfig) {
 		var _this = this;
 		//Variables
 		_this.myProjects = [];

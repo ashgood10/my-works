@@ -23,7 +23,8 @@ angular.module('Me', ['ngRoute',
 			'bg-black','bg-white','bg-blue',
 			'bg-teal','bg-mars','bg-lime',
 			'bg-green','bg-amber','bg-grey',
-			'bg-indigo','bg-orange','bg-red']
+			'bg-indigo','bg-orange','bg-red'],
+		apiBase : "https://github.com/ashish-dwivedi/my-works/blob/master/"
 	}).run(appRun);
 
 	appRun.$inject = ['$location', '$rootScope'];
