@@ -1,8 +1,13 @@
+#works-home .project-element {
+	position: absolute;
+	/*top: -60vh;*/
+	transform: translate3d(0px, 0px, 0px);
+	transition: transform .3s ease-in-out;
+}
+
 #works-home .thumb-image-wrapper {
 	width: 100%;
     height: 40vh;
-    position: absolute;
-    top: 20vh;
     cursor: pointer;
     overflow: hidden;
     background-size: 100% 100%;
@@ -19,9 +24,8 @@
 }
 
 #works-home .project-img-details {
-	position: absolute;
-    top: 62vh;
     width: 100%;
+    margin-top: 20px;
     background-color: rgba(255, 255, 255, 0.5);
 }
 

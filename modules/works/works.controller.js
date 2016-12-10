@@ -3,9 +3,9 @@
 	angular.module('My.Works')
 	.controller('WorksController', WorksController);
 
-	WorksController.$inject = ['$http', 'myConfig'];
+	WorksController.$inject = ['$http', 'myConfig', '$timeout'];
 
-	function WorksController($http, myConfig) {
+	function WorksController($http, myConfig, $timeout) {
 		var _this = this;
 		//Variables
 		_this.myProjects = [];
@@ -19,6 +19,11 @@
 			}, function(error) {
 				console.log('Something went wrong, please try again');
 			});
+
+			$timeout(function() {
+				$('.project-element').css({'animation' : 'bounce-from-top 2s'});
+				$('.project-element').css({'top' : '20vh'});
+			}, 500)
 		}
 
 		initialize();
