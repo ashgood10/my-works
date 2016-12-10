@@ -1,6 +1,7 @@
-@import url('menu/menu.css');
 @import url('common/icons.css');
 @import url('common/reusable.css');
+@import url('menu/menu.css');
+@import url('works/works.css');
 
 @font-face {
     font-family: 'adihaus_psreg';
@@ -17,6 +18,11 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
+}
+
+img {
+    background-image: url('../images/img-loading2.gif');
+    background-size: 100% 100%;
 }
 
 /* Font Color Classes */
@@ -158,4 +164,8 @@ body {
 	color: #fff;
 	background-color:rgba(0, 0, 0, 1);
 	transition: all ease-in 0.3s;
+}
+
+.modal-content {
+    margin-top: calc(50vh - 175px);
 }
