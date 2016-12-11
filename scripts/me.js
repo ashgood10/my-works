@@ -29,9 +29,9 @@ angular.module('Me', ['ngRoute',
 
 	appRun.$inject = ['$location', '$rootScope'];
 	function appRun($location, $rootScope) {
-		/*$rootScope.$on('$routeChangeStart', function (event, current, next) {
+		$rootScope.$on('$routeChangeStart', function (event, current, next) {
 			if(!sessionStorage.getItem('username')) {
 				$location.path('/auth');
 			}
-		});*/
+		});
 	}
