@@ -21,7 +21,8 @@
 			});
 
 			$timeout(function() {
-				$('.project-element').css({'animation' : 'bounce-from-top 2s'});
+// 				$('.project-element').css({'animation' : 'bounce-from-top 2s'});
+				$('.project-element').addClass('animate bounceInDown');
 				$('.project-element').css({'top' : '20vh'});
 			}, 500)
 		}
