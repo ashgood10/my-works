@@ -7,7 +7,7 @@
 	
 	function routeConfig($routeProvider) {
 		$routeProvider.when('/works', {
-			templateUrl: '/modules/works/works.html',
+			templateUrl: 'modules/works/works.html',
 			controller: 'WorksController',
 			controllerAs: 'wvm'
 		})
