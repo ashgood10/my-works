@@ -20,7 +20,7 @@
 
 		function login() {
 			if(_this.creds.username && _this.creds.password) {
-				$http.get('../../scripts/auth.data.json').then(function(result) {
+				$http.get('scripts/auth.data.json').then(function(result) {
 					// var result = {
 					// 	"data" : {
 					// 		"authData" : {
