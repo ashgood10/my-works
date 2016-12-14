@@ -1,15 +1,17 @@
 #works-home .project-element {
 	position: absolute;
-	/*top: -60vh;*/
-	transform: translate3d(0px, 0px, 0px);
-	transition: transform .3s ease-in-out;
+    top: 20vh;
+    display: none;
+/*	transform: translate3d(0px, 0px, 0px);
+	transition: transform .3s ease-in-out;*/
 }
 
 #works-home .thumb-image-wrapper {
 	width: 100%;
-    height: 40vh;
+    height: 255px;
     cursor: pointer;
     overflow: hidden;
+    border: 3px solid #d2d2d2;
     background-size: 100% 100%;
 }
 

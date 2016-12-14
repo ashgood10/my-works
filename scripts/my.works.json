@@ -42,37 +42,37 @@
          "name":"Designer Work Bench",
          "client":"Adidas",
          "projectMode":"Internal Circulation",
-         "thumb":"images/dp/dwb1.png",
+         "thumb":"images/dwb/dwb1.png",
          "slides":[  
             {  
-               "path":"images/dp/dwb1.png",
+               "path":"images/dwb/dwb1.png",
                "description":"MOS Landing"
             },
             {  
-               "path":"images/dp/dwb2.png",
+               "path":"images/dwb/dwb2.png",
                "description":"MOS Search"
             },
             {  
-               "path":"images/dp/dwb3.png",
+               "path":"images/dwb/dwb3.png",
                "description":"MOS Search List View"
             },
             {  
-               "path":"images/dp/dwb4.png",
+               "path":"images/dwb/dwb4.png",
                "description":"MOS Material Details"
             },
             {  
-               "path":"images/dp/dwb5.png",
+               "path":"images/dwb/dwb5.png",
                "description":"MOS Material Slideshow"
             },
             {  
-               "path":"images/dp/dwb6.png",
+               "path":"images/dwb/dwb6.png",
                "description":"MOS Baskets"
             },
             {  
                "description":"MOS Basket Details"
             },
             {  
-               "path":"images/dp/dwb8.png",
+               "path":"images/dwb/dwb8.png",
                "description":"MOS Basket Modal"
             }
          ],

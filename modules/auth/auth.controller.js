@@ -15,20 +15,13 @@
 
 		//Functions
 		_this.login = login;
+		_this.checkEnterKey = checkEnterKey;
 
 		$('#authModal').modal({backdrop: 'static', keyboard: false, show: true});
 
 		function login() {
 			if(_this.creds.username && _this.creds.password) {
 				$http.get('scripts/auth.data.json').then(function(result) {
-					// var result = {
-					// 	"data" : {
-					// 		"authData" : {
-					// 			"username" : ["ashish_dwivedi", "guest"],
-					// 			"password" : ["ashish1909", "guest"]
-					// 		}
-					// 	}
-					// } 
 					if(result.data.authData.username.indexOf(_this.creds.username)!==-1) {
 						if(result.data.authData.password[result.data.authData.username.indexOf(_this.creds.username)] ===_this.creds.password) {
 							$('#authModal').modal('hide');
@@ -50,6 +43,14 @@
 			$timeout(function() {
 				_this.errorText = '';
 			}, 3000);
+		}
+
+		function checkEnterKey(event) {
+			if(event.which === 13) {
+				login();
+			} else {
+				return;
+			}
 		}
 	}
 })();
