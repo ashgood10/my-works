@@ -8,9 +8,12 @@
 	function WorksController($http, myConfig, $timeout, $scope) {
 		var _this = this;
 		//Variables
+		var backgroundUrl = '';
 		_this.myProjects = [];
 
 		//Functions
+		_this.startGIF = startGIF;
+		_this.resetBackground = resetBackground;
 
 		$(window).bind('mousewheel', function(e) {
 			$scope.$apply( function () {
@@ -55,6 +58,18 @@
 			$timeout(function() {
 				$('.project-element').addClass('animated bounceInUp display-block');
 			}, 500)
+		}
+
+		function startGIF(event, project) {
+			var thisElement = event.currentTarget;
+			$(thisElement).css({'background-image' : 'url('+ project.gif + ')', 'transform' : 'scale(1.3)', 'transition' : 'transform ease-in 0.3s'});
+			$('.project-img-details').hide();
+		}
+
+		function resetBackground(event, project) {
+			var thisElement = event.currentTarget;
+			$(thisElement).css({'background-image' : 'url('+ project.thumb + ')', 'transform' : 'scale(1)'});
+			$('.project-img-details').show();
 		}
 
 		initialize();

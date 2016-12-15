@@ -59,4 +59,10 @@
 	background-position: 0 -451px;
 }
 
+.icon.arrow-down {
+	background-position: 0 -511px;
+	height: 50px;
+	width: 50px;
+}
+
 /*ICONS CSS ENDS*/

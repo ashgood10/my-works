@@ -2,7 +2,7 @@
 @import url('common/reusable.css');
 @import url('menu/menu.css');
 @import url('works/works.css');
-@import url('animate.css');
+@import url('lib/animate.css');
 
 @font-face {
     font-family: 'adihaus_psreg';

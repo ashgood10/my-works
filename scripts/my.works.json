@@ -1,6 +1,22 @@
 {  
    "works":[
       {  
+         "name":"My Portfolio",
+         "client":"N/A",
+         "projectMode":"Personal Usage/ Portfolio",
+         "thumb":"mp1.png",
+         "slides":[  
+            "mp1.png",
+            "mp2.png",
+            "mp3.png",
+            "mp4.png",
+            "mp5.png"
+         ],
+         "gif" : "mp-slideshow.gif",
+         "description":"",
+         "active": true
+      },
+      {
          "name":"Design Portal",
          "client":"Adidas",
          "projectMode":"Internal Circulation",
@@ -35,8 +51,9 @@
                "description":"Fetch"
             }
          ],
+         "gif" : "images/dp/dp-slideshow.gif",
          "description":"",
-         "active" : true
+         "active" : false
       },
       {  
          "name":"Designer Work Bench",
@@ -76,6 +93,7 @@
                "description":"MOS Basket Modal"
             }
          ],
+         "gif" : "images/dwb/dwb-slideshow.gif",
          "description":""
       },
       {  
@@ -88,19 +106,6 @@
             "wfms3.png",
             "wfms4.png",
             "wfms5.png"
-         ],
-         "description":""
-      },
-      {  
-         "name":"My Portfolio",
-         "client":"Adidas",
-         "projectMode":"Personal Usage/ Portfolio",
-         "slides":[  
-            "mp1.png",
-            "mp2.png",
-            "mp3.png",
-            "mp4.png",
-            "mp5.png"
          ],
          "description":""
       }

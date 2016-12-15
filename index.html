@@ -4,12 +4,15 @@
 		<!-- Bootstrap -->
 		<link href="css/lib/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href= "css/collective.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="icon" href="icons/favicon.png" type="image/gif">
 		<title>Ashish Dwivedi- Web Dev</title>
 	</head>
 	<body>
-		<div ng-include= "'modules/menu/menu.html'"></div>
-		<div ng-view></div>
+		<div id= "body-wrapper">
+			<div ng-include= "'modules/menu/menu.html'"></div>
+			<div ng-view></div>
+		</div>
 		<!-- Library Files Start -->
 		<script src= "scripts/lib/angular.min.js"></script>
 		<script src= "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
