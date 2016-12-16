@@ -1,6 +1,7 @@
 {  
    "works":[
       {  
+         "id" : "1",
          "name":"My Portfolio",
          "client":"N/A",
          "projectMode":"Personal Usage/ Portfolio",
@@ -17,6 +18,7 @@
          "active": true
       },
       {
+         "id" : "2",
          "name":"Design Portal",
          "client":"Adidas",
          "projectMode":"Internal Circulation",
@@ -55,7 +57,8 @@
          "description":"",
          "active" : false
       },
-      {  
+      {
+         "id" : "3",
          "name":"Designer Work Bench",
          "client":"Adidas",
          "projectMode":"Internal Circulation",
@@ -96,7 +99,8 @@
          "gif" : "images/dwb/dwb-slideshow.gif",
          "description":""
       },
-      {  
+      {
+         "id" : "4",
          "name":"Work Flow Management System",
          "client":"Adidas",
          "projectMode":"Internal Circulation",

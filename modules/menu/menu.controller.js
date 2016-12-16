@@ -60,7 +60,8 @@ Author: Ashish Dwivedi
 		}
 
 		function goToWorks(proj) {
-			$location.path('/works')
+			$location.search({});
+			$location.path('/works');
 		}
 	}
 })();

@@ -46,8 +46,28 @@
     color: #d9534f;
 }
 
-.arrow-down {
+#works-home .arrow {
+    width: 100px;
     position: absolute;
-    top: 75vh;
-    left: 14.5vw;
+    height: 20px;
+    opacity: .8;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 1px #d2d2d2;
 }
+
+#works-home .arrow.arrow-down {
+    top: 58vh;
+    left: 13vw;
+}
+
+#works-home .arrow.arrow-up {
+    top: -15vh;
+    left: 13vw;
+}
+
+#works-home .arrow-down i,
+#works-home .arrow-up i {
+    margin: -2px;
+}
+

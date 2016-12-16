@@ -2,9 +2,10 @@
 <html ng-app= "Me">
 	<head>
 		<!-- Bootstrap -->
-		<link href="css/lib/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/lib/bootstrap.min.css">
+		<link rel="stylesheet" href="css/lib/introjs.min.css">
 		<link rel="stylesheet" href= "css/collective.css">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="icon" href="icons/favicon.png" type="image/gif">
 		<title>Ashish Dwivedi- Web Dev</title>
 	</head>
@@ -18,6 +19,7 @@
 		<script src= "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
 		<script src="scripts/lib/jquery-3.1.1.min.js"></script>
 		<script src="scripts/lib/bootstrap.min.js"></script>
+		<script src="scripts/lib/intro.min.js"></script>
 		<!-- Library Files End -->
 		<!-- Module Files Start -->
 		<script type="text/javascript" src= "scripts/me.js"></script>
@@ -25,8 +27,11 @@
 
 		<script type="text/javascript" src= "modules/home/home.controller.js"></script>
 
-		<script type="text/javascript" src= "modules/works/works.module.js"></script>
-		<script type="text/javascript" src= "modules/works/works.controller.js"></script>
+		<script type="text/javascript" src= "modules/works/works-home/works.module.js"></script>
+		<script type="text/javascript" src= "modules/works/works-home/works.controller.js"></script>
+
+		<script type="text/javascript" src= "modules/works/works-details/works.details.module.js"></script>
+		<script type="text/javascript" src= "modules/works/works-details/works.details.controller.js"></script>
 
 		<script type="text/javascript" src= "modules/auth/auth.module.js"></script>
 		<script type="text/javascript" src= "modules/auth/auth.controller.js"></script>

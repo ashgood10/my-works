@@ -3,6 +3,7 @@ angular.module('Me', ['ngRoute',
 					'My.Menu',
 					'My.Home', 
 					'My.Works',
+					'My.Works.Details'
 				])
 	.config(['$routeProvider', function($routeProvider) {
 		$routeProvider.when('/', {
@@ -11,7 +12,7 @@ angular.module('Me', ['ngRoute',
 			controllerAs: 'hvm'
 		})
 		$routeProvider.when('/profile', {
-			templateUrl: 'profile/profile.html',
+			templateUrl: 'modules/profile/profile.html',
 			controller: 'ProfileController',
 			controllerAs: 'pvm'
 		})
@@ -28,6 +29,7 @@ angular.module('Me', ['ngRoute',
 	}).run(appRun);
 
 	appRun.$inject = ['$location', '$rootScope'];
+
 	function appRun($location, $rootScope) {
 		$rootScope.$on('$routeChangeStart', function (event, current, next) {
 			if(!sessionStorage.getItem('username')) {

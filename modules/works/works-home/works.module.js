@@ -1,5 +1,6 @@
 (function() {
 	"use strict";
+
 	angular.module('My.Works', [])
 	.config(routeConfig);
 
@@ -7,9 +8,9 @@
 	
 	function routeConfig($routeProvider) {
 		$routeProvider.when('/works', {
-			templateUrl: 'modules/works/works.html',
+			templateUrl: 'modules/works/works-home/works.html',
 			controller: 'WorksController',
 			controllerAs: 'wvm'
-		})
+		});
 	}
 })();
