@@ -11,20 +11,21 @@
 				</div>
 			</div>
 			<a href= "javascript:void(0)" ng-click= "wvm.goToDetails(project)">
-			<div class= "row project-img-details cursor-pointer" data-step="4" data-intro="Click to go to details page">
-				<div class= "col-lg-6 col-md-6 col-sm-6 col-xs-6">
-					<span>Project Name : </span>
+				<div class= "row project-img-details cursor-pointer" data-step="4" data-intro="Click to go to details page">
+					<div class= "col-lg-6 col-md-6 col-sm-6 col-xs-6">
+						<span>Project Name : </span>
+					</div>
+					<div class= "col-lg-6 col-md-6 col-sm-6 col-xs-6">
+						<span class= "value">{{project.name}}</span>
+					</div>
+					<div class= "col-lg-6 col-md-6 col-sm-6 col-xs-6">
+						<span>Client : </span>
+					</div>
+					<div class= "col-lg-6 col-md-6 col-sm-6 col-xs-6">
+						<span class= "value">{{project.client}}</span>
+					</div>
 				</div>
-				<div class= "col-lg-6 col-md-6 col-sm-6 col-xs-6">
-					<span class= "value">{{project.name}}</span>
-				</div>
-				<div class= "col-lg-6 col-md-6 col-sm-6 col-xs-6">
-					<span>Client : </span>
-				</div>
-				<div class= "col-lg-6 col-md-6 col-sm-6 col-xs-6">
-					<span class= "value">{{project.client}}</span>
-				</div>
-			</div>
+			</a>
 			<button class= "arrow arrow-down animated animate-2s bounce" ng-hide= "$last" ng-click= "wvm.scrollUpDown('down')">
 				<i class="material-icons">keyboard_arrow_down</i>
 			</button>
