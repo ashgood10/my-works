@@ -1,24 +1,7 @@
 {  
    "works":[
-      {  
-         "id" : "1",
-         "name":"My Portfolio",
-         "client":"N/A",
-         "projectMode":"Personal Usage/ Portfolio",
-         "thumb":"mp1.png",
-         "slides":[  
-            "mp1.png",
-            "mp2.png",
-            "mp3.png",
-            "mp4.png",
-            "mp5.png"
-         ],
-         "gif" : "mp-slideshow.gif",
-         "description":"",
-         "active": true
-      },
       {
-         "id" : "2",
+         "id" : "dp",
          "name":"Design Portal",
          "client":"Adidas",
          "projectMode":"Internal Circulation",
@@ -55,10 +38,27 @@
          ],
          "gif" : "images/dp/dp-slideshow.gif",
          "description":"",
-         "active" : false
+         "active" : true
+      },
+      {  
+         "id" : "mp",
+         "name":"My Portfolio",
+         "client":"N/A",
+         "projectMode":"Personal Usage/ Portfolio",
+         "thumb":"mp1.png",
+         "slides":[  
+            "mp1.png",
+            "mp2.png",
+            "mp3.png",
+            "mp4.png",
+            "mp5.png"
+         ],
+         "gif" : "mp-slideshow.gif",
+         "description":"",
+         "active": false
       },
       {
-         "id" : "3",
+         "id" : "dwb",
          "name":"Designer Work Bench",
          "client":"Adidas",
          "projectMode":"Internal Circulation",
@@ -100,7 +100,7 @@
          "description":""
       },
       {
-         "id" : "4",
+         "id" : "wfms",
          "name":"Work Flow Management System",
          "client":"Adidas",
          "projectMode":"Internal Circulation",
