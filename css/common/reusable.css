@@ -25,3 +25,7 @@
 .text-center {
 	text-align: center !important;
 }
+
+.vertical-middle {
+	vertical-align: middle !important;
+}

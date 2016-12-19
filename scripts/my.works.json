@@ -6,7 +6,7 @@
          "client":"Adidas",
          "projectMode":"Internal Circulation",
          "thumb":"images/dp/dp1.png",
-         "slides":[  
+         "slides":[
             {  
                "path":"images/dp/dp1.png",
                "description":"User Profile"
@@ -37,7 +37,6 @@
             }
          ],
          "gif" : "images/dp/dp-slideshow.gif",
-         "description":"",
          "active" : true
       },
       {  
@@ -54,7 +53,6 @@
             "mp5.png"
          ],
          "gif" : "mp-slideshow.gif",
-         "description":"",
          "active": false
       },
       {
@@ -97,7 +95,7 @@
             }
          ],
          "gif" : "images/dwb/dwb-slideshow.gif",
-         "description":""
+         "active": false
       },
       {
          "id" : "wfms",
@@ -111,7 +109,8 @@
             "wfms4.png",
             "wfms5.png"
          ],
-         "description":""
+         "gif" : "images/dwb/dwb-slideshow.gif",
+         "active": false
       }
    ]
 }
