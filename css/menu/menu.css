@@ -1,5 +1,5 @@
 .home-menu {
-	min-height: 40px;
+	min-height: 5.3vh;
 	background-color: #1E1E1E;
 	color: #f9f9f9;
 }
@@ -30,7 +30,7 @@
 	text-align: center;
 	background-color: #1E1E1E;
 	color: #fff;
-	line-height: 50px;
+	line-height: 6.5vh;
 }
 
 .name-header span {

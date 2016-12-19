@@ -1,3 +1,5 @@
+@import url('works.details.css');
+
 #works-home .project-element {
 	position: absolute;
     top: 20vh;
@@ -69,5 +71,6 @@
 #works-home .arrow-down i,
 #works-home .arrow-up i {
     margin: -2px;
+    color: #337ab7;
 }
 

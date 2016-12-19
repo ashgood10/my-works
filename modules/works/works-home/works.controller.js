@@ -44,7 +44,7 @@
 						introJs().start();
 						sessionStorage.setItem('alreadyLoaded' , true);
 					}
-				}, 800);
+				}, 1000);
 			}, 500);
 		}
 
