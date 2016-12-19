@@ -4,8 +4,6 @@
 	position: absolute;
     top: 20vh;
     display: none;
-/*	transform: translate3d(0px, 0px, 0px);
-	transition: transform .3s ease-in-out;*/
 }
 
 #works-home .thumb-image-wrapper {

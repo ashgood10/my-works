@@ -18,6 +18,7 @@
 	border-left: 1px solid #d2d2d2;
 	border-top: 1px solid #d2d2d2;
 	z-index: 2;
+	height: 100%;
 }
 
 .home-menu-header:hover {
