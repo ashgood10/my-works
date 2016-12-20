@@ -4,9 +4,9 @@
 	angular.module('My.Works.Details')
 	.controller('WorksDetailsController', WorksDetailsController);
 
-	WorksDetailsController.$inject = ['$http', '$route'];
+	WorksDetailsController.$inject = ['$route', 'APIFactory'];
 
-	function WorksDetailsController($http, $route) {
+	function WorksDetailsController($route, APIFactory) {
 		var _this = this;
 		var currentProjectId = '';
 		//Variables
@@ -17,7 +17,8 @@
 		_this.goBack = goBack;
 
 		function initialize() {
-			$http.get('scripts/my.works.json').then(function (result) {
+			var projectPromise = APIFactory.getProjects();
+			projectPromise.then(function (result) {
 				_this.myWorks = result.data;
 				currentProjectId = $route.current.params.id;
 				angular.forEach(_this.myWorks.works, function (project) {
@@ -25,7 +26,8 @@
 						_this.project = project;
 					}
 				});
-				$http.get('scripts/my.works.desc.json').then( function (result) {
+				var detailPromise = APIFactory.getDetailsOfProject();
+				detailPromise.then( function (result) {
 					_this.project['details'] = result.data.works.filter( function (item) {
 						return item.id === _this.project.id;
 					}).map( function (item) {

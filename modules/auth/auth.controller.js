@@ -3,9 +3,9 @@
 	angular.module('My.Auth')
 	.controller('AuthController', AuthController);
 
-	AuthController.$inject = ['$location', '$http', '$timeout', 'myConfig'];
+	AuthController.$inject = ['$location', '$timeout', 'myConfig', 'APIFactory'];
 
-	function AuthController($location, $http, $timeout, myConfig) {
+	function AuthController($location, $timeout, myConfig, APIFactory) {
 		var _this = this;
 		_this.creds = {
 			username: '',
@@ -21,7 +21,8 @@
 
 		function login() {
 			if(_this.creds.username && _this.creds.password) {
-				$http.get('scripts/auth.data.json').then(function(result) {
+				var authPromise = APIFactory.getAuthData();
+				authPromise.then(function(result) {
 					if(result.data.authData.username.indexOf(_this.creds.username)!==-1) {
 						if(result.data.authData.password[result.data.authData.username.indexOf(_this.creds.username)] ===_this.creds.password) {
 							$('#authModal').modal('hide');

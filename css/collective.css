@@ -22,6 +22,12 @@ body {
     overflow-y: hidden;
 }
 
+@media only screen and (max-width: 500px) {
+    body {
+        background-image: url('../images/back-img.png');
+    }
+}
+
 img {
     background-image: url('../images/img-loading2.gif');
     background-size: 100% 100%;
