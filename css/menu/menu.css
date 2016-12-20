@@ -8,6 +8,7 @@
 	font-size: x-large;
 	font-weight: bolder;
 	margin-top: 20px;
+	cursor: pointer;
 }
 
 .home-menu-header {
@@ -61,6 +62,13 @@
 	display: block;
 	line-height: 35px;
 	max-height: 35px;
+	cursor: pointer;
+}
+
+.dropdown-element:hover {
+	background-color: #d2d2d2;
+	color: #1e1e1e;
+	font-weight: bolder;
 }
 
 .vertical.home-menu {
