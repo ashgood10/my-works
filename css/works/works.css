@@ -58,12 +58,14 @@
 
 #works-home .arrow.arrow-down {
     top: 58vh;
-    left: 13vw;
+    margin-left: 13vw;
+    position: absolute;
 }
 
 #works-home .arrow.arrow-up {
     top: -15vh;
-    left: 13vw;
+    margin-left: 13vw;
+    position: absolute;
 }
 
 #works-home .arrow-down i,
