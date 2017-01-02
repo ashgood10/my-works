@@ -29,3 +29,7 @@
 .vertical-middle {
 	vertical-align: middle !important;
 }
+
+.float-right {
+	float: right !important;
+}

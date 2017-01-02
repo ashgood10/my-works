@@ -1,0 +1,74 @@
+#education hr {
+	border-color: #fff !important;
+}
+
+.category-tile {
+	position: absolute;
+	top: 30vh;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.category-tile img {
+	border-radius: 50%;
+}
+
+.education-container {
+	left: 20vw;
+}
+
+.training-container {
+	right: 20vw;
+}
+
+.education-content,
+.training-content {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	position: absolute;
+	top:0;
+	left: 0;
+	transform: scale(0);
+}
+
+.education-content.expand {
+	top: -75%;
+	left: 35vw;
+	width: 40vw;
+	z-index: 2;
+	height: 60vh;
+	transform: scale(1);
+	transition : all ease-in 0.3s;
+	padding: 10px;
+}
+
+.training-content.expand {
+	top: -75%;
+	left: -60vw;
+	width: 40vw;
+	z-index: 2;
+	height: 60vh;
+	transform: scale(1);
+	transition : all ease-in 0.3s;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.training-content.expand:hover {
+	overflow-y: auto;
+}
+
+.graduation-row,
+.training-row {
+	padding: 15px;
+}
+
+.graduation-row .header-label,
+.training-row .header-label{
+	color: #428bca;
+	font-size: 18px;
+}
+
+.training-row .value {
+	border-bottom: 2px solid #fff;
+}

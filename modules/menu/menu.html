@@ -6,15 +6,15 @@
 	<!-- Horizontal View -->
 	<div class= "col-lg-12 col-md-12 col-sm-12 home-menu horizontal" ng-if= "mvm.layoutHorizontal" ng-class= "$root.theme">
 		<div class= "row">
-			<div class= "col-lg-4 col-md-4 col-sm-4 col-xs-4 works home-menu-header" ng-mouseover= "hover.works = true" ng-mouseout= "hover.works = false" ng-click= "mvm.goToWorks()">
+			<div class= "col-lg-4 col-md-4 col-sm-4 col-xs-4 works home-menu-header" ng-mouseover= "hover.works = true" ng-mouseout= "hover.works = false">
 				<span class= "home-label">
 					MY WORKS
 					<hr class= "custom-hr" ng-class= "{'opaque' : hover.works}">
 				</span>
 				<div class= "custom-dropdown" ng-class= "$root.theme">
-					<span class= "dropdown-element">DESIGN PORTAL</span>
-					<span class= "dropdown-element">DWB</span>
-					<span class= "dropdown-element">OTHERS</span>
+					<span class= "dropdown-element" ng-click= "mvm.goToWorks()">ALL</span>
+					<span class= "dropdown-element" ng-click= "mvm.goToWorks('dp')">DESIGN PORTAL</span>
+					<span class= "dropdown-element" ng-click= "mvm.goToWorks('dwb')">DWB</span>
 				</div>
 			</div>
 			<div class= "col-lg-4 col-md-4 col-sm-4 col-xs-4 profile home-menu-header" ng-mouseover= "hover.about = true" ng-mouseout= "hover.about = false">
@@ -23,9 +23,9 @@
 					<hr class= "custom-hr" ng-class= "{'opaque' : hover.about}">
 				</span>
 				<div class= "custom-dropdown" ng-class= "$root.theme">
-					<span class= "dropdown-element">1</span>
-					<span class= "dropdown-element">2</span>
-					<span class= "dropdown-element">3</span>
+					<span class= "dropdown-element" ng-click= "mvm.goToMyDetails('education')">EDUCATION</span>
+					<span class= "dropdown-element" ng-click= "mvm.goToMyDetails('jobs')">CAREER HISTORY</span>
+					<span class= "dropdown-element" ng-click= "mvm.goToMyDetails('awards')">AWARDS & RECOGNITIONS</span>
 				</div>
 			</div>
 			<div class= "col-lg-4 col-md-4 col-sm-4 col-xs-4 customize home-menu-header" ng-mouseover= "hover.customize = true" ng-mouseout= "hover.customize = false">
@@ -60,9 +60,9 @@
 					<hr class= "custom-hr" ng-class= "{'opaque' : hover.works}">
 				</span>
 				<div class= "custom-dropdown" ng-class= "$root.theme">
-					<span class= "dropdown-element">DESIGN PORTAL</span>
-					<span class= "dropdown-element">DWB</span>
-					<span class= "dropdown-element">OTHERS</span>
+					<span class= "dropdown-element" ng-click= "mvm.goToWorks()">ALL</span>
+					<span class= "dropdown-element" ng-click= "mvm.goToWorks('dp')">DESIGN PORTAL</span>
+					<span class= "dropdown-element" ng-click= "mvm.goToWorks('dwb')">DWB</span>
 				</div>
 			</div>
 		</div>
@@ -73,9 +73,9 @@
 					<hr class= "custom-hr" ng-class= "{'opaque' : hover.about}">
 				</span>
 				<div class= "custom-dropdown" ng-class= "$root.theme">
-					<span class= "dropdown-element">1</span>
-					<span class= "dropdown-element">2</span>
-					<span class= "dropdown-element">3</span>
+					<span class= "dropdown-element">EDUCATION</span>
+					<span class= "dropdown-element">WORK HISTORY</span>
+					<span class= "dropdown-element">AWARDS & RECOGNITIONS</span>
 				</div>
 			</div>
 		</div>

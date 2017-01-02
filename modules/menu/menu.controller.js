@@ -23,6 +23,7 @@ Author: Ashish Dwivedi
 		_this.goToHome = goToHome;
 		_this.switchLayout = switchLayout;
 		_this.goToWorks = goToWorks;
+		_this.goToMyDetails = goToMyDetails;
 
 		function goToHome() {
 			$location.path('/');
@@ -61,7 +62,21 @@ Author: Ashish Dwivedi
 
 		function goToWorks(proj) {
 			$location.search({});
-			$location.path('/works');
+			if(!proj) {
+				$location.path('/works');
+			} else {
+				var urlParams = {
+					id : proj
+				}
+				$location.search(urlParams);
+				$location.path('/works/details');
+			}
+		}
+
+		function goToMyDetails(page) {
+			var path = '/' + page;
+			$location.search({});
+			$location.path(path);
 		}
 	}
 })();
