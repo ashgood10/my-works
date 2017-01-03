@@ -1,0 +1,46 @@
+<div class= "row" id= "awards">
+	<button class= "back-to-works" ng-click= "history.go(-1)">
+		<i class="material-icons vertical-middle">keyboard_arrow_left</i>
+		<span class= "vertical-middle">Back</span>
+	</button>
+	<div class= "col-lg-6 col-md-6 col-sm-12 col-lg-12">
+		<div class= "education-container category-tile">
+			<img src= "images/education.png" tooltip= "Education" ng-mouseover="educationHover=true">
+			<div class= "education-content" ng-class= "{'expand' : educationHover}">
+				<i class="material-icons float-right" ng-click="educationHover=false">clear</i>
+				<h2><label class="red">GRADUATION</label></h2>
+				<hr/>
+				<div class= "row">
+					<div ng-repeat= "(key, value) in amvm.educationData" class= "graduation-row">
+						<div class= "col-lg-6 col-md-6 col-sm-12 col-lg-12 text-uppercase header-label">
+							{{key}}
+						</div>
+						<div class= "col-lg-6 col-md-6 col-sm-12 col-lg-12">
+							{{value}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class= "col-lg-6 col-md-6 col-sm-12 col-lg-12">
+		<div class= "training-container category-tile">
+			<img src= "images/training.png" tooltip= "Trainings" ng-mouseover="trainingHover=true">
+			<div class= "training-content" ng-class= "{'expand' : trainingHover}">
+				<i class="material-icons float-right" ng-click="trainingHover=false">clear</i>
+				<h2><label class="red">TRAININGS</label></h2>
+				<hr/>
+				<div class= "row">
+					<div ng-repeat= "(key, value) in amvm.trainingData" class= "training-row">
+						<div class= "col-lg-6 col-md-6 col-sm-12 col-lg-12 text-uppercase header-label">
+							{{key}}
+						</div>
+						<div class= "col-lg-6 col-md-6 col-sm-12 col-lg-12 value">
+							{{value}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

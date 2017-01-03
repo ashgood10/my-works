@@ -1,0 +1,22 @@
+{
+	"jobs" : {
+		"thumb" : "infosys.png",
+		"organisation" : "Infosys Limited",
+		"role" : "Front End Developer",
+		"experience" : "2 years",
+		"references" : 
+		[
+			{
+				"name" : "Suresh Narra",
+				"designation" : "Project Manager (Logistics)",
+				"contact" : "On Demand"
+			},
+			{
+				"name" : "KS Ganapathy",
+				"designation" : "Onsite Project Manager (Delivery)",
+				"contact" : "On Demand"
+			}
+		],
+		"journey" : "Started with trainig provided my Infosys as a Trainee and climbing up the ladders, started working in project contunuing my learning, and eventually started taking the role of lead for a small team."
+	}
+}

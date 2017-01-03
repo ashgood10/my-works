@@ -1,5 +1,5 @@
 <div class= "row" id= "education">
-	<button class= "back-to-works" ng-click= "wdvm.goBack()">
+	<button class= "back-to-works" ng-click= "history.go(-1)">
 		<i class="material-icons vertical-middle">keyboard_arrow_left</i>
 		<span class= "vertical-middle">Back</span>
 	</button>
@@ -11,7 +11,7 @@
 				<h2><label class="red">GRADUATION</label></h2>
 				<hr/>
 				<div class= "row">
-					<div ng-repeat= "(key, value) in evm.educationData" class= "graduation-row">
+					<div ng-repeat= "(key, value) in amvm.educationData" class= "graduation-row">
 						<div class= "col-lg-6 col-md-6 col-sm-12 col-lg-12 text-uppercase header-label">
 							{{key}}
 						</div>
@@ -31,7 +31,7 @@
 				<h2><label class="red">TRAININGS</label></h2>
 				<hr/>
 				<div class= "row">
-					<div ng-repeat= "(key, value) in evm.trainingData" class= "training-row">
+					<div ng-repeat= "(key, value) in amvm.trainingData" class= "training-row">
 						<div class= "col-lg-6 col-md-6 col-sm-12 col-lg-12 text-uppercase header-label">
 							{{key}}
 						</div>
