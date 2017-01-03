@@ -1,0 +1,28 @@
+#jobs hr {
+	border-color: #fff !important;
+}
+
+.jobs-wrapper {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	position: absolute;
+	top: 20vh;
+	overflow-y: auto;
+	height: 75%;
+}
+
+.organisation-thumb {
+	opacity: 0.8;
+	margin-left: 28%;
+}
+
+.job-details {
+	margin-top: 20px;
+}
+
+.job-header {
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #428bca;
+	padding-left: 20px;
+}

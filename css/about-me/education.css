@@ -1,3 +1,5 @@
+@import url('jobs.css');
+
 #education hr {
 	border-color: #fff !important;
 }
@@ -51,10 +53,7 @@
 	transform: scale(1);
 	transition : all ease-in 0.3s;
 	padding: 10px;
-	overflow: hidden;
-}
-
-.training-content.expand:hover {
+	overflow-x: hidden;
 	overflow-y: auto;
 }
 
@@ -71,4 +70,8 @@
 
 .training-row .value {
 	border-bottom: 2px solid #fff;
+}
+
+.organisation-thumb {
+
 }
