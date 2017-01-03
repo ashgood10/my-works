@@ -14,7 +14,7 @@
 }
 
 .icon.vertical-layout {
-	background-position: -26px -1px;
+	background-position: -31px -1px;
 	height: 18px;
 	width: 18px;
 }
@@ -25,38 +25,28 @@
 	width: 50px;
 }
 
-.icon.linked-in:hover {
+.icon.mail-me {
 	background-position: 0 -91px;
+	height: 50px;
+	width: 50px;
 }
 
-.icon.mail-me {
+.icon.fb {
 	background-position: 0 -151px;
 	height: 50px;
 	width: 50px;
 }
 
-.icon.mail-me:hover {
-	background-position: 0 -211px;
-}
-
-.icon.fb {
-	background-position: 0 -271px;
-	height: 50px;
-	width: 50px;
-}
-
-.icon.fb:hover {
-	background-position: 0 -331px;
-}
-
 .icon.twitter {
-	background-position: 0 -391px;
-	height: 50px;
-	width: 50px;
+	background-position: 0 -211px;
+	transform : scale(0.8);
 }
 
-.icon.twitter:hover {
-	background-position: 0 -451px;
+.twitter-container {
+	height: 50px;
+	width: 50px;
+	border: 1px solid #d2d2d2;
+	display: inline-block;
 }
 
 .icon.arrow-down {
