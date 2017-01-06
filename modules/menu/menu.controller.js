@@ -61,6 +61,10 @@ Author: Ashish Dwivedi
 		}
 
 		function goToWorks(proj) {
+			if((!proj && $location.path() === '/works') || (proj && window.location.href.indexOf('/works/details?id='+proj) !== -1)) {
+				return;
+			}
+			$rootScope.homeLoading = true;
 			$location.search({});
 			if(!proj) {
 				$location.path('/works');

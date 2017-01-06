@@ -1,0 +1,8 @@
+<div ng-class= "{'page-loading' : pageLoading}">
+	<div class= "loading-content-container">
+		<span class= "loading-text">
+			<span ng-repeat= "letter in loadingText track by $index" class= "loading-letter-{{$index}} display-none"><b>{{letter}}</b></span>
+		</span>
+		<span> ... </span>
+	</div>
+</div>

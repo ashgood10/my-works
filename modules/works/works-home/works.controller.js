@@ -3,9 +3,9 @@
 	angular.module('My.Works')
 	.controller('WorksController', WorksController);
 
-	WorksController.$inject = ['myConfig', '$timeout', '$scope', '$location', 'APIFactory'];
+	WorksController.$inject = ['myConfig', '$timeout', '$scope', '$location', 'apiFactory', '$rootScope'];
 
-	function WorksController(myConfig, $timeout, $scope, $location, APIFactory) {
+	function WorksController(myConfig, $timeout, $scope, $location, apiFactory, $rootScope) {
 		var _this = this;
 		//Variables
 		_this.$location = $location;
@@ -30,8 +30,11 @@
 		 });
 
 		function initialize() {
+			$timeout(function() {
+				$rootScope.homeLoading = false;
+			}, 1400);
 			//Get my works data from the JSON
-			var projectPromise = APIFactory.getProjects();
+			var projectPromise = apiFactory.getProjects();
 			projectPromise.then(function(result) {
 				_this.myProjects = result.data.works;
 			}, function(error) {

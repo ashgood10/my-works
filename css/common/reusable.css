@@ -6,6 +6,10 @@
 	display: block !important;
 }
 
+.display-none {
+	display: none;
+}
+
 .opaque {
 	opacity: 1 !important;
 }

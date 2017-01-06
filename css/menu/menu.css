@@ -1,5 +1,5 @@
 .home-menu {
-	min-height: 5.3vh;
+	min-height: 40.7px;
 	background-color: #1E1E1E;
 	color: #f9f9f9;
 }
@@ -145,8 +145,29 @@
 .social-connect {
 	position: absolute;
 	top: 50vh;
-	left: 50vw;
+	left: 44vw;
 	margin-top: -25px;
 	margin-left: -50px;
-	width: 105px;
+	/*width: 105px;*/
+}
+
+.social-connect a {
+	margin-right: 10px;
+}
+
+.social-connect span:hover {
+	transform : scale(1.1);
+}
+
+@media only screen and (max-width: 320px) {
+	.home-menu-header:hover .custom-dropdown {
+		z-index: 3;
+		background-color: #fff;
+		color: #1e1e1e;
+	}
+
+	.custom-dropdown:hover {
+		background-color: #1e1e1e;
+		color: #fff;
+	}
 }

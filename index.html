@@ -13,6 +13,7 @@
 		<div id= "body-wrapper">
 			<div ng-include= "'modules/menu/menu.html'"></div>
 			<div ng-view></div>
+			<custom-loading ng-if= "$root.homeLoading" loading-text= "Loading" page-loading = "true"></custom-loading>
 		</div>
 		<!-- Library Files Start -->
 		<script src= "scripts/lib/angular.min.js"></script>
@@ -42,6 +43,7 @@
 
 		<!-- Directrive Files Start -->
 		<script type="text/javascript" src= "modules/common/directives/tooltip.js"></script>
+		<script type="text/javascript" src= "modules/common/directives/loading.js"></script>
 		<!-- Directrive Files End -->
 
 		<!-- Services Files Start -->

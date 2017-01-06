@@ -32,7 +32,14 @@ angular.module('Me', ['ngRoute',
 
 	function appRun($location, $rootScope) {
 		$rootScope.$on('$routeChangeStart', function (event, current, next) {
-			if(!sessionStorage.getItem('username')) {
+			var username = '';
+			var cookies = document.cookie.split(';');
+			angular.forEach(cookies, function(cookie) {
+				if(cookie.indexOf('username_mw') !== -1) {
+					username = cookie.substr(cookie.indexOf('=')+1, cookie.length);
+				}
+			});
+			if(angular.isUndefined(username) || username === '') {
 				$location.path('/auth');
 			}
 		});

@@ -1,5 +1,6 @@
 @import url('common/icons.css');
 @import url('common/reusable.css');
+@import url('common/common.css');
 @import url('menu/menu.css');
 @import url('works/works.css');
 @import url('about-me/education.css');
@@ -23,9 +24,9 @@ body {
     overflow-y: hidden;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 320px) {
     body {
-        background-image: url('../images/back-img.png');
+        background-image: url('../images/back-img-2.gif');
     }
 }
 

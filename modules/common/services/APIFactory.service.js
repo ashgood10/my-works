@@ -2,15 +2,18 @@
 	"use strict";
 
 	angular.module('Me')
-	.factory('APIFactory', APIFactory);
+	.factory('apiFactory', apiFactory);
 
-	APIFactory.$inject = ['$http'];
+	apiFactory.$inject = ['$http'];
 
-	function APIFactory($http) {
+	function apiFactory($http) {
 		return {
 			getAuthData : getAuthData,
 			getProjects : getProjects,
-			getDetailsOfProject : getDetailsOfProject
+			getDetailsOfProject : getDetailsOfProject,
+			getEducation : getEducation,
+			getJobs : getJobs,
+			getAwards : getAwards
 		}
 
 		function getAuthData() {
@@ -25,6 +28,21 @@
 
 		function getDetailsOfProject () {
 			var promise = $http.get('scripts/user-data/my.works.details.json');
+			return promise;
+		}
+
+		function getEducation() {
+			var promise = $http.get('scripts/user-data/my.education.json');
+			return promise;
+		}
+
+		function getJobs() {
+			var promise = $http.get('scripts/user-data/my.jobs.json');
+			return promise;
+		}
+
+		function getAwards() {
+			var promise = $http.get('scripts/user-data/my.awards.json');
 			return promise;
 		}
 	}
