@@ -1,0 +1,13 @@
+{
+	"award" : {
+		"name" : "Insta Award",
+		"path" : "images/insta.png"
+	},
+	"recognition" : {
+			"name" : "Outsanding Performer",
+			"desc" : "Have been rated outstanding performer for 2 consecutive financial years. Appreciated by Clients, Managers and Peers."
+		},
+	"aboutme" : {
+		"content" : "Hi, I'm Ashish Dwivedi. I hail from New Delhi. I'm a Web Developer and currently working in Infosys Limited with am experience of 2 years. I have specialized skillset in Front End development with the knowledge of leading front end technologies like AngularJS, jQuery, Bootstrap etc. I'm very keen in learning new technologies and have a tendency to prioritize my work over everything else. Leave me a message if you would like to know more about me."
+	}
+}

@@ -37,7 +37,7 @@
 				case 'awards' : {
 					var awardPromise = apiFactory.getAwards();
 					awardPromise.then(function(result) {
-						_this.awardsData = result.data.awards;
+						_this.awardsData = result.data;
 					}, function(error) {
 						console.log('Something went wrong while fetching details. Please try again!');
 					});

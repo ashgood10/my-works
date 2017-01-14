@@ -1,0 +1,48 @@
+.awards-recog-cont {
+	height: 500px;
+}
+
+.awards-content {
+	text-align: center;
+	padding: 0 25px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	margin-top: 60px;
+	height: 100%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+	.awards-content {
+		width: 93%;
+	}
+
+	.awards-content.award {
+		margin-left: 40px;
+	}
+}
+
+.awards-content.award {
+	margin-left: 100px;
+}
+
+.awards-content.recognition {
+	margin-left: 40px;
+}
+
+.insta-award {
+	width: 500px;
+	height: 330px;
+	margin: 50px 0 50px 0;
+}
+
+.mywords-container {
+	border-top: 1px solid #d2d2d2;
+	margin-top: 50px;
+}
+
+.recognition-content,
+.mywords {
+	margin-top: 30px;
+}

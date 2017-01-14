@@ -24,7 +24,7 @@ body {
     overflow-y: hidden;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     body {
         background-image: url('../images/back-img-2.gif');
     }
