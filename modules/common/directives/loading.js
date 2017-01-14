@@ -4,9 +4,9 @@
 	angular.module('Me')
 	.directive('customLoading', customLoading);
 
-	customLoading.$inject = ['$timeout'];
+	customLoading.$inject = ['$timeout', 'myConfig'];
 
-	function customLoading($timeout) {
+	function customLoading($timeout, myConfig) {
 		return {
 			restrict : "EA",
 			templateUrl : 'modules/common/loading.html',
@@ -32,11 +32,11 @@
 				$timeout(function() {
 					for(var i=0; i<scope.loadingText.length; i++) {
 						if(i === 0) {
-							$('.loading-letter-'+ i).css('display', 'inherit');
+							$('.loading-letter-'+ i).css({'display' : 'inherit', 'color' : myConfig.color[0]});
 						} else {
 							timeoutArray.push(i);
 							$timeout(function() {
-								$('.loading-letter-'+ timeoutArray[0]).css('display', 'inherit');
+								$('.loading-letter-'+ timeoutArray[0]).css({'display' : 'inherit', 'color' : myConfig.color[timeoutArray.length%myConfig.color.length]});
 								timeoutArray.shift();
 							}, i*200);
 						}

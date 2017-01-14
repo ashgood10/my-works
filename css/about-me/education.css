@@ -74,6 +74,8 @@
 	border-bottom: 2px solid #fff;
 }
 
-.organisation-thumb {
-
+.word-resume {
+	position: absolute;
+	right: 50px;
+	top: 95px;
 }
