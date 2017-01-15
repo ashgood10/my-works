@@ -114,6 +114,7 @@
 
 .color-picker.active {
 	left: 50vw;
+	z-index: 2
 	margin-top: -25px;
 	margin-left: -25px;
 	-webkit-animation-name: rotatecolor; /* Safari 4.0 - 8.0 */
