@@ -78,6 +78,11 @@
 @media screen and (max-width: 768px) {
     #works-home .thumb-image-wrapper {
         height: 35vh;
-        margin-left: -45px;
+        margin-left: -20px;
+    }
+
+    #works-home .arrow.arrow-up,
+    #works-home .arrow.arrow-down {
+        margin-left: 25% !important;
     }
 }

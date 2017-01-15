@@ -29,10 +29,14 @@
 
 @media screen and (max-width:768px) {
 	.organisation-thumb {
-		margin-left : 10%;
+		margin-left: 10%;
+		width: 65vw;
+		height: 25vh;
 	}
 
 	.jobs-wrapper {
 		overflow-y: initial;
+		margin-left: 40px;
+		height: auto;
 	}
 }

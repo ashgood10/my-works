@@ -1,5 +1,5 @@
 .awards-recog-cont {
-	height: auto;
+	height: 500px;
 }
 
 .awards-content {
@@ -16,7 +16,7 @@
 }
 
 .awards-content.recognition {
-	margin-left: 40px;
+	margin-left: 25px;
 }
 
 .insta-award {
@@ -51,5 +51,9 @@
 	.insta-award {
 		width: 80vw;
 		height: 40vh;
+	}
+
+	.awards-recog-cont {
+		height: auto !important;
 	}
 }

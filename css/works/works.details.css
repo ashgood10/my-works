@@ -34,9 +34,10 @@
 
 @media screen and (max-width: 768px) {
 	#works-details .details-wrapper {
-		overflow-y: inherit;
+		margin-left: 40px;
+		overflow-y: initial;
 		margin-top: 8vh;
 		padding-bottom: 5px;
-		max-height: 100vh;
+		max-height: none;
 	}
 }

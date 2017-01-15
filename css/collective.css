@@ -16,12 +16,15 @@
 body {
 	font-family: adihaus_psreg;
 	text-align: left;
-	overflow-x: hidden;
-    overflow-y: hidden;
 	background-image: url('../images/back-img.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+    width: 100vw;
+
 }
 
 @media only screen and (max-width: 768px) {
