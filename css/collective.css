@@ -13,6 +13,14 @@
     font-style: normal;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 body {
 	font-family: adihaus_psreg;
 	text-align: left;
