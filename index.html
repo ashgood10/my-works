@@ -15,7 +15,9 @@
 	<body>
 		<div id= "body-wrapper">
 			<div ng-include= "'modules/menu/menu.html'"></div>
-			<div ng-view></div>
+			<div class= "container-fluid">
+				<div ng-view></div>
+			</div>
 			<custom-loading ng-if= "$root.homeLoading" loading-text= "Loading" page-loading = "true"></custom-loading>
 		</div>
 		<!-- Library Files Start -->

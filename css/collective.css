@@ -26,8 +26,12 @@ body {
 
 @media only screen and (max-width: 768px) {
     body {
-        background-image: url('../images/back-img-2.gif');
+        background-image: url('../images/back-img-mob.png');
         overflow-y: auto;
+    }
+
+    canvas {
+        z-index: 0;
     }
 }
 
