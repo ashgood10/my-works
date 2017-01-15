@@ -11,6 +11,8 @@
 		_this.educationData = {};
 		_this.trainingData = {};
 
+		_this.goBack = goBack;
+
 		function initialize() {
 			var path = $location.path();
 			path = path.substr(path.indexOf('/')+1, path.length);
@@ -44,6 +46,10 @@
 					return;
 				}
 			}
+		}
+
+		function goBack() {
+			history.go(-1);
 		}
 
 		initialize();

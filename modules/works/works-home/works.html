@@ -1,4 +1,8 @@
 <div class= "row" id= "works-home">
+	<button class= "back-to-works" ng-click= "wvm.goBack()">
+		<i class="material-icons vertical-middle">keyboard_arrow_left</i>
+		<span class= "vertical-middle">Back</span>
+	</button>
 	<div class= "col-lg-4 col-md-4 col-sm-10 col-xs-10 col-lg-offset-4 col-md-offset-4 col-sm-offset-1 col-xs-offset-1">
 		<div class= "col-lg-12 col-md-12 col-sm-12 col-xs-12 project-element" ng-repeat= "project in wvm.myProjects" ng-if= "project.active" ng-class= "project.animClass" data-step="1" data-intro="Scroll to navigate through projects.">
 			<button class= "arrow arrow-up animated animate-2s bounce" ng-hide= "$first" ng-click= "wvm.scrollUpDown('up')">

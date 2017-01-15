@@ -85,3 +85,28 @@
 .word-resume:hover {
 	transform : scale(0.98);
 }
+
+@media screen and (max-width: 768px) {
+	.education-container {
+		top: 15vh;
+	}
+
+	.training-container {
+		top: 20vh;
+		left: 20vw;
+		right: initial;
+		margin-top: 200px;
+	}
+
+	.education-content.expand,
+	.training-content.expand {
+		top: -8vh;
+		left: -10vw;
+		width: 80vw;
+		max-height: none;
+	}
+
+	.training-content.expand {
+		top: -45vh;
+	}
+}

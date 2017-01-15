@@ -16,6 +16,7 @@
 		_this.resetBackground = resetBackground;
 		_this.scrollUpDown = scrollUpDown;
 		_this.goToDetails = goToDetails;
+		_this.goBack = goBack;
 
 		$(window).bind('mousewheel', function(e) {
 			$scope.$apply( function () {
@@ -106,6 +107,10 @@
 			}
 			$location.search(urlParams);
 			$location.path('/works/details');
+		}
+
+		function goBack() {
+			history.go(-1);
 		}
 
 		initialize();
