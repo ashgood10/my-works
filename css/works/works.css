@@ -74,3 +74,10 @@
     color: #337ab7;
 }
 
+
+@media screen and (max-width: 768px) {
+    #works-home .thumb-image-wrapper {
+        height: 35vh;
+        margin-left: -45px;
+    }
+}

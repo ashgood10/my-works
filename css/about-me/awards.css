@@ -11,18 +11,6 @@
 	height: 100%;
 }
 
-
-
-@media only screen and (max-width: 768px) {
-	.awards-content {
-		width: 93%;
-	}
-
-	.awards-content.award {
-		margin-left: 40px;
-	}
-}
-
 .awards-content.award {
 	margin-left: 100px;
 }
@@ -45,4 +33,23 @@
 .recognition-content,
 .mywords {
 	margin-top: 30px;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 768px) {
+	.awards-content {
+		width: 90%;
+		height: 80%;
+		margin-top: 0;
+	}
+
+	.awards-content.award {
+		margin-left: 25px;
+		margin-top: 70px;
+	}
+
+	.insta-award {
+		width: 80vw;
+		height: 40vh;
+	}
 }

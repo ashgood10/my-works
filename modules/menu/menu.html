@@ -1,6 +1,6 @@
 <div class= "row" ng-controller= "MenuController as mvm"  ng-init= "hover = {}">
 	<div class= "col-lg-12 col-md-12 col-sm-12 home name-header" ng-class= "$root.theme" ng-click= "$location.path('/')">
-		<span class= "home-label" tooltip= "Go to Home" ng-click= "mvm.goToHome()">ASHISH DWIVEDI <span class= "red">[Web Dev]</span></span>
+		<span class= "home-label-head" tooltip= "Go to Home" ng-click= "mvm.goToHome()">ASHISH DWIVEDI <span class= "red">[Web Dev]</span></span>
 	</div>
 
 	<!-- Horizontal View -->
@@ -23,9 +23,9 @@
 					<hr class= "custom-hr" ng-class= "{'opaque' : hover.about}">
 				</span>
 				<div class= "custom-dropdown" ng-class= "$root.theme">
-					<span class= "dropdown-element" ng-click= "mvm.goToMyDetails('education')">EDUCATION</span>
-					<span class= "dropdown-element" ng-click= "mvm.goToMyDetails('jobs')">CAREER HISTORY</span>
-					<span class= "dropdown-element" ng-click= "mvm.goToMyDetails('awards')">AWARDS & RECOGNITIONS</span>
+					<span tooltip= "EDUCATION" class= "dropdown-element" ng-click= "mvm.goToMyDetails('education')">EDUCATION</span>
+					<span tooltip= "CAREER HISTORY" class= "dropdown-element" ng-click= "mvm.goToMyDetails('jobs')">CAREER HISTORY</span>
+					<span tooltip= "AWARDS & RECOGNITIONS" class= "dropdown-element" ng-click= "mvm.goToMyDetails('awards')">AWARDS & RECOGNITIONS</span>
 				</div>
 			</div>
 			<div class= "col-lg-4 col-md-4 col-sm-4 col-xs-4 customize home-menu-header" ng-mouseover= "hover.customize = true" ng-mouseout= "hover.customize = false">

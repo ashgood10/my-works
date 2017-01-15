@@ -17,16 +17,17 @@ body {
 	font-family: adihaus_psreg;
 	text-align: left;
 	overflow-x: hidden;
+    overflow-y: hidden;
 	background-image: url('../images/back-img.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
-    overflow-y: hidden;
 }
 
 @media only screen and (max-width: 768px) {
     body {
         background-image: url('../images/back-img-2.gif');
+        overflow-y: auto;
     }
 }
 

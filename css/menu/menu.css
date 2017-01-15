@@ -4,7 +4,8 @@
 	color: #f9f9f9;
 }
 
- .home-label {
+.home-label-head,
+.home-label {
 	font-size: x-large;
 	font-weight: bolder;
 	margin-top: 20px;
@@ -43,6 +44,7 @@
 	position: absolute;
 	width: 100%;
 	left:0;
+	top: 40px;
 	opacity: 0;
 	transform: translateY(-100%);
 	transition: all 0.3s ease-in;
@@ -148,7 +150,6 @@
 	left: 44vw;
 	margin-top: -25px;
 	margin-left: -50px;
-	/*width: 105px;*/
 }
 
 .social-connect a {
@@ -159,15 +160,37 @@
 	transform : scale(1.1);
 }
 
-@media only screen and (max-width: 320px) {
-	.home-menu-header:hover .custom-dropdown {
-		z-index: 3;
-		background-color: #fff;
-		color: #1e1e1e;
+@media screen and (max-width: 768px) {
+	.home-menu {
+		min-height: 20px !important;
 	}
 
-	.custom-dropdown:hover {
-		background-color: #1e1e1e;
-		color: #fff;
+	.home-label {
+		font-size: large !important;
+		font-weight: normal !important;
+	}
+
+	.custom-dropdown {
+		top: 30px !important;
+	}
+
+	.name-header span {
+		font-size: x-large !important;
+	}
+
+	.social-connect {
+		left: 0  !important;
+		margin-left: 10% !important;
+	}
+
+	.customize {
+		padding-left: 0 !important;
+	}
+
+	.dropdown-element {
+		max-width: 130px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
 	}
 }

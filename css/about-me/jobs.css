@@ -26,3 +26,13 @@
 	color: #428bca;
 	padding-left: 20px;
 }
+
+@media screen and (max-width:768px) {
+	.organisation-thumb {
+		margin-left : 10%;
+	}
+
+	.jobs-wrapper {
+		overflow-y: initial;
+	}
+}
