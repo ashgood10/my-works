@@ -48,6 +48,10 @@
 		margin-top: 70px;
 	}
 
+	.awards-content.recognition {
+		margin: 0 0 25px 25px;
+	}
+
 	.insta-award {
 		width: 80vw;
 		height: 40vh;
