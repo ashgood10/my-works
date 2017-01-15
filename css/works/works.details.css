@@ -37,5 +37,6 @@
 		overflow-y: inherit;
 		margin-top: 8vh;
 		padding-bottom: 5px;
+		max-height: 100vh;
 	}
 }
