@@ -1,16 +1,16 @@
 {
 	"graduation" : {
 		"university" : "Guru Gobind Singh Indraprastha University",
-		"institute" : "Ansal Institue Of Technology",
+		"institute" : "Ansal Institute Of Technology",
 		"stream" : "Electrical & Electronics Engineering",
 		"percentage" : "80.22%",
-		"releveant subjects" : "C++, C, Data Structures",
+		"relevant subjects" : "C++, C, Data Structures",
 		"website" : "www.ipu.ac.in"
 	},
 	"trainings" : {
-		"Java EE" : "Training imparted by Infosys in Mysore's world class Global Education Center(GEC), considered as the rigorous-most of trainings provided by any leading IT company in India. This training comprised of building basics of computers and IT and then diving deep into the concepts of Java.",
-		"Front End" : "To widen the horizons of personal knowledge, was put through Front End training. This training started with the basic concepts of Web Development and then covered the leading FE technologies like AngularJS, jQuery, Bootstrap and then ended subtly with giving an idea about UX.",
-		"Internal Training" : "While working into projects, I attended fre internal trainig sessions provided by Infosys, which help me sharpen my skills. Few of them are HTML5, CSS3, JavaScript, Intoduction to PHP, AJAX etc.",
-		"Design Thinking" : "Design Thinking is an initiative in which a candidate is given the liberty to think of any out of box ideas and then make a model of the same. This has very little to do with the actual work, but helps extract creativity out of candidates."
+		"Java EE" : "Training imparted by Infosys in Mysore's world class Global Education Center(GEC), considered as the rigorous-most of trainings provided by any leading IT company in India. This training started with building basics of computers and IT and then diving deep into the concepts of Java.",
+		"Front End" : "To widen the horizons of area of applicability, was put through Front End training. This training started with the basic concepts of Web Development and then covered the leading FE technologies like AngularJS, jQuery, Bootstrap and then ended subtly giving an idea of UX best practices",
+		"Internal Training" : "While working into projects, I attended various internal training sessions provided by Infosys. Few of them are HTML5, CSS3, JavaScript, Intoduction to PHP, AJAX etc.",
+		"Design Thinking" : "Design Thinking is an initiative in which a candidate is supposed to come up with any out of box ideas followed by a fun process of making a model of the same. This technique is proven to extract out creativity which is implicit in everyone, but is generally not nurtured. Design Thinking is a good way of breaking prolonged work stress while doing something productive."
 	}
 }
