@@ -4,11 +4,11 @@
 		<span class= "vertical-middle">Back</span>
 	</button>
 	<div class= "awards-recog-cont">
-		<div class= "col-lg-5 col-md-5 col-sm-12 col-lg-12 awards-content award">
+		<div class= "col-lg-5 col-md-5 col-sm-12 col-lg-12 awards-content award" ng-class= "[$root.theme, 'theme']">
 			<h2>{{amvm.awardsData.award.name}}</h2>
 			<img class= "insta-award" src= "{{amvm.awardsData.award.path}}" />
 		</div>
-		<div class= "col-lg-5 col-md-5 col-sm-12 col-lg-12 awards-content recognition">
+		<div class= "col-lg-5 col-md-5 col-sm-12 col-lg-12 awards-content recognition" ng-class= "[$root.theme, 'theme']">
 			<div>
 				<h2>{{amvm.awardsData.recognition.name}}</h2>
 				<div class= "recognition-content">{{amvm.awardsData.recognition.desc}}</div>

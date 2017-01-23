@@ -84,7 +84,8 @@ img {
 }
 
 .bg-white {
-    background-color:#FFF!important;
+    /*background-color:#fff!important;*/
+    background-color: rgba(255, 255, 255, 1) !important;
     color:#000 !important;
     transition: all 0.5s ease;
     transition-property: background,color;
@@ -92,80 +93,102 @@ img {
 
 
 .bg-blue {
-    background-color:#2196F3 !important;
+    /*background-color:#2196F3 !important;*/
+    background-color: rgba(33, 150, 243, 1) !important;
     color:white !important;
     transition: all 0.5s ease;
     transition-property: background,color;
 }
 
 .bg-teal {
-    background-color:#009688 !important;
+    /*background-color:#009688 !important;*/
+    background-color: rgba(0, 150, 136, 1) !important;
     color:white !important;
     transition: all 0.5s ease;
     transition-property: background,color;
 }
 
 .bg-mars {
-    background-color:#ee6e73 !important;
+    /*background-color:#ee6e73 !important;*/
+    background-color: rgba(238, 110, 115, 1) !important;
     color:white !important;
     transition: all 0.5s ease;
     transition-property: background,color;
 }
 
 .bg-lime {
-    background-color: #BED011 !important;
+    /*background-color: #BED011 !important;*/
+    background-color: rgba(190, 208, 17, 1) !important;
     color:white !important;
     transition: all 0.5s ease;
     transition-property: background,color;
 }
 
 .bg-green {
-    background-color: #4CAF50 !important;
+    /*background-color: #4CAF50 !important;*/
+    background-color: rgba(76, 175, 80, 1) !important;
     color:white !important;
     transition: all 0.5s ease;
     transition-property: background,color;
 }
 
 .bg-amber {
-    background-color:#FFC107 !important;
+    /*background-color:#FFC107 !important;*/
+    background-color: rgba(255, 193, 7, 1) !important;
     color:white !important;
     transition: all 0.5s ease;
     transition-property: background,color;
 }
 
 .bg-grey {
-    background-color:#607D8B !important;
+    /*background-color:#607D8B !important;*/
+    background-color: rgba(96, 125, 139, 1) !important;
     color:white !important;
     transition: all 0.5s ease;
     transition-property: background,color;
 }
 
 .bg-indigo {
-    background-color:#3f51b5 !important;
+    /*background-color:#3f51b5 !important;*/
+    background-color: rgba(63, 81, 181, 1) !important;
     color:white !important;
     transition: all 0.5s ease;
     transition-property: background,color;
 }
 
 .bg-cyan {
-    background-color:#00bcd4 !important;
+    /*background-color:#00bcd4 !important;*/
+    background-color: rgba(0, 188, 212, 1) !important;
     color:white !important;
     transition: all 0.5s ease;
     transition-property: background,color;
 }
 
 .bg-red {
-    background-color:#b71c1c !important;
+    /*background-color:#b71c1c !important;*/
+    background-color: rgba(183, 28, 28, 1) !important;
     color:white !important;
     transition: all 0.5s ease;
     transition-property: background,color;
 }
 
 .bg-orange {
-    background-color: #E79723 !important;
+    /*background-color: #E79723 !important;*/
+    background-color: rgba(231, 151, 35, 1) !important;
     color:white !important;
     transition: all 0.5s ease;
     transition-property: background,color;
+}
+
+.theme.bg-black, .theme.bg-white, .theme.bg-blue, .theme.bg-teal, .theme.bg-mars, .theme.bg-lime, .theme.bg-green, .theme.bg-amber, .theme.bg-grey, .theme.bg-indigo, .theme.bg-cyan, .theme.bg-red, .theme.bg-orange {
+    opacity: 0.6 !important;
+}
+
+.theme .red,
+.theme.red,
+.theme label {
+    font-weight: bolder;
+    text-shadow : 1px 1px #000;
 }
 
 .header {

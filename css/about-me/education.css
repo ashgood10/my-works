@@ -8,6 +8,8 @@
 .category-tile {
 	position: absolute;
 	top: 30vh;
+	height: 150px;
+	width: 180px;
 	border-radius: 50%;
 	cursor: pointer;
 }
@@ -108,5 +110,15 @@
 
 	.training-content.expand {
 		top: -45vh;
+	}
+
+	.word-resume {
+		right: 10px;
+		top: 80px;
+		transform: scale(0.7);
+	}
+
+	.icon.resume {
+		border-radius: 50%;
 	}
 }
