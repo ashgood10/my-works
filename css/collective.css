@@ -108,12 +108,20 @@ img {
     transition-property: background,color;
 }
 
+.bg-teal .red, .bg-teal.red, .bg-teal label {
+    color: #962300;
+}
+
 .bg-mars {
     /*background-color:#ee6e73 !important;*/
     background-color: rgba(238, 110, 115, 1) !important;
     color:white !important;
     transition: all 0.5s ease;
     transition-property: background,color;
+}
+
+.bg-mars .red, .bg-mars.red, .bg-mars label {
+    color: #6e79ee;
 }
 
 .bg-lime {
@@ -124,6 +132,10 @@ img {
     transition-property: background,color;
 }
 
+.bg-lime .red, .bg-lime.red, .bg-lime label {
+    color: #d01b11;
+}
+
 .bg-green {
     /*background-color: #4CAF50 !important;*/
     background-color: rgba(76, 175, 80, 1) !important;
@@ -132,12 +144,20 @@ img {
     transition-property: background,color;
 }
 
+.bg-green .red, .bg-green.red, .bg-green label {
+    color: #af4e4c;
+}
+
 .bg-amber {
     /*background-color:#FFC107 !important;*/
     background-color: rgba(255, 193, 7, 1) !important;
     color:white !important;
     transition: all 0.5s ease;
     transition-property: background,color;
+}
+
+.bg-amber .red, .bg-amber.red, .bg-amber label {
+    color: #8307ff;
 }
 
 .bg-grey {
@@ -187,8 +207,14 @@ img {
 .theme .red,
 .theme.red,
 .theme label {
-    font-weight: bolder;
-    text-shadow : 1px 1px #000;
+/*    font-weight: bolder;
+    text-shadow : 1px 1px #191919;*/
+    /*color: #962300;*/
+}
+
+.theme:hover {
+    transition: 0.3s opacity ease-in;
+    opacity: 0.9 !important;
 }
 
 .header {

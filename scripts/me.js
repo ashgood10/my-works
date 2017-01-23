@@ -42,6 +42,10 @@ angular.module('Me', ['ngRoute',
 			});
 			if(angular.isUndefined(username) || username === '') {
 				$location.path('/auth');
+			} else {
+				if(localStorage.getItem('user-theme')) {
+					$rootScope.theme = localStorage.getItem('user-theme');
+				}
 			}
 		});
 	}

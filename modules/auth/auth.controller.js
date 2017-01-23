@@ -33,6 +33,9 @@
 							date.setTime(date.getTime() + (1 * 24 * 60 * 60 * 1000));
 							var expires = "expires=" + date.toUTCString();
 							document.cookie = "username_mw=" + _this.creds.username + "; expires=" + expires + ";";
+							if(localStorage.getItem('user-theme')) {
+								$rootScope.theme = localStorage.getItem('user-theme');
+							}
 							$location.path('/');
 						}
 						else {

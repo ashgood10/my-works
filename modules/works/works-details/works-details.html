@@ -3,7 +3,7 @@
 		<i class="material-icons vertical-middle">keyboard_arrow_left</i>
 		<span class= "vertical-middle">Back</span>
 	</button>
-	<div class= "col-lg-6 col-md-6 col-sm-10 col-xs-10 col-lg-offset-3 col-md-offset-3 col-sm-offset-1 col-xs-offset-1 details-wrapper" ng-class= "[$root.theme, 'theme']">
+	<div class= "col-lg-6 col-md-6 col-sm-10 col-xs-10 col-lg-offset-3 col-md-offset-3 col-sm-offset-1 col-xs-offset-1 details-wrapper" ng-class= "[$root.theme, ($root.theme?'theme':'')]">
 		<h1 class= "red text-center text-uppercase">{{wdvm.project.name}}</h1>
 		<div>{{wdvm.project.description}}</div>
 		<div class= "details-container row">

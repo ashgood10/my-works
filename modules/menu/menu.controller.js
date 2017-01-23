@@ -58,6 +58,9 @@ Author: Ashish Dwivedi
 				$('.social-connect').css({'left' : '105vw', 'animation' : 'rotatecolor',  'transition' : 'all ease-in 0.3s'});
 				$(".social-connect").addClass("animation");
 			}
+			if($rootScope.theme) {
+				localStorage.setItem('user-theme', $rootScope.theme);
+			}
 		}
 
 		function goToWorks(proj) {
