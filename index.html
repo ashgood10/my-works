@@ -19,11 +19,14 @@
 				<div ng-view></div>
 			</div>
 			<custom-loading ng-if= "$root.homeLoading" loading-text= "Loading" page-loading = "true"></custom-loading>
+			<span class= "icon info" ng-controller= "MenuController as mvm" ng-click= "mvm.broadCastIntro()"></span>
 		</div>
 		<!-- Library Files Start -->
 		<script src= "scripts/lib/angular.min.js"></script>
+		<script src="scripts/lib/angular-animate.js"></script>
 		<script src= "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
 		<script src="scripts/lib/jquery-3.1.1.min.js"></script>
+		<script src="scripts/lib/ui-bootstrap-tpls-2.4.0.js"></script>
 		<script src="scripts/lib/bootstrap.min.js"></script>
 		<script src="scripts/lib/intro.min.js"></script>
 		<!-- Library Files End -->

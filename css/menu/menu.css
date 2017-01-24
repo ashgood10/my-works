@@ -170,6 +170,18 @@
 	transform : scale(1.1);
 }
 
+.highlights-modal .modal-dialog {
+	width: 60vw;
+}
+
+.highlights-modal .modal-container {
+	padding: 20px;
+}
+
+.highlights-modal .material-icons {
+	margin : -15px 10px 0 0;
+}
+
 @media screen and (max-width: 768px) {
 	.home-menu {
 		min-height: 20px !important;

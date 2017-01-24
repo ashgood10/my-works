@@ -1,13 +1,13 @@
-<div class= "row" id= "education">
-	<button class= "back-to-works" ng-click= "amvm.goBack()">
+<div class= "row" id= "education" data-step="1" data-intro="Walkthrough about my education and trainings">
+	<button class= "back-to-works" ng-click= "amvm.goBack()" data-step="5" data-intro="Go back to previous page">
 		<i class="material-icons vertical-middle">keyboard_arrow_left</i>
 		<span class= "vertical-middle">Back</span>
 	</button>
-	<a class= "word-resume" href= "scripts/user-data/ASHISHDWIVEDI.pdf" target= "_blank">
+	<a class= "word-resume" href= "scripts/user-data/ASHISHDWIVEDI.pdf" target= "_blank" data-step="4" data-intro="Download my resume">
 		<span class= "icon resume" tooltip= "Download Resume"></span>
 	</a>
 	<div class= "col-lg-6 col-md-6 col-sm-12 col-lg-12">
-		<div class= "education-container category-tile">
+		<div class= "education-container category-tile" data-step="2" data-intro="Click to know more about my education">
 			<img class= "education-thumb-images" src= "images/education.png" tooltip= "Education" ng-click="educationHover=true">
 			<div class= "education-content {{$root.theme + ($root.theme?' theme':'')}}" ng-class= "{'expand' : educationHover}">
 				<i class="material-icons float-right" ng-click="educationHover=false">clear</i>
@@ -27,7 +27,7 @@
 		</div>
 	</div>
 	<div class= "col-lg-6 col-md-6 col-sm-12 col-lg-12">
-		<div class= "training-container category-tile">
+		<div class= "training-container category-tile" data-step="3" data-intro="See the trainings I've been through">
 			<img class= "education-thumb-images" src= "images/training.png" tooltip= "Trainings" ng-click="trainingHover=true">
 			<div class= "training-content {{$root.theme + ($root.theme?' theme':'')}}" ng-class= "{'expand' : trainingHover}">
 				<i class="material-icons float-right" ng-click="trainingHover=false">clear</i>

@@ -1,4 +1,6 @@
 angular.module('Me', ['ngRoute',
+					'ngAnimate',
+					'ui.bootstrap',
 					'My.Auth',
 					'My.Menu',
 					'My.Home', 

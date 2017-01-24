@@ -1,41 +1,41 @@
 <div class= "row" id= "jobs">
-	<button class= "back-to-works" ng-click= "amvm.goBack()">
+	<button class= "back-to-works" ng-click= "amvm.goBack()" data-step="2" data-intro="Go back to previous page">
 		<i class="material-icons vertical-middle">keyboard_arrow_left</i>
 		<span class= "vertical-middle">Back</span>
 	</button>
-	<div class= "col-lg-6 col-md-6 col-sm-10 col-xs-10 col-lg-offset-3 col-md-offset-3 col-sm-offset-1 col-xs-offset-1 jobs-wrapper" ng-class= "[$root.theme, ($root.theme?'theme':'')]">
+	<div class= "col-lg-6 col-md-6 col-sm-10 col-xs-10 col-lg-offset-3 col-md-offset-3 col-sm-offset-1 col-xs-offset-1 jobs-wrapper" ng-class= "[$root.theme, ($root.theme?'theme':'')]" data-step="1" data-intro="My previous job and experiences">
 		<h1 class= "red text-center text-uppercase">{{amvm.jobsData.organisation}}</h1>
 		<img class= "organisation-thumb" src= "{{amvm.jobsData.thumb}}" />
 		<div class= "job-details">
 			<div class= "row">
-				<div class= "col-lg-6 col-md-6 col-sm-6 col-xs-6 job-header">
+				<label class= "col-lg-6 col-md-6 col-sm-6 col-xs-6 job-header">
 					role
-				</div>
+				</label>
 				<div class= "col-lg-6 col-md-6 col-sm-6 col-xs-6 job-value">
 					{{amvm.jobsData.role}}
 				</div>
 			</div>
 			<div class= "row">
-				<div class= "col-lg-6 col-md-6 col-sm-6 col-xs-6 job-header">
+				<label class= "col-lg-6 col-md-6 col-sm-6 col-xs-6 job-header">
 					total experience
-				</div>
+				</label>
 				<div class= "col-lg-6 col-md-6 col-sm-6 col-xs-6 job-value">
 					{{amvm.jobsData.experience}}
 				</div>
 			</div>
 			<div class= "row">
-				<div class= "col-lg-6 col-md-6 col-sm-6 col-xs-6 job-header">
+				<label class= "col-lg-6 col-md-6 col-sm-6 col-xs-6 job-header">
 					journey
-				</div>
+				</label>
 				<div class= "col-lg-6 col-md-6 col-sm-6 col-xs-6 job-value">
 					{{amvm.jobsData.journey}}
 				</div>
 			</div>
 			<div class= "row">
-				<div class= "col-lg-12 col-md-12 col-sm-12 col-xs-12 job-header">
+				<label class= "col-lg-12 col-md-12 col-sm-12 col-xs-12 job-header">
 					references
 					<hr/>
-				</div>
+				</label>
 				<div class= "col-lg-6 col-md-6 col-sm-6 col-xs-6 job-value" ng-repeat= "reference in amvm.jobsData.references">
 					<label>{{reference.name}}</label> -
 					<span>{{reference.designation}}</span> 

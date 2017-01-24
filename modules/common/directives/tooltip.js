@@ -20,7 +20,7 @@
 				$timeout(function() {
 					if(scope.hovered) {
 						var position = element[0].getBoundingClientRect();
-						var tooltipString = "<span class='tooltip text-uppercase " + scope.tooltipPlacement +"' style= 'top:"+ (position.top+30) + "px;left:" + (position.left) + "px;position:absolute;'>" + scope.tooltip + "</span>";
+						var tooltipString = "<span class='tooltip text-uppercase " + scope.tooltipPlacement +"' style= 'top:"+ (position.top+30) + "px;left:" + (position.left+($(element).width()/2-30)) + "px;position:absolute;'>" + scope.tooltip + "</span>";
 						$("body").append(tooltipString);
 					}
 				}, 1000);

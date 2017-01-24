@@ -13,7 +13,8 @@
 			getDetailsOfProject : getDetailsOfProject,
 			getEducation : getEducation,
 			getJobs : getJobs,
-			getAwards : getAwards
+			getAwards : getAwards,
+			getHighlights : getHighlights
 		}
 
 		function getAuthData() {
@@ -43,6 +44,11 @@
 
 		function getAwards() {
 			var promise = $http.get('scripts/user-data/my.awards.json');
+			return promise;
+		}
+
+		function getHighlights() {
+			var promise = $http.get('scripts/user-data/my.highlights.json');
 			return promise;
 		}
 	}

@@ -35,20 +35,13 @@ body {
 
 }
 
-@media only screen and (max-width: 768px) {
-    body {
-        background-image: url('../images/back-img-mob.png');
-        overflow-y: auto;
-    }
-
-    canvas {
-        z-index: 0;
-    }
-}
-
 img {
     background-image: url('../images/img-loading2.gif');
     background-size: 100% 100%;
+}
+
+i {
+    cursor: pointer;
 }
 
 /* Font Color Classes */
@@ -168,12 +161,20 @@ img {
     transition-property: background,color;
 }
 
+.bg-grey .red, .bg-grey.red, .bg-grey label {
+    color: #D1D6E7;
+}
+
 .bg-indigo {
     /*background-color:#3f51b5 !important;*/
     background-color: rgba(63, 81, 181, 1) !important;
     color:white !important;
     transition: all 0.5s ease;
     transition-property: background,color;
+}
+
+.bg-indigo .red, .bg-indigo.red, .bg-indigo label {
+    color: #b5943f;
 }
 
 .bg-cyan {
@@ -184,6 +185,10 @@ img {
     transition-property: background,color;
 }
 
+.bg-cyan .red, .bg-cyan.red, .bg-cyan label {
+    color: #b5943f;
+}
+
 .bg-red {
     /*background-color:#b71c1c !important;*/
     background-color: rgba(183, 28, 28, 1) !important;
@@ -192,12 +197,20 @@ img {
     transition-property: background,color;
 }
 
+.bg-red .red, .bg-red.red, .bg-red label {
+    color: #69b71c;
+}
+
 .bg-orange {
     /*background-color: #E79723 !important;*/
     background-color: rgba(231, 151, 35, 1) !important;
     color:white !important;
     transition: all 0.5s ease;
     transition-property: background,color;
+}
+
+.bg-orange .red, .bg-orange.red, .bg-orange label {
+    color: #1cb7b7;
 }
 
 .theme.bg-black, .theme.bg-white, .theme.bg-blue, .theme.bg-teal, .theme.bg-mars, .theme.bg-lime, .theme.bg-green, .theme.bg-amber, .theme.bg-grey, .theme.bg-indigo, .theme.bg-cyan, .theme.bg-red, .theme.bg-orange {
@@ -255,6 +268,15 @@ hr {
     border-top: 1px solid #1e1e1e;
 }
 
+.icon.info {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
 /*Custom scroll bar CSS*/
 ::-webkit-scrollbar-track
 {
@@ -274,3 +296,10 @@ hr {
     background-color: #555;
 }
 /*Custom scroll bar CSS Ends*/
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url('../images/back-img-mob.png');
+        overflow-y: auto;
+    }
+}
