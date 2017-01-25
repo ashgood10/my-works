@@ -46,7 +46,7 @@
 	left:0;
 	top: 40px;
 	opacity: 0;
-	transform: translateY(-100%);
+	transform: perspective(500px) translate3d(0,-100%,0);
 	transition: all 0.3s ease-in;
 	visibility: hidden;
 }
@@ -56,7 +56,7 @@
 	background-color: #1E1E1E;
 	visibility: visible;
 	transition: .5s cubic-bezier(0, 1, 0.5, 1);
-  	transform: translateY(0);
+	transform: perspective(500px) translate3d(0,0,0);
 }
 
 .dropdown-element {
