@@ -30,7 +30,12 @@ Author: Ashish Dwivedi
 		_this.broadCastIntro = broadCastIntro;
 
 		function goToHome() {
+			if($location.path() === '/') {
+				return;
+			}
+			$location.search({redirected:'true'});
 			$location.path('/');
+			location.reload();
 		}
 
 		function switchLayout() {
@@ -91,7 +96,6 @@ Author: Ashish Dwivedi
 		}
 
 		function goToHighlights() {
-			// $('#highlights-cont').modal({backdrop: 'static', keyboard: false, show: true});
 			var highlightPromise = apiFactory.getHighlights();
 			highlightPromise.then(function(result) {
 				highlightData = result;
@@ -112,8 +116,21 @@ Author: Ashish Dwivedi
 		}
 
 		function broadCastIntro() {
-			introJs().start();
+			introJs().start($location.path());
 		}
+
+		function initialize() {
+			$location.search({});
+			$timeout(function() {
+				if(!localStorage.getItem('alreadyLoaded')) {
+					var path = $location.path();
+					introJs().start(path);
+					localStorage.setItem('alreadyLoaded' , true);
+				}
+			}, 500);
+		}
+
+		initialize();
 	}
 
 	HighlightController.$inject = ['modalData', '$uibModalInstance'];

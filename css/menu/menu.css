@@ -215,4 +215,10 @@
 		overflow: hidden;
 		white-space: nowrap;
 	}
+
+	.highlights-modal .modal-dialog {
+		width: 95vw;
+		margin: 10px 5px;
+	}
+
 }

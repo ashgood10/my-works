@@ -44,12 +44,6 @@
 
 			$timeout(function() {
 				$('.project-element').addClass('animated bounceInUp display-block');
-				$timeout(function() {
-					// if(!sessionStorage.getItem('alreadyLoaded')) {
-					// 	introJs().start();
-					// 	sessionStorage.setItem('alreadyLoaded' , true);
-					// }
-				}, 1000);
 			}, 500);
 		}
 
