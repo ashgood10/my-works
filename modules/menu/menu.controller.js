@@ -61,7 +61,8 @@ Author: Ashish Dwivedi
 		$rootScope.switchColor = function() {
 			$rootScope.pickColor = !$rootScope.pickColor;
 			if($(".social-connect").hasClass('animation')) {
-				$('.social-connect').css({'left' : '50vw', 'animation' : ''});
+				var width = $('.social-connect').width();
+				$('.social-connect').css({'left' : '44vw', 'animation' : ''});
 				$(".social-connect").removeClass("animation");
 			} else {
 				$('.social-connect').css({'left' : '105vw', 'animation' : 'rotatecolor',  'transition' : 'all ease-in 0.3s'});
