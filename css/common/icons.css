@@ -8,15 +8,84 @@
 }
 
 .icon.horizontal-layout {
-	background-position: -1px -1px;
-	height: 18px;
-	width: 18px;
+	background-position: -1px -666px;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	border: 0.5px solid #fff;
+	vertical-align: middle;
 }
 
 .icon.vertical-layout {
-	background-position: -31px -1px;
-	height: 18px;
-	width: 18px;
+	background-position: -1px -666px;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	border: 0.5px solid #fff;
+	vertical-align: middle;
+}
+
+.icon.highlight {
+	background-position: -72px -666px;
+	height: 22px;
+	width: 20px;
+	border-radius: 50%;
+	border: 0.5px solid #fff;
+	vertical-align: middle;
+}
+
+.icon.award {
+	background-position: -73px -736px;
+	height: 22px;
+	width: 20px;
+	border-radius: 50%;
+	border: 0.5px solid #fff;
+	vertical-align: middle;
+}
+
+.icon.career {
+	background-position: -37px -736px;
+	height: 22px;
+	width: 20px;
+	border-radius: 50%;
+	border: 0.5px solid #fff;
+	vertical-align: middle;
+}
+
+.icon.education {
+	background-position: -2px -736px;
+	height: 22px;
+	width: 20px;
+	border-radius: 50%;
+	border: 0.5px solid #fff;
+	vertical-align: middle;
+}
+
+.icon.slideshow {
+	background-position: -1px -698px;
+	height: 22px;
+	width: 20px;
+	border-radius: 50%;
+	border: 0.5px solid #fff;
+	vertical-align: middle;
+}
+
+.icon.dp {
+	background-position: -37px -698px;
+	height: 22px;
+	width: 20px;
+	border-radius: 50%;
+	border: 0.5px solid #fff;
+	vertical-align: middle;
+}
+
+.icon.dwb {
+	background-position: -73px -698px;
+	height: 22px;
+	width: 20px;
+	border-radius: 50%;
+	border: 0.5px solid #fff;
+	vertical-align: middle;
 }
 
 .icon.linked-in {

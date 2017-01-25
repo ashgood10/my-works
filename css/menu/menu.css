@@ -44,7 +44,7 @@
 	position: absolute;
 	width: 100%;
 	left:0;
-	top: 40px;
+	top: 39px;
 	opacity: 0;
 	transform: perspective(500px) translate3d(0,-100%,0);
 	transition: all 0.3s ease-in;
@@ -164,6 +164,7 @@
 
 .social-connect a {
 	margin-right: 10px;
+	color: transparent;
 }
 
 .social-connect span:hover {
