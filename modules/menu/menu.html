@@ -35,19 +35,19 @@
 				</span>
 				<div class= "custom-dropdown" ng-class= "$root.theme">
 					<div class= "dropdown-element" ng-click= "mvm.switchLayout()">
-						<label tooltip="Switch to vertical view" class= "inline-block">LAYOUT</label>
+						<span tooltip="Switch to vertical view" class= "inline-block">LAYOUT</span>
 						<div class= "layout-picker inline-block">
 							<span class= "icon" ng-class= "{'vertical-layout' : !mvm.layoutHorizontal, 'horizontal-layout' : mvm.layoutHorizontal}"></span>
 						</div>
 					</div>
 					<div class= "dropdown-element" ng-click= "$root.switchColor()">
-						<label tooltip= "Use a new theme">COLOR THEME</label>
+						<span tooltip= "Use a new theme">COLOR THEME</span>
 						<div class= "color-picker-small">
 							<span class= "color-tile-small" ng-repeat="theme in mvm.myConfig.bgThemes" ng-class= "theme"></span>
 						</div>
 					</div>
 					<div class= "dropdown-element" ng-click= "mvm.goToHighlights()">
-						<label tooltip= "Use a new theme">WEBSITE HIGHLIGHTS</label>
+						<span tooltip= "Use a new theme">WEBSITE HIGHLIGHTS</span>
 					</div>
 				</div>
 			</div>
@@ -90,13 +90,13 @@
 				</span>
 				<div class= "custom-dropdown" ng-class= "$root.theme">
 					<div class= "dropdown-element" ng-click= "mvm.switchLayout()">
-						<label tooltip="Switch to horizontal view" class= "inline-block">LAYOUT</label>
+						<span tooltip="Switch to horizontal view" class= "inline-block">LAYOUT</span>
 						<div class= "layout-picker inline-block">
 							<span class= "icon" ng-class= "{'vertical-layout' : !mvm.layoutHorizontal, 'horizontal-layout' : mvm.layoutHorizontal}"></span>
 						</div>
 					</div>
 					<div class= "dropdown-element" tooltip= "Use new theme" ng-click= "$root.switchColor()">
-						<label>COLOR THEME</label>
+						<span>COLOR THEME</span>
 						<div class= "color-picker-small">
 							<span class= "color-tile-small" ng-repeat="theme in mvm.myConfig.bgThemes" ng-class= "theme"></span>
 						</div>

@@ -182,6 +182,14 @@
 	margin : -15px 10px 0 0;
 }
 
+.menu-page {
+	margin: 0;
+}
+
+	.home-menu-header {
+	padding: 0;
+}
+
 @media screen and (max-width: 768px) {
 	.home-menu {
 		min-height: 20px !important;
@@ -194,6 +202,7 @@
 
 	.custom-dropdown {
 		top: 30px !important;
+		font-size: smaller;
 	}
 
 	.name-header span {
@@ -210,7 +219,7 @@
 	}
 
 	.dropdown-element {
-		max-width: 130px;
+		max-width: 120px;
 		text-overflow: ellipsis;
 		overflow: hidden;
 		white-space: nowrap;
