@@ -127,5 +127,8 @@
 
 	<div class= "color-picker" ng-class= "{'active' : $root.pickColor}">
 		<span class= "color-tile" ng-repeat="theme in mvm.myConfig.bgThemes" ng-class= "theme" ng-click= "($root.theme=theme);$root.switchColor()"></span>
+		<fieldset ng-disabled= "!$root.theme" ng-class= "{'disabled' : !$root.theme}">
+			<i class="material-icons clear-theme" tooltip= "Clear Theme" ng-click= "$root.clearTheme()">clear</i>
+		</fieldset>
 	</div>
 </div>

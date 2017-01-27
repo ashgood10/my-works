@@ -58,21 +58,6 @@ Author: Ashish Dwivedi
 			_this.layoutHorizontal = !_this.layoutHorizontal;
 		}
 
-		$rootScope.switchColor = function() {
-			$rootScope.pickColor = !$rootScope.pickColor;
-			if($(".social-connect").hasClass('animation')) {
-				var width = $('.social-connect').width();
-				$('.social-connect').css({'left' : '44vw', 'animation' : ''});
-				$(".social-connect").removeClass("animation");
-			} else {
-				$('.social-connect').css({'left' : '105vw', 'animation' : 'rotatecolor',  'transition' : 'all ease-in 0.3s'});
-				$(".social-connect").addClass("animation");
-			}
-			if($rootScope.theme) {
-				localStorage.setItem('user-theme', $rootScope.theme);
-			}
-		}
-
 		function goToWorks(proj) {
 			if((!proj && $location.path() === '/works') || (proj && window.location.href.indexOf('/works/details?id='+proj) !== -1)) {
 				return;

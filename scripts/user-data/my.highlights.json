@@ -1,4 +1,6 @@
-[
+{
+	"header" : "Wesite Highlights",
+	"value" : [
 		{
 			"Intro JS" : "This website uses Intro JS to give the user a brief tour of the whereabouts of the website when a page is loaded. Want to see this in action? Hit the '?' button at the bottom-right of the page."
 		},
@@ -8,4 +10,5 @@
 		{
 			"Color Theme" : "Don't like the default theme applied on page load? Visit the 'Customize' dropdown and apply a new theme from a set of defined themes. Want more? You can even switch to vertical layout to have more screen area."
 		}
-]
+	]
+}
