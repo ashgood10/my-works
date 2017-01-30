@@ -1,14 +1,20 @@
 {
-	"header" : "Wesite Highlights",
+	"header" : "Website Highlights",
 	"value" : [
 		{
-			"Intro JS" : "This website uses Intro JS to give the user a brief tour of the whereabouts of the website when a page is loaded. Want to see this in action? Hit the '?' button at the bottom-right of the page."
+			"Intro JS" : "This website uses Intro JS to give the user a brief tour of the whereabouts of the website when a page is loaded. Want to see this in action? Hit the '?' button at the bottom-right of the page"
 		},
 		{
-			"Tooltips" : "Want to know purpose of any button or component, just hover mouse cursor over that element for 1 second (you have to be a bit desperate to see the tooltip :-)) and there pops a tooltip with info about that component."
+			"Tooltips" : "Want to know purpose of any button or component, just hover mouse cursor over that element for 1 second (you have to be a bit desperate to see the tooltip :-)) and there pops a tooltip with info about that component"
 		},
 		{
-			"Color Theme" : "Don't like the default theme applied on page load? Visit the 'Customize' dropdown and apply a new theme from a set of defined themes. Want more? You can even switch to vertical layout to have more screen area."
+			"Color Theme" : "Don't like the default theme applied on page load? Visit the 'Customize' dropdown and apply a new theme from a set of defined themes. Want more? You can even switch to vertical layout to have more screen area"
+		},
+		{
+			"Your Preferences Matter" : "This website preserves your preferences when you come back and visit pages after navigating away"
+		},
+		{
+			"Responsive Layout" : "The layout of this website is responsive, make sure you visit this website on desktop as well as on your smartphone"
 		}
 	]
 }
