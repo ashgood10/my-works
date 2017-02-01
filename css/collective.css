@@ -86,7 +86,7 @@ i {
 
 
 .bg-blue {
-    /*background-color:#2196F3 !important;*/
+    /*background-color:#2196F3 !important;*/ /*Ash*/
     background-color: rgba(33, 150, 243, 1) !important;
     color:white !important;
     transition: all 0.5s ease;
