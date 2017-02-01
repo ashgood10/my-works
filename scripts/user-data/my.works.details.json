@@ -22,38 +22,12 @@
                "Netbeans",
                "SOLR Admin Interface"
             ],
-            "role":"FE Lead: Led a team of 3 FE developers to accomplish client requirements, keeping highest coding standards",
+            "role":"FE Developer: Worked in close conjunction with the client to understand their requirement and proceed with the development accordingly. Got an opportunity to learn industry standards and sharpened my comm skills.",
             "details":" Design Portal is an internal circulation Web Project which is used by Adidas Designers to fulfill theirs needs, from the state of planning to production. The project has 6 main modules out of which I got the opportunity to work on 3 modules. The project extensively uses various concepts of AngularJS few of which are Directive, Services, Scopes etc."
          }
       },
       {  
          "id":"dwb",
-         "description":{  
-            "technology":{  
-               "frontend":[  
-                  "AngularJS",
-                  "Gulp",
-                  "jQuery",
-                  "Twitter Bootstrap",
-                  "HTML5",
-                  "CSS3"
-               ],
-               "backend":[  
-                  "Java",
-                  "SOLR"
-               ]
-            },
-            "tools":[  
-               "Sublime Text",
-               "Netbeans",
-               "SOLR Admin Interface"
-            ],
-            "role":"FE Lead: Led a team of 3 FE developers to accomplish client requirements, keeping highest coding standards",
-            "details":" Design Portal is an internal circulation Web Project which is used by Adidas Designers to fulfill theirs needs, from the state of planning to production. The project has 6 main modules out of which I got the opportunity to work on 3 modules. The project extensively uses various concepts of AngularJS few of which are Directive, Services, Scopes etc."
-         }
-      },
-      {  
-         "id":"wfms",
          "description":{  
             "technology":{  
                "frontend":[  
@@ -100,8 +74,8 @@
                "Netbeans",
                "SOLR Admin Interface"
             ],
-            "role":"FE Lead: Led a team of 3 FE developers to accomplish client requirements, keeping highest coding standards",
-            "details":" Design Portal is an internal circulation Web Project which is used by Adidas Designers to fulfill theirs needs, from the state of planning to production. The project has 6 main modules out of which I got the opportunity to work on 3 modules. The project extensively uses various concepts of AngularJS few of which are Directive, Services, Scopes etc."
+            "role":"Designer & Developer: Having some free time in-between my project just to utilize my time and sharpen by skills, I came up with the idea of 'My-Works'. Getting this portal to this stage needed a lot of brain storming, total scrapping of ideas and a lot of tweaks. I've kept this website as ingenious and original as I could.",
+            "details":"'My Works' is meant to be a showcase of my skills as well as an online Portfoliio which recruiters can access from anywhere across the globe. It is purely based on AngularJS and to fulfill the detailed requirement, uses jQuery, Bootstrap etc. "
          }
       }
    ]
