@@ -4,9 +4,9 @@
 	angular.module('Me')
 	.controller('AboutMeController', AboutMeController);
 
-	AboutMeController.$inject = ['$http', '$location', 'apiFactory'];
+	AboutMeController.$inject = ['$http', '$location', 'apiFactory', '$timeout', '$rootScope'];
 
-	function AboutMeController($http, $location, apiFactory) {
+	function AboutMeController($http, $location, apiFactory, $timeout, $rootScope) {
 		var _this = this;
 		_this.educationData = {};
 		_this.trainingData = {};
@@ -14,6 +14,9 @@
 		_this.goBack = goBack;
 
 		function initialize() {
+			$timeout(function() {
+				$rootScope.homeLoading = false;
+			}, 1400);
 			var path = $location.path();
 			path = path.substr(path.indexOf('/')+1, path.length);
 			switch(path) {

@@ -93,6 +93,10 @@ i {
     transition-property: background,color;
 }
 
+.bg-blue .red, .bg-blue.red, .bg-blue label {
+    color: #d9534f;
+}
+
 .bg-teal {
     /*background-color:#009688 !important;*/
     background-color: rgba(0, 150, 136, 1) !important;

@@ -76,7 +76,11 @@ Author: Ashish Dwivedi
 		}
 
 		function goToMyDetails(page) {
+			if($location.path().indexOf(page) !== -1) {
+				return;
+			}
 			var path = '/' + page;
+			$rootScope.homeLoading = true;
 			$location.search({});
 			$location.path(path);
 		}
