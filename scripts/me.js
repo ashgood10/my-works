@@ -42,12 +42,12 @@ angular.module('Me', ['ngRoute',
 					username = cookie.substr(cookie.indexOf('=')+1, cookie.length);
 				}
 			});
-			if(angular.isUndefined(username) || username === '') {
-				$location.path('/auth');
-			} else {
+			// if(angular.isUndefined(username) || username === '') {
+			// 	$location.path('/auth');
+			// } else {
 				if(localStorage.getItem('user-theme')) {
 					$rootScope.theme = localStorage.getItem('user-theme');
 				}
-			}
+			// }
 		});
 	}
