@@ -49,14 +49,14 @@
                "SOLR Admin Interface"
             ],
             "role":"FE Lead: Led a team of 3 FE developers to accomplish client requirements, keeping highest coding standards",
-            "details":" Design Portal is an internal circulation Web Project which is used by Adidas Designers to fulfill theirs needs, from the state of planning to production. The project has 6 main modules out of which I got the opportunity to work on 3 modules. The project extensively uses various concepts of AngularJS few of which are Directive, Services, Scopes etc."
+            "details":" Designer Work Bench is an internal circulation Web Project which serves the Adidas Designers as an online e-commerce portal where they can view various materials, apply filters to get some selective materials, add those to baskets and share with colleagues, print labels etc. The project extensively uses various concepts of AngularJS few of which are Directive, Services, Scopes etc."
          }
       },
       {  
          "id":"mp",
-         "description":{  
-            "technology":{  
-               "frontend":[  
+         "description":{
+            "technology":{
+               "frontend":[
                   "AngularJS",
                   "Gulp",
                   "jQuery",
@@ -64,9 +64,8 @@
                   "HTML5",
                   "CSS3"
                ],
-               "backend":[  
-                  "Java",
-                  "SOLR"
+               "backend":[
+                  "JSON"
                ]
             },
             "tools":[  
