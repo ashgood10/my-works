@@ -15,6 +15,9 @@
 		},
 		{
 			"Responsive Layout" : "The layout of this website is responsive, make sure you visit this website on desktop as well as on your smartphone"
+		},
+		{
+			"Authentication" : "This webiste has local user authentication which prohibits any invalid access by restricting page opening. Authentication has been disabled currently for obvious reasons."
 		}
 	]
 }
