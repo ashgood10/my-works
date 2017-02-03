@@ -231,10 +231,44 @@
 	position: relative;
 }
 
+.menu-collapse {
+	display: none;
+	background: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	transition: 0.3s all ease-in;
+}
+
 @media screen and (max-width: 768px) {
+
+	.vertical-layout .menu-collapse {
+		display: block;
+		position: absolute;
+		margin-left: 10px;
+		margin-bottom: 5px;
+		z-index: 3;
+	}
+
 	.home-menu {
 		min-height: 20px !important;
 		z-index: 2;
+		transition : 0.3s all ease-in;
+	}
+
+	.home-menu.vertical {
+		margin-top: -150vh;
+		position: fixed;
+		width: 100vw;
+		background-color: rgba(256, 256, 256, 0.5);
+	}
+
+	.vertical .home-menu-header {
+		margin-top: 65px;
+	}
+
+	.vertical .home-menu-header.first {
+		margin-top : 20px;
 	}
 
 	.home-label {
@@ -253,7 +287,11 @@
 
 	.social-connect {
 		left: 0 !important;
-		margin-left: 10% !important;
+		margin-left: 7% !important;
+	}
+
+	.vertical-layout .social-connect {
+		margin-left: 5% !important;
 	}
 
 	.customize {
@@ -270,12 +308,6 @@
 	.highlights-modal .modal-dialog {
 		width: 95vw;
 		margin: 10px 5px;
-	}
-
-	.vertical.home-menu {
-		position: absolute;
-		width: 100vw;
-		margin-top: 0;
 	}
 
 	.home.name-header {

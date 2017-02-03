@@ -28,6 +28,7 @@ Author: Ashish Dwivedi
 		_this.goToMyDetails = goToMyDetails;
 		_this.goToHighlights = goToHighlights;
 		_this.broadCastIntro = broadCastIntro;
+		_this.expandMenu = expandMenu;
 
 		function goToHome() {
 			if($location.path() === '/') {
@@ -117,6 +118,18 @@ Author: Ashish Dwivedi
 					localStorage.setItem('alreadyLoaded' , true);
 				}
 			}, 500);
+		}
+
+		function expandMenu() {
+			if(!angular.element(document.querySelector('.home-menu.vertical')).hasClass('expanded')) {
+				angular.element(document.querySelector('.menu-collapse')).css({'transform':'rotate(90deg)'});
+				angular.element(document.querySelector('.home-menu.vertical')).css({'margin-top':'0'});
+				angular.element(document.querySelector('.home-menu.vertical')).addClass('expanded');
+			} else {
+				angular.element(document.querySelector('.menu-collapse')).css({'transform':'rotate(0deg)'});
+				angular.element(document.querySelector('.home-menu.vertical')).css({'margin-top':'-150vh'});
+				angular.element(document.querySelector('.home-menu.vertical')).removeClass('expanded');
+			}
 		}
 
 		initialize();
