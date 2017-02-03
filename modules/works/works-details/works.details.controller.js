@@ -16,6 +16,7 @@
 		//Functions
 		_this.goBack = goBack;
 
+
 		function initialize() {
 			$timeout(function() {
 				$rootScope.homeLoading = false;

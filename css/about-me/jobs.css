@@ -11,6 +11,10 @@
 	height: 75%;
 }
 
+.vertical-layout .jobs-wrapper {
+	position: inherit;
+}
+
 .organisation-thumb {
 	opacity: 0.8;
 	margin-left: 28%;

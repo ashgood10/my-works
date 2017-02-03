@@ -110,7 +110,6 @@ Author: Ashish Dwivedi
 		}
 
 		function initialize() {
-			$location.search({});
 			$timeout(function() {
 				if(!localStorage.getItem('alreadyLoaded')) {
 					var path = $location.path();

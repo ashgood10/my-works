@@ -217,13 +217,24 @@
 	margin: 0;
 }
 
+.vertical-layout .menu-page {
+	z-index: 2;
+	position: relative;
+}
+
 .home-menu-header {
 	padding: 0;
+}
+
+.vertical-layout [ng-view] {
+	margin-top: -70px;
+	position: relative;
 }
 
 @media screen and (max-width: 768px) {
 	.home-menu {
 		min-height: 20px !important;
+		z-index: 2;
 	}
 
 	.home-label {
@@ -259,6 +270,16 @@
 	.highlights-modal .modal-dialog {
 		width: 95vw;
 		margin: 10px 5px;
+	}
+
+	.vertical.home-menu {
+		position: absolute;
+		width: 100vw;
+		margin-top: 0;
+	}
+
+	.home.name-header {
+		width: 100vw!important;
 	}
 
 }
