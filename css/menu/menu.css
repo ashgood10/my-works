@@ -1,129 +1,129 @@
 .home-menu {
-	min-height: 40.7px;
-	background-color: #1E1E1E;
-	color: #f9f9f9;
+    min-height: 40.7px;
+    background-color: #1E1E1E;
+    color: #f9f9f9;
 }
 
 .home-label-head,
 .home-label {
-	font-size: x-large;
-	font-weight: bolder;
-	margin-top: 20px;
-	cursor: pointer;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 .home-menu-header {
-	text-align: center;
-	vertical-align: middle;
-	border-radius: 0;
-	opacity: 0.8;
-	border-left: 1px solid #d2d2d2;
-	border-top: 1px solid #d2d2d2;
-	z-index: 3;
-	height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0;
+    opacity: 0.8;
+    border-left: 1px solid #d2d2d2;
+    border-top: 1px solid #d2d2d2;
+    z-index: 3;
+    height: 100%;
 }
 
 .home-menu-header:hover {
-	opacity: 1;
+    opacity: 1;
 } 
 
 .name-header {
-	font-size: 12px;
-	text-align: center;
-	background-color: #1E1E1E;
-	color: #fff;
-	line-height: 6.5vh;
-	cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    background-color: #1E1E1E;
+    color: #fff;
+    line-height: 6.5vh;
+    cursor: pointer;
 }
 
 .name-header span {
-	font-size: xx-large;
+    font-size: xx-large;
 }
 
 .custom-dropdown {
-	position: absolute;
-	width: 100%;
-	left:0;
-	top: 39px;
-	opacity: 0;
-	transform: perspective(500px) translate3d(0,-100%,0);
-	transition: all 0.3s ease-in;
-	visibility: hidden;
+    position: absolute;
+    width: 100%;
+    left:0;
+    top: 39px;
+    opacity: 0;
+    transform: perspective(500px) translate3d(0,-100%,0);
+    transition: all 0.3s ease-in;
+    visibility: hidden;
 }
 
 .home-menu-header:hover .custom-dropdown {
-	opacity: 1;
-	background-color: #1E1E1E;
-	visibility: visible;
-	transition: .5s cubic-bezier(0, 1, 0.5, 1);
-	transform: perspective(500px) translate3d(0,0,0);
+    opacity: 1;
+    background-color: #1E1E1E;
+    visibility: visible;
+    transition: .5s cubic-bezier(0, 1, 0.5, 1);
+    transform: perspective(500px) translate3d(0,0,0);
 }
 
 .dropdown-element {
-	display: block;
-	line-height: 35px;
-	max-height: 35px;
-	cursor: pointer;
+    display: block;
+    line-height: 35px;
+    max-height: 35px;
+    cursor: pointer;
 }
 
 .dropdown-element:hover {
-	background-color: #fff;
-	color: #1e1e1e;
-	font-weight: bolder;
+    background-color: #fff;
+    color: #1e1e1e;
+    font-weight: bolder;
 }
 
 .vertical.home-menu {
-	position: fixed;
-	margin-top: 120px;
-	height: 100vh;
-	background-color: transparent;
+    position: fixed;
+    margin-top: 120px;
+    height: 100vh;
+    background-color: transparent;
 }
 
 .vertical .home-menu-header {
-	position: relative;
-	margin-top: 95px;
-	height: 70px;
-	border: none;
-	background-color: #1e1e1e;
+    position: relative;
+    margin-top: 95px;
+    height: 70px;
+    border: none;
+    background-color: #1e1e1e;
 }
 
 .vertical .home-menu-header.first {
-	margin-top: 50px;
+    margin-top: 50px;
 }
 
 .vertical-layout .back-to-works {
-	position: relative;
-	margin: -80px 20px 0 0;
-	float: right;
+    position: relative;
+    margin: -80px 20px 0 0;
+    float: right;
 }
 
 .color-picker {
-	position: absolute;
-	width: 75px;
-	height: 80px;
-	display: block;
-	top: 50vh;
-	left: -25vw;
-	transition: all ease-in 0.3s;
+    position: absolute;
+    width: 75px;
+    height: 80px;
+    display: block;
+    top: 50vh;
+    left: -25vw;
+    transition: all ease-in 0.3s;
 }
 
 .color-picker .color-tile {
-	margin-right: 5px;
-	width: 20px;
-	height: 20px;
-	display: inline-block;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
 }
 
 .color-picker .clear-theme {
-	margin-left: 24px;
-	margin-top: 10px;
-	background-color: #fff;
-	border-radius: 50%;
+    margin-left: 24px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 50%;
 }
 
 .color-picker fieldset[disabled],
 .color-picker .disabled .clear-theme {
-	cursor: not-allowed;
+    cursor: not-allowed;
 }
 
 @keyframes rotatecolor {
@@ -134,184 +134,188 @@
 }
 
 .color-picker.active {
-	left: 50vw;
-	z-index: 3;
-	margin-top: -25px;
-	margin-left: -25px;
-	-webkit-animation-name: rotatecolor;
-	-webkit-animation-duration: 0.3s;
-	animation-name: rotatecolor;
-	animation-duration: 0.3s;
+    left: 50vw;
+    z-index: 3;
+    margin-top: -25px;
+    margin-left: -25px;
+    -webkit-animation-name: rotatecolor;
+    -webkit-animation-duration: 0.3s;
+    animation-name: rotatecolor;
+    animation-duration: 0.3s;
 }
 
 .color-picker-small {
-	height: 16px;
-	width: 22px;
-	display: inline-block;
-	position: absolute;
-	margin-top: 10px;
-	margin-left: 5px;
-	border: 0.5px solid #d2d2d2
+    height: 16px;
+    width: 22px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+    border: 0.5px solid #d2d2d2
 }
 
 .color-tile-small {
-	height: 5px;
-	width: 5px;
-	display: inline-block;
-	float: left;
+    height: 5px;
+    width: 5px;
+    display: inline-block;
+    float: left;
 }
 
 .layout-picker {
-	display: inline-block;
-	vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .social-connect {
-	position: absolute;
-	top: 50vh;
-	left: 44vw;
-	margin-top: -25px;
-	margin-left: -50px;
+    position: absolute;
+    top: 50vh;
+    left: 44vw;
+    margin-top: -25px;
+    margin-left: -50px;
 }
 
 .social-connect a {
-	margin-right: 10px;
-	color: transparent;
+    margin-right: 10px;
+    color: transparent;
 }
 
 .social-connect span:hover {
-	transform : scale(1.1);
-	-webkit-animation-name: rotate-social;
-	-webkit-animation-duration: 0.3s;
-	animation-name: rotatecolor;
-	animation-duration: 0.3s;
+    transform : scale(1.1);
+    -webkit-animation-name: rotate-social;
+    -webkit-animation-duration: 0.3s;
+    animation-name: rotatecolor;
+    animation-duration: 0.3s;
 }
 
 @keyframes rotate-social {
-	0% {transform : rotate(0deg);}
-	100% {transform : rotate(360deg);}
+    0% {transform : rotate(0deg);}
+    100% {transform : rotate(360deg);}
 }
 
 .highlights-modal .modal-dialog {
-	width: 60vw;
+    width: 60vw;
 }
 
 .highlights-modal .modal-container {
-	padding: 20px;
+    padding: 20px;
 }
 
 .highlights-modal .material-icons {
-	margin : -15px 10px 0 0;
+    margin : -15px 10px 0 0;
 }
 
 .highlights-modal .highlight-row {
-	border-bottom: 1px solid #d2d2d2;
-	margin-top: 20px;
-	padding-bottom: 10px;
+    border-bottom: 1px solid #d2d2d2;
+    margin-top: 20px;
+    padding-bottom: 10px;
 }
 
 .highlights-modal h2 {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 .menu-page {
-	margin: 0;
+    margin: 0;
 }
 
 .vertical-layout .menu-page {
-	z-index: 2;
-	position: relative;
+    z-index: 2;
+    position: relative;
 }
 
 .home-menu-header {
-	padding: 0;
+    padding: 0;
 }
 
 .vertical-layout [ng-view] {
-	margin-top: -70px;
-	position: relative;
+    position: relative;
 }
 
 .menu-collapse {
-	display: none;
-	background: none;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	transition: 0.3s all ease-in;
+    display: none;
+    border-radius: 50%;
+    transition: 0.3s all ease-in;
 }
 
 @media screen and (max-width: 768px) {
-
-	.vertical-layout .menu-collapse {
-		display: block;
-		position: absolute;
-		margin-left: 10px;
-		margin-bottom: 5px;
-		z-index: 3;
-	}
-
-	.home-menu {
-		min-height: 20px !important;
-		z-index: 2;
-		transition : 0.3s all ease-in;
-	}
-
-	.home-menu.vertical {
-		margin-top: -150vh;
-		position: fixed;
-		width: 100vw;
-		background-color: rgba(256, 256, 256, 0.5);
-	}
-
-	.vertical .home-menu-header {
-		margin-top: 65px;
-	}
-
-	.vertical .home-menu-header.first {
-		margin-top : 20px;
-	}
-
-	.home-label {
-		font-size: large !important;
-		font-weight: normal !important;
-	}
-
-	.custom-dropdown {
-		top: 30px !important;
-		font-size: smaller;
-	}
-
-	.name-header span {
-		font-size: x-large !important;
-	}
-
-	.social-connect {
-		left: 0 !important;
-		margin-left: 7% !important;
-	}
-
-	.vertical-layout .social-connect {
-		margin-left: 5% !important;
-	}
-
-	.customize {
-		padding-left: 0 !important;
-	}
-
-	.dropdown-element {
-		max-width: 120px;
-		text-overflow: ellipsis;
-		overflow: hidden;
-		white-space: nowrap;
-	}
-
-	.highlights-modal .modal-dialog {
-		width: 95vw;
-		margin: 10px 5px;
-	}
-
-	.home.name-header {
-		width: 100vw!important;
-	}
-
+    
+    .vertical-layout .menu-collapse {
+        display: block;
+        position: absolute;
+        margin: -10px 0 5px -5px;
+        z-index: 3;
+    }
+    
+    .home-menu {
+        min-height: 20px !important;
+        z-index: 2;
+        transition : 0.3s all ease-in;
+    }
+    
+    .home-menu.vertical {
+        margin-top: -150vh;
+        position: fixed;
+        width: 100vw;
+        background-color: #1e1e1e;
+        opacity: 0.8;
+    }
+    
+    .vertical .home-menu-header {
+        margin-top: 65px;
+    }
+    
+    .vertical .home-menu-header.first {
+        margin-top : 20px;
+    }
+    
+    .home-label {
+        font-size: large !important;
+        font-weight: normal !important;
+    }
+    
+    .custom-dropdown {
+        top: 30px !important;
+        font-size: smaller;
+    }
+    
+    .name-header span {
+        font-size: x-large !important;
+    }
+    
+    .social-connect {
+        left: 0 !important;
+        margin-left: 7% !important;
+    }
+    
+    .vertical-layout .social-connect {
+        margin-left: 5% !important;
+    }
+    
+    .customize {
+        padding-left: 0 !important;
+    }
+    
+    .dropdown-element {
+        max-width: 120px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+    .vertical-layout .dropdown-element {
+        max-width: none;
+    }
+    
+    .highlights-modal .modal-dialog {
+        width: 95vw;
+        margin: 10px 5px;
+    }
+    
+    .home.name-header {
+        width: 100vw!important;
+    }
+    
+    .vertical-layout [ng-view] {
+        margin-top: 80px;
+    }
+    
 }

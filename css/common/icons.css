@@ -1,161 +1,166 @@
 .icon {
-	background: url('../../icons/icons.png') no-repeat top left; 
-	width: 50px;
-	height: 50px;
-	position: relative;
-	display: inline-block;
-	cursor: pointer;
+    background: url('../../icons/icons.png') no-repeat top left; 
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .icon.horizontal-layout {
-	background-position: -1px -666px;
-	height: 20px;
-	width: 20px;
-	border-radius: 50%;
-	border: 0.5px solid #fff;
-	vertical-align: middle;
+    background-position: -1px -666px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 0.5px solid #fff;
+    vertical-align: middle;
 }
 
 .icon.vertical-layout {
-	background-position: -1px -666px;
-	height: 20px;
-	width: 20px;
-	border-radius: 50%;
-	border: 0.5px solid #fff;
-	vertical-align: middle;
+    background-position: -1px -666px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 0.5px solid #fff;
+    vertical-align: middle;
 }
 
 .icon.highlight {
-	background-position: -72px -666px;
-	height: 22px;
-	width: 20px;
-	border-radius: 50%;
-	border: 0.5px solid #fff;
-	vertical-align: middle;
+    background-position: -72px -666px;
+    height: 22px;
+    width: 20px;
+    border-radius: 50%;
+    border: 0.5px solid #fff;
+    vertical-align: middle;
 }
 
 .icon.award {
-	background-position: -73px -736px;
-	height: 22px;
-	width: 20px;
-	border-radius: 50%;
-	border: 0.5px solid #fff;
-	vertical-align: middle;
+    background-position: -73px -736px;
+    height: 22px;
+    width: 20px;
+    border-radius: 50%;
+    border: 0.5px solid #fff;
+    vertical-align: middle;
 }
 
 .icon.career {
-	background-position: -37px -736px;
-	height: 22px;
-	width: 20px;
-	border-radius: 50%;
-	border: 0.5px solid #fff;
-	vertical-align: middle;
+    background-position: -37px -736px;
+    height: 22px;
+    width: 20px;
+    border-radius: 50%;
+    border: 0.5px solid #fff;
+    vertical-align: middle;
 }
 
 .icon.education {
-	background-position: -2px -736px;
-	height: 22px;
-	width: 20px;
-	border-radius: 50%;
-	border: 0.5px solid #fff;
-	vertical-align: middle;
+    background-position: -2px -736px;
+    height: 22px;
+    width: 20px;
+    border-radius: 50%;
+    border: 0.5px solid #fff;
+    vertical-align: middle;
 }
 
 .icon.slideshow {
-	background-position: -1px -698px;
-	height: 22px;
-	width: 20px;
-	border-radius: 50%;
-	border: 0.5px solid #fff;
-	vertical-align: middle;
+    background-position: -1px -698px;
+    height: 22px;
+    width: 20px;
+    border-radius: 50%;
+    border: 0.5px solid #fff;
+    vertical-align: middle;
 }
 
 .icon.dp {
-	background-position: -37px -698px;
-	height: 22px;
-	width: 20px;
-	border-radius: 50%;
-	border: 0.5px solid #fff;
-	vertical-align: middle;
+    background-position: -37px -698px;
+    height: 22px;
+    width: 20px;
+    border-radius: 50%;
+    border: 0.5px solid #fff;
+    vertical-align: middle;
 }
 
 .icon.dwb {
-	background-position: -73px -698px;
-	height: 22px;
-	width: 20px;
-	border-radius: 50%;
-	border: 0.5px solid #fff;
-	vertical-align: middle;
+    background-position: -73px -698px;
+    height: 22px;
+    width: 20px;
+    border-radius: 50%;
+    border: 0.5px solid #fff;
+    vertical-align: middle;
 }
 
 .icon.linked-in {
-	background-position: 0 -30px;
-	height: 50px;
-	width: 50px;
+    background-position: 0 -30px;
+    height: 50px;
+    width: 50px;
 }
 
 .icon.mail-me {
-	background-position: 0 -90px;
-	height: 50px;
-	width: 50px;
+    background-position: 0 -90px;
+    height: 50px;
+    width: 50px;
 }
 
 .icon.fb {
-	background-position: 0 -150px;
-	height: 50px;
-	width: 50px;
+    background-position: 0 -150px;
+    height: 50px;
+    width: 50px;
 }
 
 .icon.twitter {
-	background-position: 0 -210px;
-	height: 50px;
-	width: 50px;
+    background-position: 0 -210px;
+    height: 50px;
+    width: 50px;
 }
 
 .icon.github {
-	background-position: 0 -270px;
-	height: 50px;
-	width: 50px;
+    background-position: 0 -270px;
+    height: 50px;
+    width: 50px;
 }
 
 .icon.resume { 
-	background-position: -1px -333px;
-	 height: 50px;
-	 width: 50px;
+    background-position: -1px -333px;
+    height: 50px;
+    width: 50px;
 }
 
 .icon.resume-30 { 
-	background-position: 0 -390px;
-	height: 30px;
-	width: 30px;
+    background-position: 0 -390px;
+    height: 30px;
+    width: 30px;
 }
 
 .icon.word { 
-	background-position: 0 -430px;
-	height: 50px;
-	width: 50px;
+    background-position: 0 -430px;
+    height: 50px;
+    width: 50px;
 }
 
 .icon.word-30 { 
-	background-position: 0 -490px;
-	height: 30px;
-	width: 30px;
+    background-position: 0 -490px;
+    height: 30px;
+    width: 30px;
 }
 
 .icon.arrow-down {
-	background-position: 0 -511px;
-	height: 50px;
-	width: 50px;
+    background-position: 0 -511px;
+    height: 50px;
+    width: 50px;
 }
 
 .icon.info {
-	background-position: 0 -530px;
+    background-position: 0 -530px;
 }
 
 .icon.info:hover {
-	background-position: 0 -575px;
+    background-position: 0 -575px;
 }
 
 .icon.question {
-	background-position: 0 -575px;
+    background-position: 0 -575px;
+}
+
+.icon.menu-collapse {
+    background-position: 0 -770px;
+    transform : scale(0.6);
 }

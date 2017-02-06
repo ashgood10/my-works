@@ -1,63 +1,72 @@
 .awards-recog-cont {
-	height: 500px;
+    height: 500px;
+}
+
+.vertical-layout .awards-recog-cont {
+    height: 600px;
+    overflow: auto;
 }
 
 .awards-content {
-	text-align: center;
-	padding: 0 25px;
-	background-color: rgba(0, 0, 0, 0.6);
-	color: #fff;
-	margin-top: 60px;
-	height: 100%;
+    text-align: center;
+    padding: 0 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    margin-top: 60px;
+    height: 100%;
 }
 
 .awards-content.award {
-	margin-left: 100px;
+    margin-left: 100px;
+}
+
+.vertical-layout .awards-content.award,
+.vertical-layout .awards-content.recognition {
+    margin-left: 450px;
 }
 
 .awards-content.recognition {
-	margin-left: 25px;
+    margin-left: 25px;
 }
 
 .insta-award {
-	width: 500px;
-	height: 330px;
-	margin: 50px 0 50px 0;
+    width: 500px;
+    height: 330px;
+    margin: 50px 0 50px 0;
 }
 
 .mywords-container {
-	border-top: 1px solid #d2d2d2;
-	margin-top: 50px;
+    border-top: 1px solid #d2d2d2;
+    margin-top: 50px;
 }
 
 .recognition-content,
 .mywords {
-	margin-top: 30px;
+    margin-top: 30px;
 }
 
 /*Media Queries*/
 @media screen and (max-width: 768px) {
-	.awards-content {
-		width: 90%;
-		height: 80%;
-		margin-top: 0;
-	}
+    .awards-content {
+        width: 90%;
+        height: 80%;
+        margin-top: 0;
+    }
 
-	.awards-content.award {
-		margin-left: 25px;
-		margin-top: 70px;
-	}
+    .awards-content.award {
+        margin: 70px 0 0 25px !important;
+    }
 
-	.awards-content.recognition {
-		margin: 0 0 25px 25px;
-	}
+    .awards-content.recognition {
+        margin: 0 0 25px 25px !important;
+    }
 
-	.insta-award {
-		width: 75vw;
-		height: 40vh;
-	}
+    .insta-award {
+        width: 75vw;
+        height: 40vh;
+    }
 
-	.awards-recog-cont {
-		height: auto !important;
-	}
+    .awards-recog-cont {
+        height: auto !important;
+    }
 }
