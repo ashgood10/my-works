@@ -1,116 +1,101 @@
 {  
-   "works":[
-      {
-         "id" : "dp",
-         "name":"Design Portal",
-         "client":"Adidas",
-         "projectMode":"Internal Circulation",
-         "thumb":"images/dp/dp1.png",
-         "slides":[
-            {  
-               "path":"images/dp/dp1.png",
-               "description":"User Profile"
-            },
-            {  
-               "path":"images/dp/dp2.png",
-               "description":"People"
-            },
-            {  
-               "path":"images/dp/dp3.png",
-               "description":"Documents"
-            },
-            {  
-               "path":"images/dp/dp4.png",
-               "description":"Collections Modal"
-            },
-            {  
-               "path":"images/dp/dp5.png",
-               "description":"Documents Filter"
-            },
-            {  
-               "path":"images/dp/dp6.png",
-               "description":"Tutorials"
-            },
-            {  
-               "path":"images/dp/dp7.png",
-               "description":"Fetch"
-            }
-         ],
-         "gif" : "images/dp/dp-slideshow.gif",
-         "active" : true
-      },
-      {  
-         "id" : "mp",
-         "name":"My Portfolio",
-         "client":"N/A",
-         "projectMode":"Personal Usage/ Portfolio",
-         "thumb":"mp1.png",
-         "slides":[  
-            "mp1.png",
-            "mp2.png",
-            "mp3.png",
-            "mp4.png",
-            "mp5.png"
-         ],
-         "gif" : "mp-slideshow.gif",
-         "active": false
-      },
-      {
-         "id" : "dwb",
-         "name":"Designer Work Bench",
-         "client":"Adidas",
-         "projectMode":"Internal Circulation",
-         "thumb":"images/dwb/dwb1.png",
-         "slides":[  
-            {  
-               "path":"images/dwb/dwb1.png",
-               "description":"MOS Landing"
-            },
-            {  
-               "path":"images/dwb/dwb2.png",
-               "description":"MOS Search"
-            },
-            {  
-               "path":"images/dwb/dwb3.png",
-               "description":"MOS Search List View"
-            },
-            {  
-               "path":"images/dwb/dwb4.png",
-               "description":"MOS Material Details"
-            },
-            {  
-               "path":"images/dwb/dwb5.png",
-               "description":"MOS Material Slideshow"
-            },
-            {  
-               "path":"images/dwb/dwb6.png",
-               "description":"MOS Baskets"
-            },
-            {  
-               "description":"MOS Basket Details"
-            },
-            {  
-               "path":"images/dwb/dwb8.png",
-               "description":"MOS Basket Modal"
-            }
-         ],
-         "gif" : "images/dwb/dwb-slideshow.gif",
-         "active": false
-      },
-      {
-         "id" : "wfms",
-         "name":"Work Flow Management System",
-         "client":"Adidas",
-         "projectMode":"Internal Circulation",
-         "slides":[  
-            "wfms1.png",
-            "wfms2.png",
-            "wfms3.png",
-            "wfms4.png",
-            "wfms5.png"
-         ],
-         "gif" : "images/dwb/dwb-slideshow.gif",
-         "active": false
-      }
-   ]
+    "works":[
+        {  
+            "id" : "mp",
+            "name":"My Portfolio",
+            "client":"Self",
+            "projectMode":"Personal Usage/ Portfolio",
+            "thumb":"images/mp/mp1.png",
+            "slides":[  
+                "images/mp/mp1.png",
+                "images/mp/mp2.png",
+                "images/mp/mp3.png",
+                "images/mp/mp4.png",
+                "images/mp/mp5.png"
+            ],
+            "gif" : "images/mp/mp-slideshow.gif",
+            "active": true
+        },
+        {
+            "id" : "dp",
+            "name":"Design Portal",
+            "client":"Adidas",
+            "projectMode":"Internal Circulation",
+            "thumb":"images/dp/dp1.png",
+            "slides":[
+                {  
+                    "path":"images/dp/dp1.png",
+                    "description":"User Profile"
+                },
+                {  
+                    "path":"images/dp/dp2.png",
+                    "description":"People"
+                },
+                {  
+                    "path":"images/dp/dp3.png",
+                    "description":"Documents"
+                },
+                {  
+                    "path":"images/dp/dp4.png",
+                    "description":"Collections Modal"
+                },
+                {  
+                    "path":"images/dp/dp5.png",
+                    "description":"Documents Filter"
+                },
+                {  
+                    "path":"images/dp/dp6.png",
+                    "description":"Tutorials"
+                },
+                {  
+                    "path":"images/dp/dp7.png",
+                    "description":"Fetch"
+                }
+            ],
+            "gif" : "images/dp/dp-slideshow.gif",
+            "active" : false
+        },
+        {
+            "id" : "dwb",
+            "name":"Designer Work Bench",
+            "client":"Adidas",
+            "projectMode":"Internal Circulation",
+            "thumb":"images/dwb/dwb1.png",
+            "slides":[  
+                {  
+                    "path":"images/dwb/dwb1.png",
+                    "description":"MOS Landing"
+                },
+                {  
+                    "path":"images/dwb/dwb2.png",
+                    "description":"MOS Search"
+                },
+                {  
+                    "path":"images/dwb/dwb3.png",
+                    "description":"MOS Search List View"
+                },
+                {  
+                    "path":"images/dwb/dwb4.png",
+                    "description":"MOS Material Details"
+                },
+                {  
+                    "path":"images/dwb/dwb5.png",
+                    "description":"MOS Material Slideshow"
+                },
+                {  
+                    "path":"images/dwb/dwb6.png",
+                    "description":"MOS Baskets"
+                },
+                {  
+                    "description":"MOS Basket Details"
+                },
+                {  
+                    "path":"images/dwb/dwb8.png",
+                    "description":"MOS Basket Modal"
+                }
+            ],
+            "gif" : "images/dwb/dwb-slideshow.gif",
+            "active": false
+        }
+    ]
 }

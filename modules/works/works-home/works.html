@@ -11,7 +11,7 @@
 			<div data-step="2" data-intro="Hover over to start slideshow">
 				<div class= "row thumb-image-wrapper" ng-style="{'background-image':'url({{project.thumb}})'}" ng-mouseover= "wvm.startGIF($event, project)" ng-mouseout= "wvm.resetBackground($event, project)" data-step="3" data-intro="Click to expand image">
 				</div>
-				<div class= "row thumb-image-wrapper shadow" ng-style="{'background-image':'url({{project.thumb}})'}">
+				<div class= "row thumb-image-wrapper shadow" ng-style="{'background-image':'url({{project.slides[1]}})'}">
 				</div>
 			</div>
 			<a href= "javascript:void(0)" ng-click= "wvm.goToDetails(project)">
