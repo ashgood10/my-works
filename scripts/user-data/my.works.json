@@ -17,6 +17,49 @@
             "active": true
         },
         {
+            "id" : "eassist",
+            "name":"e-Assistant",
+            "client":"Self",
+            "projectMode":"Personal Usage/ Portfolio",
+            "thumb":"images/eassist/eassist1.png",
+            "slides":[  
+                {  
+                    "path":"images/eassist/eassist1.png",
+                    "description":""
+                },
+                {  
+                    "path":"images/eassist/eassist2.png",
+                    "description":""
+                },
+                {  
+                    "path":"images/eassist/eassist3.png",
+                    "description":""
+                },
+                {  
+                    "path":"images/eassist/eassist4.png",
+                    "description":""
+                },
+                {  
+                    "path":"images/eassist/eassist5.png",
+                    "description":""
+                },
+                {  
+                    "path":"images/eassist/eassist6.png",
+                    "description":""
+                },
+                {  
+                    "path":"images/eassist/eassist7.png",
+                    "description":""
+                },
+                {  
+                    "path":"images/eassist/eassist8.png",
+                    "description":""
+                }
+            ],
+            "gif" : "images/eassist/eassist-slideshow.gif",
+            "active": false
+        },
+        {
             "id" : "dp",
             "name":"Design Portal",
             "client":"Adidas",

@@ -75,6 +75,28 @@
             "role":"Designer & Developer: Having some free time in-between my project just to utilize my time and sharpen by skills, I came up with the idea of 'My-Works'. Getting this portal to this stage needed a lot of brain storming, total scrapping of ideas and a lot of tweaks. I've kept this website as ingenious and original as I could.",
             "details":"'My Works' is meant to be a showcase of my skills as well as an online Portfoliio which recruiters can access from anywhere across the globe. It is purely based on AngularJS and to fulfill the detailed requirement, uses jQuery, Bootstrap etc. "
          }
+      },
+      {  
+         "id":"eassist",
+         "description":{
+            "technology":{
+               "frontend":[
+                  "AngularJS",
+                  "jQuery",
+                  "HTML5",
+                  "CSS3"
+               ],
+               "backend":[
+                  "JSON"
+               ]
+            },
+            "tools":[  
+               "Eclipse",
+               "Notepad ++"
+            ],
+            "role":"Designer & Developer: After having learnt AngularJS basics, just to have a practical experience built this website. Designed is based on some famous e-commerce websites and developed keeping optimized code in mind.",
+            "details":"'e-Assistant' is an online portal which can serve trainees in Mysore Infosys to order there items of need through the organisation's intranet. Additionally it serves to order food, an artificial chat app(hardcoded responses), get around places using the embedded Google Maps application, access Library etc."
+         }
       }
    ]
 }
