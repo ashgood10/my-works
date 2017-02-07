@@ -72,6 +72,18 @@
     font-weight: bolder;
 }
 
+.dropdown-element.active:after {
+    content: '\2022';
+    color: green;
+    right: 15px;
+    position: absolute;
+    font-size: xx-large;
+}
+
+.vertical-layout .dropdown-element.active:after {
+    right:0 !important;
+}
+
 .vertical.home-menu {
     position: fixed;
     margin-top: 120px;

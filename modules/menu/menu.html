@@ -13,16 +13,16 @@
 					<hr class= "custom-hr" ng-class= "{'opaque' : hover.works}">
 				</span>
 				<div class= "custom-dropdown" ng-class= "$root.theme">
-					<div class= "dropdown-element" ng-click= "mvm.goToWorks()">
-						<span>ALL</span>
+					<div class= "dropdown-element all" ng-click= "mvm.goToWorks()" ng-class="{'active' : (mvm.$location.path() === '/works')}">
+						<span tooltip= "VIEW ALL WORKS">ALL</span>
 						<span class= "icon slideshow"></span>
 					</div>
-					<div class= "dropdown-element" ng-click= "mvm.goToWorks('dp')">
-						<span>DESIGN PORTAL</span>
+					<div class= "dropdown-element dp" ng-click= "mvm.goToWorks('dp')" ng-class="{'active' : (mvm.$location.path().indexOf('/works/details')!==-1 && mvm.$route.current.params.id==='dp')}">
+						<span tooltip= "GO TO DP DETAILS">DESIGN PORTAL</span>
 						<span class= "icon dp"></span>
 					</div>
-					<div class= "dropdown-element" ng-click= "mvm.goToWorks('dwb')">
-						<span>DWB</span>
+					<div class= "dropdown-element dwb" ng-click= "mvm.goToWorks('dwb')"  ng-class="{'active' : (mvm.$location.path().indexOf('/works/details')!==-1 && mvm.$route.current.params.id==='dwb')}">
+						<span tooltip= "GO TO DWB DETAILS">DWB</span>
 						<span class= "icon dwb"></span>
 					</div>
 				</div>
@@ -33,15 +33,15 @@
 					<hr class= "custom-hr" ng-class= "{'opaque' : hover.about}">
 				</span>
 				<div class= "custom-dropdown" ng-class= "$root.theme">
-					<div class= "dropdown-element" ng-click= "mvm.goToMyDetails('education')">
+					<div class= "dropdown-element education" ng-click= "mvm.goToMyDetails('education')"  ng-class="{'active' : (mvm.$location.path().indexOf('/education') !== -1)}">
 						<span tooltip= "EDUCATION">EDUCATION</span>
 						<span class= "icon education"></span>
 					</div>
-					<div class= "dropdown-element" ng-click= "mvm.goToMyDetails('jobs')">
+					<div class= "dropdown-element jobs" ng-click= "mvm.goToMyDetails('jobs')"  ng-class="{'active' : (mvm.$location.path().indexOf('/jobs') !== -1)}">
 						<span tooltip= "CAREER HISTORY">CAREER HISTORY</span>
 						<span class= "icon career"></span>
 					</div>
-					<div class= "dropdown-element" ng-click= "mvm.goToMyDetails('awards')">
+					<div class= "dropdown-element awards" ng-click= "mvm.goToMyDetails('awards')"  ng-class="{'active' : (mvm.$location.path().indexOf('/awards') !== -1)}">
 						<span tooltip= "AWARDS & RECOGNITIONS">AWARDS & RECOGNITIONS</span>
 						<span class= "icon award"></span>
 					</div>
@@ -83,16 +83,16 @@
 					<hr class= "custom-hr" ng-class= "{'opaque' : hover.works}">
 				</span>
 				<div class= "custom-dropdown" ng-class= "$root.theme">
-					<div class= "dropdown-element" ng-click= "mvm.goToWorks()">
-						<span>ALL</span>
+					<div class= "dropdown-element all" ng-click= "mvm.goToWorks()"  ng-class="{'active' : (mvm.$location.path().indexOf('/works') !== -1)}">
+						<span tooltip= "VIEW ALL WORKS">ALL</span>
 						<span class= "icon slideshow"></span>
 					</div>
-					<div class= "dropdown-element" ng-click= "mvm.goToWorks('dp')">
-						<span>DESIGN PORTAL</span>
+					<div class= "dropdown-element dp" ng-click= "mvm.goToWorks('dp')"  ng-class="{'active' : (mvm.$location.path().indexOf('/works/details?id=dp') !== -1)}">
+						<span tooltip= "GO TO DP DETAILS">DESIGN PORTAL</span>
 						<span class= "icon dp"></span>
 					</div>
-					<div class= "dropdown-element" ng-click= "mvm.goToWorks('dwb')">
-						<span>DWB</span>
+					<div class= "dropdown-element dwb" ng-click= "mvm.goToWorks('dwb')"  ng-class="{'active' : (mvm.$location.path().indexOf('/works/details?id=dwb') !== -1)}">
+						<span tooltip= "GO TO DWB DETAILS">DWB</span>
 						<span class= "icon dwb"></span>
 					</div>
 				</div>
@@ -105,15 +105,15 @@
 					<hr class= "custom-hr" ng-class= "{'opaque' : hover.about}">
 				</span>
 				<div class= "custom-dropdown" ng-class= "$root.theme">
-					<div class= "dropdown-element" ng-click= "mvm.goToMyDetails('education')">
+					<div class= "dropdown-element education" ng-click= "mvm.goToMyDetails('education')" ng-class="{'active' : (mvm.$location.path().indexOf('/education') !== -1)}">
 						<span tooltip= "EDUCATION">EDUCATION</span>
 						<span class= "icon education"></span>
 					</div>
-					<div class= "dropdown-element" ng-click= "mvm.goToMyDetails('jobs')">
+					<div class= "dropdown-element jobs" ng-click= "mvm.goToMyDetails('jobs')"  ng-class="{'active' : (mvm.$location.path().indexOf('/jobs') !== -1)}">
 						<span tooltip= "CAREER HISTORY">CAREER HISTORY</span>
 						<span class= "icon career"></span>
 					</div>
-					<div class= "dropdown-element" ng-click= "mvm.goToMyDetails('awards')">
+					<div class= "dropdown-element awards" ng-click= "mvm.goToMyDetails('awards')"  ng-class="{'active' : (mvm.$location.path().indexOf('/awards') !== -1)}">
 						<span tooltip= "AWARDS & RECOGNITIONS">AWARDS & RECOGNITIONS</span>
 						<span class= "icon award"></span>
 					</div>

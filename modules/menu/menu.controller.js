@@ -9,9 +9,9 @@ Author: Ashish Dwivedi
             .controller('MenuController', MenuController)
             .controller('HighlightController', HighlightController);
     
-    MenuController.$inject = ['$scope', '$location', 'myConfig', '$timeout', '$rootScope', '$uibModal', 'apiFactory'];
+    MenuController.$inject = ['$scope', '$location', 'myConfig', '$timeout', '$rootScope', '$uibModal', 'apiFactory', '$route'];
     
-    function MenuController($scope, $location, myConfig, $timeout, $rootScope, $uibModal, apiFactory) {
+    function MenuController($scope, $location, myConfig, $timeout, $rootScope, $uibModal, apiFactory, $route) {
         var _this = this;
         
         // Variables
@@ -20,6 +20,7 @@ Author: Ashish Dwivedi
         $rootScope.pickColor = false;
         _this.myConfig = myConfig;
         _this.$location = $location;
+        _this.$route = $route;
         
         // Functions
         _this.goToHome = goToHome;
@@ -118,6 +119,24 @@ Author: Ashish Dwivedi
                     localStorage.setItem('alreadyLoaded' , true);
                 }
             }, 500);
+            var path = $location.path();
+            if(path.indexOf('/works') !== -1) {
+                if(path.indexOf('/details?id') !== -1) {
+                    if($route.current.params.id === 'dp') {
+                        angular.element(document.querySelector('.works .custom-dropdown.dp')).addClass('active');
+                    } else if($route.current.params.id === 'dwb') {
+                        angular.element(document.querySelector('.works .custom-dropdown.dwb')).addClass('active');
+                    } else {
+                        angular.element(document.querySelector('.works .custom-dropdown.all')).addClass('active');
+                    }
+                }
+            } else if(path.indexOf('education') !== -1) {
+                angular.element(document.querySelector('.profile .custom-dropdown.education')).addClass('active');
+            } else if(path.indexOf('jobs') !== -1) {
+                $('.profile .custom-dropdown.jobs').addClass('active');
+            } else if(path.indexOf('awards') !== -1) {
+                angular.element(document.querySelector('.profile .custom-dropdown.jobs')).addClass('active');
+            }
         }
         
         function expandMenu() {
