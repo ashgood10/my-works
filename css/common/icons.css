@@ -119,9 +119,10 @@
 }
 
 .icon.resume { 
-    background-position: -1px -333px;
-    height: 50px;
+    background-position: -1px -435px;
+    height: 40px;
     width: 50px;
+    border-radius: 50%;
 }
 
 .icon.resume-30 { 
@@ -148,16 +149,16 @@
     width: 50px;
 }
 
-.icon.info {
+/*.icon.info {
     background-position: 0 -530px;
 }
 
 .icon.info:hover {
     background-position: 0 -575px;
-}
+}*/
 
-.icon.question {
-    background-position: 0 -575px;
+.icon.info {
+    background-position: 0 -620px;
 }
 
 .icon.menu-collapse {

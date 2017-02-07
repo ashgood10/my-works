@@ -2,124 +2,128 @@
 @import url('awards.css');
 
 #education hr {
-	border-color: #fff !important;
+    border-color: #fff !important;
 }
 
 .category-tile {
-	position: absolute;
-	top: 30vh;
-	height: 150px;
-	width: 180px;
-	border-radius: 50%;
-	cursor: pointer;
+    position: absolute;
+    top: 30vh;
+    height: 150px;
+    width: 180px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .category-tile img {
-	border-radius: 50%;
+    border-radius: 50%;
 }
 
 .education-container {
-	left: 20vw;
+    left: 20vw;
 }
 
 .training-container {
-	right: 20vw;
+    right: 20vw;
 }
 
 .education-content,
 .training-content {
-	background-color: rgba(0, 0, 0, 0.6);
-	color: #fff;
-	position: absolute;
-	top:0;
-	left: 0;
-	transform: scale(0);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    position: absolute;
+    top:0;
+    left: 0;
+    transform: scale(0);
 }
 
 .education-content.expand {
-	top: -75%;
-	left: 35vw;
-	width: 40vw;
-	z-index: 2;
-	max-height: 60vh;
-	height: auto;
-	transform: scale(1);
-	transition : all ease-in 0.3s;
-	padding: 10px;
+    top: -75%;
+    left: 35vw;
+    width: 40vw;
+    z-index: 2;
+    max-height: 60vh;
+    height: auto;
+    transform: scale(1);
+    transition : all ease-in 0.3s;
+    padding: 10px;
 }
 
 .training-content.expand {
-	top: -75%;
-	left: -60vw;
-	width: 40vw;
-	z-index: 2;
-	height: auto;
-	max-height: 60vh;
-	transform: scale(1);
-	transition : all ease-in 0.3s;
-	padding: 10px;
-	overflow-x: hidden;
-	overflow-y: auto;
+    top: -75%;
+    left: -60vw;
+    width: 40vw;
+    z-index: 2;
+    height: auto;
+    max-height: 60vh;
+    transform: scale(1);
+    transition : all ease-in 0.3s;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .graduation-row,
 .training-row {
-	padding: 15px;
+    padding: 15px;
+    clear: both;
 }
 
 .graduation-row .header-label,
 .training-row .header-label{
-	color: #428bca;
-	font-size: 18px;
+    color: #428bca;
+    font-size: 18px;
 }
 
 .training-row .value {
-	border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 
 .word-resume {
-	position: absolute;
-	right: 30px;
-	top: 95px;
-	transform: scale(0.8);
+    position: absolute;
+    right: 30px;
+    top: 95px;
+    transform: scale(0.8);
 }
 
-.education-thumb-images:hover,
 .word-resume:hover {
-	transform : scale(0.98);
+    transform : scale(0.8);
+}
+
+.education-thumb-images:hover {
+    transform : scale(0.98);
 }
 
 @media screen and (max-width: 768px) {
-	.education-container {
-		top: 15vh;
-	}
-
-	.training-container {
-		top: 20vh;
-		left: 20vw;
-		right: initial;
-		margin-top: 200px;
-	}
-
-	.education-content.expand,
-	.training-content.expand {
-		top: -8vh;
-		left: -10vw;
-		width: 80vw;
-		max-height: none;
-	}
-
-	.training-content.expand {
-		top: -45vh;
-	}
-
-	.word-resume {
-		right: 10px;
-		top: 80px;
-		transform: scale(0.7);
-	}
-
-	.icon.resume {
-		border-radius: 50%;
-	}
+    .education-container {
+        top: 15vh;
+    }
+    
+    .training-container {
+        top: 20vh;
+        left: 20vw;
+        right: initial;
+        margin-top: 200px;
+    }
+    
+    .education-content.expand,
+    .training-content.expand {
+        top: -8vh;
+        left: -10vw;
+        width: 80vw;
+        max-height: none;
+    }
+    
+    .training-content.expand {
+        top: -45vh;
+    }
+    
+    .word-resume {
+        right: 10px;
+        top: 80px;
+        transform: scale(0.7);
+    }
+    
+    .icon.resume {
+        border-radius: 50%;
+    }
 }

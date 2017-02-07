@@ -1,157 +1,157 @@
 <div class= "row menu-page" ng-controller= "MenuController as mvm"  ng-init= "hover = {}">
-	<div class= "col-lg-12 col-md-12 col-sm-12 home name-header" ng-class= "$root.theme" data-step="2" data-intro="Click anytime to come back to home page">
-		<span class= "home-label-head" tooltip= "Go to Home" ng-click= "mvm.goToHome()">ASHISH DWIVEDI <span class= "red">[Web Dev]</span></span>
-	</div>
+    <div class= "col-lg-12 col-md-12 col-sm-12 home name-header" ng-class= "$root.theme" data-step="2" data-intro="Click anytime to come back to home page">
+        <span class= "home-label-head" tooltip= "Go to Home" ng-click= "mvm.goToHome()">ASHISH DWIVEDI <span class= "red">[Web Dev]</span></span>
+    </div>
     <span class= "icon menu-collapse" ng-click= "mvm.expandMenu()"></span>
-
-	<!-- Horizontal View -->
-	<div class= "col-lg-12 col-md-12 col-sm-12 home-menu horizontal" ng-if= "mvm.layoutHorizontal" ng-class= "$root.theme">
-		<div class= "row">
-			<div class= "col-lg-4 col-md-4 col-sm-4 col-xs-4 works home-menu-header" ng-mouseover= "hover.works = true" ng-mouseout= "hover.works = false" data-step="3" data-intro="Access my projects">
-				<span class= "home-label">
-					MY WORKS
-					<hr class= "custom-hr" ng-class= "{'opaque' : hover.works}">
-				</span>
-				<div class= "custom-dropdown" ng-class= "$root.theme">
-					<div class= "dropdown-element all" ng-click= "mvm.goToWorks()" ng-class="{'active' : (mvm.$location.path() === '/works')}">
-						<span tooltip= "VIEW ALL WORKS">ALL</span>
-						<span class= "icon slideshow"></span>
-					</div>
-					<div class= "dropdown-element dp" ng-click= "mvm.goToWorks('dp')" ng-class="{'active' : (mvm.$location.path().indexOf('/works/details')!==-1 && mvm.$route.current.params.id==='dp')}">
-						<span tooltip= "GO TO DP DETAILS">DESIGN PORTAL</span>
-						<span class= "icon dp"></span>
-					</div>
-					<div class= "dropdown-element dwb" ng-click= "mvm.goToWorks('dwb')"  ng-class="{'active' : (mvm.$location.path().indexOf('/works/details')!==-1 && mvm.$route.current.params.id==='dwb')}">
-						<span tooltip= "GO TO DWB DETAILS">DWB</span>
-						<span class= "icon dwb"></span>
-					</div>
-				</div>
-			</div>
-			<div class= "col-lg-4 col-md-4 col-sm-4 col-xs-4 profile home-menu-header" ng-mouseover= "hover.about = true" ng-mouseout= "hover.about = false" data-step="4" data-intro="More information about me">
-				<span class= "home-label">
-					ABOUT ME
-					<hr class= "custom-hr" ng-class= "{'opaque' : hover.about}">
-				</span>
-				<div class= "custom-dropdown" ng-class= "$root.theme">
-					<div class= "dropdown-element education" ng-click= "mvm.goToMyDetails('education')"  ng-class="{'active' : (mvm.$location.path().indexOf('/education') !== -1)}">
-						<span tooltip= "EDUCATION">EDUCATION</span>
-						<span class= "icon education"></span>
-					</div>
-					<div class= "dropdown-element jobs" ng-click= "mvm.goToMyDetails('jobs')"  ng-class="{'active' : (mvm.$location.path().indexOf('/jobs') !== -1)}">
-						<span tooltip= "CAREER HISTORY">CAREER HISTORY</span>
-						<span class= "icon career"></span>
-					</div>
-					<div class= "dropdown-element awards" ng-click= "mvm.goToMyDetails('awards')"  ng-class="{'active' : (mvm.$location.path().indexOf('/awards') !== -1)}">
-						<span tooltip= "AWARDS & RECOGNITIONS">AWARDS & RECOGNITIONS</span>
-						<span class= "icon award"></span>
-					</div>
-				</div>
-			</div>
-			<div class= "col-lg-4 col-md-4 col-sm-4 col-xs-4 customize home-menu-header" ng-mouseover= "hover.customize = true" ng-mouseout= "hover.customize = false" data-step="5" data-intro="Customize the websites as per your liking">
-				<span class= "home-label">
-					CUSTOMIZE
-					<hr class= "custom-hr" ng-class= "{'opaque' : hover.customize}">
-				</span>
-				<div class= "custom-dropdown" ng-class= "$root.theme">
-					<div class= "dropdown-element" ng-click= "mvm.switchLayout()">
-						<span tooltip="Switch to vertical view" class= "inline-block">LAYOUT</span>
-						<div class= "layout-picker inline-block">
-							<span class= "icon" ng-class= "{'vertical-layout' : !mvm.layoutHorizontal, 'horizontal-layout' : mvm.layoutHorizontal}"></span>
-						</div>
-					</div>
-					<div class= "dropdown-element" ng-click= "$root.switchColor()">
-						<span tooltip= "Use a new theme">COLOR THEME</span>
-						<div class= "color-picker-small">
-							<span class= "color-tile-small" ng-repeat="theme in mvm.myConfig.bgThemes" ng-class= "theme"></span>
-						</div>
-					</div>
-					<div class= "dropdown-element" ng-click= "mvm.goToHighlights()">
-						<span tooltip= "Use a new theme">WEBSITE HIGHLIGHTS</span>
-						<span class= "icon highlight"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Vertical Alignment -->
-	<div class= "col-lg-2 col-md-2 col-sm-12 home-menu vertical" ng-if= "!mvm.layoutHorizontal">
-		<div class= "row">
-			<div class= "col-lg-12 col-md-12 col-sm-12 col-xs-12 home-menu-header first" ng-mouseover= "hover.works = true" ng-mouseout= "hover.works = false" ng-class= "$root.theme">
-				<span class= "home-label">
-					MY WORKS
-					<hr class= "custom-hr" ng-class= "{'opaque' : hover.works}">
-				</span>
-				<div class= "custom-dropdown" ng-class= "$root.theme">
-					<div class= "dropdown-element all" ng-click= "mvm.goToWorks()"  ng-class="{'active' : (mvm.$location.path().indexOf('/works') !== -1)}">
-						<span tooltip= "VIEW ALL WORKS">ALL</span>
-						<span class= "icon slideshow"></span>
-					</div>
-					<div class= "dropdown-element dp" ng-click= "mvm.goToWorks('dp')"  ng-class="{'active' : (mvm.$location.path().indexOf('/works/details?id=dp') !== -1)}">
-						<span tooltip= "GO TO DP DETAILS">DESIGN PORTAL</span>
-						<span class= "icon dp"></span>
-					</div>
-					<div class= "dropdown-element dwb" ng-click= "mvm.goToWorks('dwb')"  ng-class="{'active' : (mvm.$location.path().indexOf('/works/details?id=dwb') !== -1)}">
-						<span tooltip= "GO TO DWB DETAILS">DWB</span>
-						<span class= "icon dwb"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class= "row">
-			<div class= "col-lg-12 col-md-12 col-sm-12 col-xs-12 profile home-menu-header" ng-mouseover= "hover.about = true" ng-mouseout= "hover.about = false" ng-class= "$root.theme">
-				<span class= "home-label">
-					ABOUT ME
-					<hr class= "custom-hr" ng-class= "{'opaque' : hover.about}">
-				</span>
-				<div class= "custom-dropdown" ng-class= "$root.theme">
-					<div class= "dropdown-element education" ng-click= "mvm.goToMyDetails('education')" ng-class="{'active' : (mvm.$location.path().indexOf('/education') !== -1)}">
-						<span tooltip= "EDUCATION">EDUCATION</span>
-						<span class= "icon education"></span>
-					</div>
-					<div class= "dropdown-element jobs" ng-click= "mvm.goToMyDetails('jobs')"  ng-class="{'active' : (mvm.$location.path().indexOf('/jobs') !== -1)}">
-						<span tooltip= "CAREER HISTORY">CAREER HISTORY</span>
-						<span class= "icon career"></span>
-					</div>
-					<div class= "dropdown-element awards" ng-click= "mvm.goToMyDetails('awards')"  ng-class="{'active' : (mvm.$location.path().indexOf('/awards') !== -1)}">
-						<span tooltip= "AWARDS & RECOGNITIONS">AWARDS & RECOGNITIONS</span>
-						<span class= "icon award"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class= "row">
-			<div class= "col-lg-12 col-md-12 col-sm-12 col-xs-12 customize home-menu-header" ng-mouseover= "hover.customize = true" ng-mouseout= "hover.customize = false" ng-class= "$root.theme">
-				<span class= "home-label">
-					CUSTOMIZE
-					<hr class= "custom-hr" ng-class= "{'opaque' : hover.customize}">
-				</span>
-				<div class= "custom-dropdown" ng-class= "$root.theme">
-					<div class= "dropdown-element" ng-click= "mvm.switchLayout()">
-						<span tooltip="Switch to vertical view" class= "inline-block">LAYOUT</span>
-						<div class= "layout-picker inline-block">
-							<span class= "icon" ng-class= "{'vertical-layout' : !mvm.layoutHorizontal, 'horizontal-layout' : mvm.layoutHorizontal}"></span>
-						</div>
-					</div>
-					<div class= "dropdown-element" ng-click= "$root.switchColor()">
-						<span tooltip= "Use a new theme">COLOR THEME</span>
-						<div class= "color-picker-small">
-							<span class= "color-tile-small" ng-repeat="theme in mvm.myConfig.bgThemes" ng-class= "theme"></span>
-						</div>
-					</div>
-					<div class= "dropdown-element" ng-click= "mvm.goToHighlights()">
-						<span tooltip= "Use a new theme">WEBSITE HIGHLIGHTS</span>
-						<span class= "icon highlight"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class= "color-picker" ng-class= "{'active' : $root.pickColor}">
-		<span class= "color-tile" ng-repeat="theme in mvm.myConfig.bgThemes" ng-class= "theme" ng-click= "($root.theme=theme);$root.switchColor()"></span>
-		<fieldset ng-disabled= "!$root.theme" ng-class= "{'disabled' : !$root.theme}">
-			<i class="material-icons clear-theme" tooltip= "Clear Theme" ng-click= "$root.clearTheme()">clear</i>
-		</fieldset>
-	</div>
+    
+    <!-- Horizontal View -->
+    <div class= "col-lg-12 col-md-12 col-sm-12 home-menu horizontal" ng-if= "mvm.layoutHorizontal" ng-class= "$root.theme">
+        <div class= "row">
+            <div class= "col-lg-4 col-md-4 col-sm-4 col-xs-4 works home-menu-header" ng-mouseover= "hover.works = true" ng-mouseout= "hover.works = false" data-step="3" data-intro="Access my projects">
+                <span class= "home-label">
+                    MY WORKS
+                    <hr class= "custom-hr" ng-class= "{'opaque' : hover.works}">
+                </span>
+                <div class= "custom-dropdown" ng-class= "$root.theme">
+                    <div class= "dropdown-element all" ng-click= "mvm.goToWorks()" ng-class="{'active' : (mvm.$location.path() === '/works')}">
+                        <span tooltip= "VIEW ALL WORKS">ALL</span>
+                        <span class= "icon slideshow"></span>
+                    </div>
+                    <div class= "dropdown-element dp" ng-click= "mvm.goToWorks('dp')" ng-class="{'active' : (mvm.$location.path().indexOf('/works/details')!==-1 && mvm.$route.current.params.id==='dp')}">
+                        <span tooltip= "GO TO DP DETAILS">DESIGN PORTAL</span>
+                        <span class= "icon dp"></span>
+                    </div>
+                    <div class= "dropdown-element dwb" ng-click= "mvm.goToWorks('dwb')"  ng-class="{'active' : (mvm.$location.path().indexOf('/works/details')!==-1 && mvm.$route.current.params.id==='dwb')}">
+                        <span tooltip= "GO TO DWB DETAILS">DWB</span>
+                        <span class= "icon dwb"></span>
+                    </div>
+                </div>
+            </div>
+            <div class= "col-lg-4 col-md-4 col-sm-4 col-xs-4 profile home-menu-header" ng-mouseover= "hover.about = true" ng-mouseout= "hover.about = false" data-step="4" data-intro="More information about me">
+                <span class= "home-label">
+                    ABOUT ME
+                    <hr class= "custom-hr" ng-class= "{'opaque' : hover.about}">
+                </span>
+                <div class= "custom-dropdown" ng-class= "$root.theme">
+                    <div class= "dropdown-element education" ng-click= "mvm.goToMyDetails('education')"  ng-class="{'active' : (mvm.$location.path().indexOf('/education') !== -1)}">
+                        <span tooltip= "EDUCATION">EDUCATION</span>
+                        <span class= "icon education"></span>
+                    </div>
+                    <div class= "dropdown-element jobs" ng-click= "mvm.goToMyDetails('jobs')"  ng-class="{'active' : (mvm.$location.path().indexOf('/jobs') !== -1)}">
+                        <span tooltip= "CAREER HISTORY">CAREER HISTORY</span>
+                        <span class= "icon career"></span>
+                    </div>
+                    <div class= "dropdown-element awards" ng-click= "mvm.goToMyDetails('awards')"  ng-class="{'active' : (mvm.$location.path().indexOf('/awards') !== -1)}">
+                        <span tooltip= "AWARDS & RECOGNITIONS">AWARDS & RECOGNITIONS</span>
+                        <span class= "icon award"></span>
+                    </div>
+                </div>
+            </div>
+            <div class= "col-lg-4 col-md-4 col-sm-4 col-xs-4 customize home-menu-header" ng-mouseover= "hover.customize = true" ng-mouseout= "hover.customize = false" data-step="5" data-intro="Customize the websites as per your liking">
+                <span class= "home-label">
+                    CUSTOMIZE
+                    <hr class= "custom-hr" ng-class= "{'opaque' : hover.customize}">
+                </span>
+                <div class= "custom-dropdown" ng-class= "$root.theme">
+                    <div class= "dropdown-element" ng-click= "mvm.switchLayout()">
+                        <span tooltip="Switch to vertical view" class= "inline-block">LAYOUT</span>
+                        <div class= "layout-picker inline-block">
+                            <span class= "icon" ng-class= "{'vertical-layout' : !mvm.layoutHorizontal, 'horizontal-layout' : mvm.layoutHorizontal}"></span>
+                        </div>
+                    </div>
+                    <div class= "dropdown-element" ng-click= "$root.switchColor()">
+                        <span tooltip= "Use a new theme">COLOR THEME</span>
+                        <div class= "color-picker-small">
+                            <span class= "color-tile-small" ng-repeat="theme in mvm.myConfig.bgThemes" ng-class= "theme"></span>
+                        </div>
+                    </div>
+                    <div class= "dropdown-element" ng-click= "mvm.goToHighlights()">
+                        <span tooltip= "Use a new theme">WEBSITE HIGHLIGHTS</span>
+                        <span class= "icon highlight"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Vertical Alignment -->
+    <div class= "col-lg-2 col-md-2 col-sm-12 home-menu vertical" ng-if= "!mvm.layoutHorizontal">
+        <div class= "row">
+            <div class= "col-lg-12 col-md-12 col-sm-12 col-xs-12 home-menu-header first" ng-mouseover= "hover.works = true" ng-mouseout= "hover.works = false" ng-class= "$root.theme">
+                <span class= "home-label">
+                    MY WORKS
+                    <hr class= "custom-hr" ng-class= "{'opaque' : hover.works}">
+                </span>
+                <div class= "custom-dropdown" ng-class= "$root.theme">
+                    <div class= "dropdown-element all" ng-click= "mvm.goToWorks()"  ng-class="{'active' : (mvm.$location.path().indexOf('/works') !== -1)}">
+                        <span tooltip= "VIEW ALL WORKS">ALL</span>
+                        <span class= "icon slideshow"></span>
+                    </div>
+                    <div class= "dropdown-element dp" ng-click= "mvm.goToWorks('dp')"  ng-class="{'active' : (mvm.$location.path().indexOf('/works/details?id=dp') !== -1)}">
+                        <span tooltip= "GO TO DP DETAILS">DESIGN PORTAL</span>
+                        <span class= "icon dp"></span>
+                    </div>
+                    <div class= "dropdown-element dwb" ng-click= "mvm.goToWorks('dwb')"  ng-class="{'active' : (mvm.$location.path().indexOf('/works/details?id=dwb') !== -1)}">
+                        <span tooltip= "GO TO DWB DETAILS">DWB</span>
+                        <span class= "icon dwb"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class= "row">
+            <div class= "col-lg-12 col-md-12 col-sm-12 col-xs-12 profile home-menu-header" ng-mouseover= "hover.about = true" ng-mouseout= "hover.about = false" ng-class= "$root.theme">
+                <span class= "home-label">
+                    ABOUT ME
+                    <hr class= "custom-hr" ng-class= "{'opaque' : hover.about}">
+                </span>
+                <div class= "custom-dropdown" ng-class= "$root.theme">
+                    <div class= "dropdown-element education" ng-click= "mvm.goToMyDetails('education')" ng-class="{'active' : (mvm.$location.path().indexOf('/education') !== -1)}">
+                        <span tooltip= "EDUCATION">EDUCATION</span>
+                        <span class= "icon education"></span>
+                    </div>
+                    <div class= "dropdown-element jobs" ng-click= "mvm.goToMyDetails('jobs')"  ng-class="{'active' : (mvm.$location.path().indexOf('/jobs') !== -1)}">
+                        <span tooltip= "CAREER HISTORY">CAREER HISTORY</span>
+                        <span class= "icon career"></span>
+                    </div>
+                    <div class= "dropdown-element awards" ng-click= "mvm.goToMyDetails('awards')"  ng-class="{'active' : (mvm.$location.path().indexOf('/awards') !== -1)}">
+                        <span tooltip= "AWARDS & RECOGNITIONS">AWARDS & RECOGNITIONS</span>
+                        <span class= "icon award"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class= "row">
+            <div class= "col-lg-12 col-md-12 col-sm-12 col-xs-12 customize home-menu-header" ng-mouseover= "hover.customize = true" ng-mouseout= "hover.customize = false" ng-class= "$root.theme">
+                <span class= "home-label">
+                    CUSTOMIZE
+                    <hr class= "custom-hr" ng-class= "{'opaque' : hover.customize}">
+                </span>
+                <div class= "custom-dropdown" ng-class= "$root.theme">
+                    <div class= "dropdown-element" ng-click= "mvm.switchLayout()">
+                        <span tooltip="Switch to vertical view" class= "inline-block">LAYOUT</span>
+                        <div class= "layout-picker inline-block">
+                            <span class= "icon" ng-class= "{'vertical-layout' : !mvm.layoutHorizontal, 'horizontal-layout' : mvm.layoutHorizontal}"></span>
+                        </div>
+                    </div>
+                    <div class= "dropdown-element" ng-click= "$root.switchColor()">
+                        <span tooltip= "Use a new theme">COLOR THEME</span>
+                        <div class= "color-picker-small">
+                            <span class= "color-tile-small" ng-repeat="theme in mvm.myConfig.bgThemes" ng-class= "theme"></span>
+                        </div>
+                    </div>
+                    <div class= "dropdown-element" ng-click= "mvm.goToHighlights()">
+                        <span tooltip= "Use a new theme">WEBSITE HIGHLIGHTS</span>
+                        <span class= "icon highlight"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class= "color-picker" ng-class= "{'active' : $root.pickColor}">
+        <span class= "color-tile" ng-repeat="theme in mvm.myConfig.bgThemes" ng-class= "theme" ng-click= "($root.theme=theme);$root.switchColor()"></span>
+        <fieldset ng-disabled= "!$root.theme" ng-class= "{'disabled' : !$root.theme}">
+            <i class="material-icons clear-theme" tooltip= "Clear Theme" ng-click= "$root.clearTheme()">clear</i>
+        </fieldset>
+    </div>
 </div>
