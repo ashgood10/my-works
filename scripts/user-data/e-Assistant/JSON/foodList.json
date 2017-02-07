@@ -1,0 +1,6 @@
+[
+{"id": "i101", "item": "Rice (150gms)", "price": "10", "image": "images/rice.jpg", "selectStatus": false, "qty":0},
+{"id": "i102", "item": "Dal (350ml)", "price": "12", "image": "images/dal.jpg", "selectStatus": false, "qty":0},
+{"id": "i103", "item": "Spicy Cabbage (200gms)", "price": "18", "image": "images/cabbage.jpg", "selectStatus": false, "qty":0},
+{"id": "i104", "item": "Curd (150ml)", "price": "8", "image": "images/curd.jpg", "selectStatus": false, "qty":0}
+]

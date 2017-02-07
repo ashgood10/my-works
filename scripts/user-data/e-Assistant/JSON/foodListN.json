@@ -1,0 +1,6 @@
+[
+{"id": "NV101", "item": "Chicken Curry (150gms)", "price": "40", "image": "images/chickenCurry.jpg", "selectStatus": false, "qty":0},
+{"id": "NV102", "item": "Fish Curry (350ml)", "price": "42", "image": "images/fishCurry.jpg", "selectStatus": false, "qty":0},
+{"id": "NV103", "item": "Rogan Josh (200gms)", "price": "38", "image": "images/roganJosh.jpg", "selectStatus": false, "qty":0},
+{"id": "NV104", "item": "Egg Curry (150ml)", "price": "58", "image": "images/eggCurry.jpg", "selectStatus": false, "qty":0}
+]

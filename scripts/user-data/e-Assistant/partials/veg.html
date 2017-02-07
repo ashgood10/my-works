@@ -1,0 +1,40 @@
+<body>
+	<center>
+		<h2>Select the food court you wish to order from:</h2>
+		<select ng-model="fc" ng-change="showMe= true; getFood()">
+			<option ng-repeat="y in foodCourt" value="{{y.no}}">{{y.name}}</option>
+		</select><br>
+		<br>
+		<div id="orderList" ng-show="showMe">
+			Select the items you want to order:
+			<form>
+				<table>
+					<!-- 					<tr class= "itemList"><th>Item</th><th>Quantity</th><th>Price</th></tr> -->
+					<tr ng-repeat="x in orderList" class="itemList"
+						title="Click on the images to see the enlarged view">
+						<td>{{x.item}}</td>
+						<td><input type="number" value="{{x.qty}}" ng-model="quant"
+							id="quantity" min="0" ng-change="{{grandPrice=0}}"></td>
+						<td>Rs.{{x.price}}</td>
+						<td><img class="compo" src="{{x.image}}"
+							style="height: 100px; width: 100px;"></td>
+						<!-- 					<td><input type="checkbox" ng-model= "selected" ng-click= "foodCart(x.id)"></td> -->
+						<td><input type="button" value="Add Item"
+							ng-click="priceCalc(x.id, quant);foodCart(x.id, quant); showMessage(x.item)"></td>
+					</tr>
+				</table>
+				<br />
+				<br />
+				<br /> <span id="grandPrice">Grand Price:{{grandPrice}}</span>
+				<div id="diaplay"></div>
+				<br>
+				<br>
+				<br> <img src="images/cart.jpg"
+					style="height: 50px; width: 50px;" ng-click="showCart()"><br>
+				<input type="reset" value="Reset"><br>
+				<br>
+				<br>
+			</form>
+		</div>
+	</center>
+</body>

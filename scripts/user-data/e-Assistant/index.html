@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="favicon.ico" />
+<title>e-Assistant @ your service</title>
+
+</head>
+<body>
+	<center>
+		<div id="header" title="So!! You want to play?" ng-include="'partials/Header.html'" onclick="game()"></div>
+		<img id="homeBtn" src="images/home.jpg" onclick="homeFxn()" ng-controller= "welcomeCtrl" ng-if="info.username">
+		
+		<p id="timeDiv"></p>
+		
+		<div ng-model="sidebar" id="sidebar" style="float: right;">
+			{{info.username}}&nbsp;&nbsp;&nbsp;<img id="profilePic" ng-src="images/{{info.username}}.jpg" ng-if="info.username">
+			<button ng-if="info.username" ng-click="logOut();" ng-controller= "welcomeCtrl" id="logBtn">LogOut</buttton>
+		</div>
+		<br>
+		<br>
+		
+		<div id="content" ng-view></div>
+		
+		<div id="footer" title="So!! You want to play?"
+			ng-include="'partials/Footer.html'" onclick="game()"></div>
+	</center>
+	<script>
+			document.getElementById('timeDiv').innerHTML= Date();
+		</script>
+
+	<style type="text/css">@import "styles/style.css";</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+	<script src="https://rawgithub.com/gsklee/ngStorage/master/ngStorage.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-cookies.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-route.min.js"></script>
+	<script src="lib/myControl.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script>
+			function game()
+			{
+				var ans= confirm("Do you want to continue with the Gravity Game");
+				if(ans)
+				{
+					location.href= 'http://finaclearchie/sites/CRM/Members/Shared%20Documents/gravitymaster%5b1%5d.swf';
+				}
+			}
+			function homeFxn()
+			{
+				location.href= '/e-Assistant/index.html#/';	
+			}
+	</script>
+</body>
+</html>

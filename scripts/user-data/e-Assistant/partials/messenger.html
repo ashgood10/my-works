@@ -1,0 +1,14 @@
+<body>
+	<div id="messengerWrapper" ng-hide="showCheck">
+		<h2>Send regards to fellow Infoscions!!</h2>
+		<span style="display: inline; float: left;">Hi
+			{{info.username}}</span> <a style="display: inline; float: right;"
+			ng-click="showCheck=logOut()">Exit Messenger</a>
+		<div id="chatWindow"></div>
+		<textarea class="sendMessage" enter-press rows="2" cols="20"
+			placeholder="Enter your message here" ng-model="messageText.data"
+			autofocus="autofocus"></textarea>
+		<button id="sendMessageBtn" ng-model="sendMessageBtn"
+			ng-click="postMessage(messageText.data); messageText.data= ''">Send</button>
+	</div>
+</body>

@@ -1,0 +1,251 @@
+body
+{
+font-family: ashish;
+background-size: 100%;
+font-size: large;
+}
+h2, span, a
+{
+	color: black;
+}
+#profilePic
+{
+	height: 30px; 
+	width: 30px; 
+	border: none;
+}
+#content
+{
+	color: black;
+	text-shadow: 2px 2px 5px gray;
+	margin-bottom: 50px;
+}
+#header, #footer
+{
+	font-family: ashish1;
+ 	background-color:#1E90FF; 
+ 	text-shadow: 0px 0px 20px white;
+ 	opacity:0.78;
+ 	box-shadow: 0px 0px 10px white;
+ 	font-size: large;
+}
+#header:hover, #footer:hover
+{
+	font-family: ashish;
+	opacity: 0.87;
+	transform: translate(1px, 1px);
+	font-size: large;
+}
+#footer
+{
+ 	font-size: medium;
+ 	height: 50px;
+ 	position:fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+.button, .input, .select
+{
+border-radius:10px;
+}
+.LoginFormDiv
+{
+    border-radius: 10px;
+    background-color: #FAFAFA;
+    width:40%;
+    box-shadow: -1px -1px 2px 15px #FBFBEF;
+    -webkit-box-shadow:-5px -5px 5px 9px #E6E6E6;
+    -moz-box-shadow:0px 0px 3px 3px #FBFBEF;
+}
+#vegImg, #nonVegImg
+{
+	height: 250px; 
+	width: 250px; 
+	margin: 50px; 
+	padding: 50px; 
+	border: 10px ridge;
+}
+#vegImg:hover, #nonVegImg:hover
+{
+	transform: translate(20px,-50px) scale(1.16);
+	transition-duration: 1.5s;
+	border-style: groove;
+	border-color: #4DBD33;
+}
+#nonVegImg:hover
+{
+	border-color: #FF4D4D;
+}
+.compo:active
+{
+	transform: scale(5);
+	transition-duration: 1.5s;
+}
+
+#loginBody
+{
+	background:#ffffff; 
+	opacity: 0.85;
+	height: 200px; 
+	width: 400px; 
+	border-style: ridge; 
+	border-radius: 20px; 
+/* 	margin-top: 200px; */
+	color: black;
+}
+
+input:focus
+{
+	background-color: #d3d3d3;
+}
+.actionCompo
+{
+	height: 150px;
+	width: 150px;
+	display: inline-block;
+	margin: 30px;
+	padding: 10;
+}
+.actionCompo:hover
+{
+	transform: translate(20px, 0px);
+	transition-duration: 1s;
+	border:4px ridge;
+}
+.itemList
+{
+	margin:20px;
+	border-radius: 25px;
+	border-style: ridge;
+	border: 2;
+	background-color: dodgerblue;
+	opacity: 0.80;
+	box-shadow: 10px 10px 20px silver;
+	margin: auto;
+	padding: inherit;
+}
+.itemList:hover, #itemList1:hover
+{
+	opacity: 0.9;
+	background-color: #94D4E9;
+	color: white;
+	text-shadow: 2px 2px 5px blue;
+}
+@font-face
+{
+	font-family: ashish;
+	src: url('galette-med.otf');
+}
+#logo
+{
+	display: inline-block;
+	background-color: blue;
+	opacity: 0.95;
+	height: 85px;
+	width: 80px;
+	border-radius: 50px;
+}
+#sidebar
+{	
+	display: inline;
+	color: black;
+}
+#homeBtn
+{
+	display: inline;
+	float: left; 
+	height: 40px; 
+	width: 80px;
+	opacity: 0.80;
+}
+#homeBtn:hover
+{
+	transform: translate(1px,1px);
+}
+#homeBtn:active
+{
+	transform: translate(-1px,-1px);
+}
+#timeDiv
+{
+	color: black;
+	display: inline;
+}
+#quantity
+{
+	width: 50px;
+}
+#grandPrice
+{
+	margin: 50px;
+	font-size: large;
+}
+#messengerWrapper
+{
+	width:30%;
+	height: 500px;
+}
+#chatWindow
+{
+	width: 100%;
+	height: 400px;
+	background-color: #E4E4E4;
+	border: 2px groove #000000;
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px gray;
+}
+.sendMessage
+{
+	border: 2px groove #000000;
+	width: 80%;
+	float: left;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+#sendMessageBtn
+{
+	border: 2px groove #000000;
+	width: 15%;
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 90px;
+	height: 38px;
+	border-radius:10px;
+}
+#msgTxt
+{
+	color: red;
+	float: left;
+	font-family: sans-serif;
+	border-radius: 6px;
+	opacity: 0.7;
+	background-image: url('../images/bubble.jpg');
+	background-repeat: no-repeat;
+	background-size: 180px;
+}
+#msgTxtReply
+{
+	color: blue;
+	float: right;
+	font-family: sans-serif;
+	border-radius: 6px;
+	opacity: 0.7;
+	background-image: url('../images/bubble1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+#map-canvas
+{
+	height: 500px;
+}
+#content
+{
+	font-family: ashish;
+}
+#logBtn
+{
+	background: #1e86ec;
+	border-radius: 10px;
+	height: 30px;
+}

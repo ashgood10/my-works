@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<?php
+	$data
+	mysql_connect("127.0.0.1","root","");
+	mysql_select_db("infy_emp");
+	mysql.query("INSERT INTO EMPLOYEE('emp_id','emp_name','status') VALUES(".$empId.",".$empName.",".$status.")");
+?>
+</body>
+</html>
