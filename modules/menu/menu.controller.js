@@ -43,7 +43,6 @@ Author: Ashish Dwivedi
         function switchLayout() {
             if(_this.layoutHorizontal) {
                 $timeout(function() {
-                    var menuItemWidth = $('.vertical .home-menu-header').outerWidth();
                     $('.home.name-header').css({'width' : '18.5vw'});
                     $('.home-label').css({'font-size' : '18px'});
                     $('.name-header span').css({'font-size' : '18px'});
@@ -61,6 +60,7 @@ Author: Ashish Dwivedi
         }
         
         function goToWorks(proj) {
+            expandMenu();
             if((!proj && $location.path() === '/works') || (proj && window.location.href.indexOf('/works/details?id='+proj) !== -1)) {
                 return;
             }
@@ -78,6 +78,7 @@ Author: Ashish Dwivedi
         }
         
         function goToMyDetails(page) {
+            expandMenu();
             if($location.path().indexOf(page) !== -1) {
                 return;
             }
@@ -88,6 +89,7 @@ Author: Ashish Dwivedi
         }
         
         function goToHighlights() {
+            expandMenu();
             var highlightPromise = apiFactory.getHighlights();
             highlightPromise.then(function(result) {
                 highlightData = result;
@@ -124,7 +126,7 @@ Author: Ashish Dwivedi
         function expandMenu() {
             if(!angular.element(document.querySelector('.home-menu.vertical')).hasClass('expanded')) {
                 angular.element(document.querySelector('.menu-collapse')).css({'transform':'rotate(90deg) scale(0.6)'});
-                angular.element(document.querySelector('.home-menu.vertical')).css({'margin-top':'30px'});
+                angular.element(document.querySelector('.home-menu.vertical')).css({'margin-top':'0px'});
                 angular.element(document.querySelector('.home-menu.vertical')).addClass('expanded');
             } else {
                 angular.element(document.querySelector('.menu-collapse')).css({'transform':'rotate(0deg) scale(0.6)'});

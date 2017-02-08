@@ -80,35 +80,6 @@
     font-size: xx-large;
 }
 
-.vertical-layout .dropdown-element.active:after {
-    right:0 !important;
-}
-
-.vertical.home-menu {
-    position: fixed;
-    margin-top: 120px;
-    height: 100vh;
-    background-color: transparent;
-}
-
-.vertical .home-menu-header {
-    position: relative;
-    margin-top: 95px;
-    height: 70px;
-    border: none;
-    background-color: #1e1e1e;
-}
-
-.vertical .home-menu-header.first {
-    margin-top: 50px;
-}
-
-.vertical-layout .back-to-works {
-    position: relative;
-    margin: 0px 20px 0 0;
-    float: right;
-}
-
 .color-picker {
     position: absolute;
     width: 75px;
@@ -229,17 +200,8 @@
     margin: 0;
 }
 
-.vertical-layout .menu-page {
-    z-index: 2;
-    position: relative;
-}
-
 .home-menu-header {
     padding: 0;
-}
-
-.vertical-layout [ng-view] {
-    position: relative;
 }
 
 .menu-collapse {
@@ -255,14 +217,44 @@
     animation-duration: 0.3s;
 }
 
+.vertical-layout [ng-view] {
+    position: relative;
+}
+
+.vertical-layout .dropdown-element.active:after {
+    right:0 !important;
+}
+
+.vertical.home-menu {
+    position: fixed;
+    margin-top: 120px;
+    height: 100vh;
+    background-color: transparent;
+}
+
+.vertical .home-menu-header {
+    position: relative;
+    margin-top: 95px;
+    height: 70px;
+    border: none;
+    background-color: #1e1e1e;
+}
+
+.vertical .home-menu-header.first {
+    margin-top: 50px;
+}
+
+.vertical-layout .back-to-works {
+    position: relative;
+    margin: -70px 20px 0 0;
+    float: right;
+}
+.vertical-layout .menu-page {
+    z-index: 2;
+    position: relative;
+}
+
 @media screen and (max-width: 768px) {
-    
-    .vertical-layout .menu-collapse {
-        display: block;
-        position: absolute;
-        margin: -10px 0 5px -5px;
-        z-index: 3;
-    }
     
     .home-menu {
         min-height: 20px !important;
@@ -276,14 +268,6 @@
         width: 100vw;
         background-color: #1e1e1e;
         opacity: 0.8;
-    }
-    
-    .vertical .home-menu-header {
-        margin-top: 65px;
-    }
-    
-    .vertical .home-menu-header.first {
-        margin-top : 20px;
     }
     
     .home-label {
@@ -310,10 +294,6 @@
         margin-left: 7% !important;
     }
     
-    .vertical-layout .social-connect {
-        margin-left: 5% !important;
-    }
-    
     .customize {
         padding-left: 0 !important;
     }
@@ -323,10 +303,6 @@
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
-    }
-    
-    .vertical-layout .dropdown-element {
-        max-width: none;
     }
     
     .highlights-modal .modal-dialog {
@@ -339,7 +315,38 @@
     }
     
     .vertical-layout [ng-view] {
-        margin-top: 80px;
+        margin-top: 40px;
     }
     
+    .vertical-layout .back-to-works {
+        margin: -35px 0;
+    }
+    
+    .vertical-layout .menu-collapse {
+        display: inline-block;
+        position: absolute;
+        margin: 10px 0 5px -25px;
+        z-index: 3;
+    }
+    
+    .vertical .home-menu-header {
+        margin-top: 65px;
+    }
+    
+    .vertical-layout .social-connect {
+        margin-left: 5% !important;
+        margin-top: -20vh;
+    }
+    
+    .vertical-layout .dropdown-element {
+        max-width: none;
+    }
+    
+    .vertical-layout .home-label-head {
+        margin-left: 20px;
+    }
+    
+    .vertical .home-menu-header.first {
+        margin-top: 0px;
+    }
 }
